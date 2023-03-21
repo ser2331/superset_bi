@@ -1,0 +1,82 @@
+.bubble-chart {
+  margin: 0;
+}
+
+[class$="svg-icon-content"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* style for custom bubble */
+/* .placemark {
+  background-image: url("/static/assets/images/bubble_map_ball.png");
+  background-size: 100%;
+  border-radius: 50%;
+}
+.placemark__value {
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* end style for custom bubble */
+
+.slice_container.bubble {
+  display: flex;
+  justify-content: center;
+}
+
+ymaps[class$="cluster-content__body"] {
+  overflow: auto;
+}
+ymaps[class$="ymaps-2-1-79-b-cluster-tabs__section_type_content"] {
+  overflow: auto;
+}
+
+.cluster-content__header {
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.balloon-content-custom {
+  margin-left: 5px;
+}
+
+.balloon-content-custom thead {
+  background-color: #efefef;
+  font-size: 14px;
+}
+
+.balloon-content-custom tbody {
+  font-size: 12px;
+}
+
+.balloon-content-custom tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.balloon-content-custom tbody tr:hover {
+  background-color: #f7f0e1;
+}
+
+#drilldown-window {
+  display: none;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  font-family: Arial,sans-serif;
+  font-size: 14px;
+  border: 1px solid #d4d4d4;
+  overflow: scroll;
+  z-index: 1200;
+}
+
+.ymaps-2-1-79-b-cluster-tabs__menu-item .hidden {
+  display: none;
+}

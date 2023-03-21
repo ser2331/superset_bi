@@ -1,0 +1,125 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import shortid from 'shortid';
+import { Button, Row, Col } from 'react-bootstrap';
+import FilterNode from './FilterNode';
+import { t } from '../../../locales';
+
+const propTypes = {
+  name: PropTypes.string,
+  onChange: PropTypes.func,
+  value: PropTypes.array,
+  datasource: PropTypes.object,
+};
+
+const defaultProps = {
+  onChange: () => {},
+  value: [],
+};
+
+export default class FilterControl extends React.Component {
+
+  constructor(props) {
+    super(props);
+    const initialFilters = props.value.map(() => ({
+      valuesLoading: false,
+      valueChoices: [],
+    }));
+    this.state = {
+      filters: initialFilters,
+      activeRequest: null,
+    };
+  }
+
+  componentDidMount() {
+    this.state.filters.forEach((filter, index) => this.fetchFilterValues(index));
+  }
+
+  shouldComponentUpdate(nextProps) {
+    const allPropsMatched = Object.keys(nextProps)
+      .filter(key => key !== 'hovered')
+      .every(key => nextProps[key] === this.props[key]);
+    return !allPropsMatched;
+  }
+
+  fetchFilterValues(index, column) {
+    const datasource = this.props.datasource;
+    const col = column || this.props.value[index].col;
+    const having = this.props.name === 'having_filters';
+    if (col && this.props.datasource && this.props.datasource.filter_select && !having) {
+      this.setState((prevState) => {
+        const newStateFilters = Object.assign([], prevState.filters);
+        newStateFilters[index].valuesLoading = true;
+        return { filters: newStateFilters };
+      });
+      // if there is an outstanding request to fetch values, cancel it.
+      if (this.state.activeRequest) {
+        this.state.activeRequest.abort();
+      }
+      this.setState({
+        activeRequest: $.ajax({
+          type: 'GET',
+          url: `/superset/filter/${datasource.type}/${datasource.id}/${col}/`,
+          success: (data) => {
+            this.setState((prevState) => {
+              const newStateFilters = Object.assign([], prevState.filters);
+              newStateFilters[index] = { valuesLoading: false, valueChoices: data };
+              return { filters: newStateFilters, activeRequest: null };
+            });
+          },
+        }),
+      });
+    }
+  }
+
+  addFilter() {
+    const newFilters = Object.assign([], this.props.value);
+    const col = this.props.datasource && this.props.datasource.filterable_cols.length > 0 ?
+      this.props.datasource.filterable_cols[0][0] :
+      null;
+    newFilters.push({
+      col,
+      op: 'in',
+      val: this.props.datasource.filter_select ? [] : '',
+      id: shortid.generate(),
+      conjuction: 'and',
+      path: [],
+    });
+    this.props.onChange(newFilters);
+  }
+
+  render() {
+    const filters = this.props.value.map((filter, index) => (
+      <FilterNode
+        key={filter.id}
+        having={this.props.name === 'having_filters'}
+        filter={filter}
+        controlsActive={index !== this.props.value.length - 1}
+        datasource={this.props.datasource}
+        value={this.props.value}
+        onChange={this.props.onChange}
+      />
+    ));
+    return (
+      <div>
+        {filters}
+        { !filters.length &&
+          <Row className="space-2">
+            <Col md={2}>
+              <Button
+                id="add-button"
+                bsSize="sm"
+                onClick={this.addFilter.bind(this)}
+              >
+                <i className="fa fa-plus" /> &nbsp; {t('Add Filters')}
+              </Button>
+            </Col>
+          </Row>
+        }
+      </div>
+    );
+  }
+}
+
+FilterControl.propTypes = propTypes;
+FilterControl.defaultProps = defaultProps;

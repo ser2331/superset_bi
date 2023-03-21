@@ -1,0 +1,49 @@
+{% extends "appbuilder/base.html" %}
+{% import 'appbuilder/general/lib.html' as lib %}
+
+{% block head_js %}
+{{ super() }}
+{% endblock %}
+
+{% block head_css %}
+{{super()}}
+<!-- Bundle css sliceview START -->
+{% for entry in get_unloaded_chunks(css_manifest('sliceview'), loaded_chunks) %}
+<link rel="stylesheet" type="text/css" href="{{ entry }}"/>
+{% endfor %}
+<!-- Bundle css sliceview END -->
+{% endblock %}
+
+{% block content %}
+{{ lib.panel_begin(title) }}
+<div class="row row-flex-wrap">
+    <div class="col-md-3 folder_tree_wrapper">
+        <div id="folder_tree" class="loading" data-bootstrap="{{ bootstrap_data }}" data-object_type="{{ object_type }}"></div>
+    </div>
+    <div class="col-md-9" id="content">
+        <div class="panel-body list-container">
+            {% block list_search scoped %}
+            {{ widgets.get('search')()|safe }}
+            {% endblock %}
+            {% if folders %}
+                <div class="paths"><span class="title">{{_("Path")}}:</span>
+                    {% for folder in folders %}
+                        <span class="path">{{ folder }}</span>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            {% block list_list scoped %}
+            {{ widgets.get('list')()|safe }}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+{{ lib.panel_end() }}
+{% endblock %}
+
+{% block tail %}
+{% with filename="sliceview" %}
+{% include "superset/partials/_script_tag.html" %}
+{% endwith %}
+{% endblock %}

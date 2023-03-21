@@ -1,0 +1,8 @@
+.widget.pivot_table tr > th,
+.widget.pivot_table tr > td {
+  padding: 1px 5px;
+}
+
+.widget.pivot_table table {
+  contain: strict;
+}

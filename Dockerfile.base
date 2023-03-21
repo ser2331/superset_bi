@@ -1,0 +1,75 @@
+FROM python:3.6-slim-stretch                                                                                                                                                                               
+                                                                                                                   
+# Caravel setup options                           
+ENV SUPERSET_VERSION=0.23 \                            
+    SUPERSET_HOME=/home/superset
+               
+ENV PYTHONPATH=$SUPERSET_HOME:$PYTHONPATH                      
+                                            
+ENV LANGUAGE=en_US.UTF-8 \
+    LANG=en_US.UTF-8 \            
+    LC_ALL=en_US.UTF-8 \     
+    LC_CTYPE=en_US.UTF-8 \                  
+    LC_MESSAGES=en_US.UTF-8
+                                     
+RUN set -ex \                
+    && buildDeps=' \                        
+        build-essential \
+        libssl-dev \                        
+        libffi-dev \                                         
+        libsasl2-dev \                      
+        libldap2-dev \                                                        
+        libpq-dev \                                                  
+        unixodbc-dev \                                     
+        unzip \                                                                                                  
+        git \
+    ' \
+    && apt-get update -yqq \
+    && apt-get install -yqq \
+        $buildDeps \
+        apt-transport-https \
+        locales \
+                build-essential \
+                libpq5 \
+                apt-utils \
+                curl \
+                netcat \
+    && sed -i 's/^# en_US.UTF-8 UTF-8$/en_US.UTF-8 UTF-8/g' /etc/locale.gen \
+    && locale-gen \
+    && update-locale LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
+
+COPY requirements.txt /tmp/requirements.txt
+
+RUN mkdir -p /opt/oracle \
+    && cd /opt/oracle \
+    && curl https://download.oracle.com/otn_software/linux/instantclient/199000/instantclient-basic-linux.x64-19.9.0.0.0dbru.zip --output instantclient-basic-linux.x64-19.9.0.0.0dbru.zip \
+    && unzip instantclient-basic-linux.x64-19.9.0.0.0dbru.zip \
+    && echo /opt/oracle/instantclient_19_9 > /etc/ld.so.conf.d/oracle-instantclient.conf \
+    && apt-get install -yqq libaio1 \
+    && ldconfig \
+    && export LD_LIBRARY_PATH=/opt/oracle/instantclient_19_9:$LD_LIBRARY_PATH \
+    && curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
+    && curl https://packages.microsoft.com/config/debian/9/prod.list > /etc/apt/sources.list.d/mssql-release.list \
+    && apt-get update -yqq \
+    && ACCEPT_EULA=Y apt-get install -yqq msodbcsql17 \
+    && pip install \
+       pyodbc \
+       redis==2.10.6 \
+       sentry-sdk[flask]==0.10.2 \
+       pymssql==2.1.4 \
+       kombu==4.1.0 \
+       tornado==4.2 \
+       celery[redis]==4.1.0 \
+       cx_Oracle \
+       elastic-apm[flask] \
+    && pip install -r /tmp/requirements.txt
+
+
+
+# Install nodejs
+RUN \
+    curl -sL https://deb.nodesource.com/setup_12.x | bash - \
+    && apt-get install -y nodejs \
+    && npm install --global cross-env yarn
+
+

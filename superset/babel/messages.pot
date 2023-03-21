@@ -1,0 +1,902 @@
+# Translations template for PROJECT.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-09-05 23:15+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: db_engine_specs.py:194 db_engine_specs.py:225 db_engine_specs.py:269
+#: db_engine_specs.py:317 db_engine_specs.py:362 db_engine_specs.py:770
+#: db_engine_specs.py:806 db_engine_specs.py:838 db_engine_specs.py:884
+msgid "Time Column"
+msgstr ""
+
+#: db_engine_specs.py:195 db_engine_specs.py:226 db_engine_specs.py:318
+#: db_engine_specs.py:363 db_engine_specs.py:771 db_engine_specs.py:839
+msgid "second"
+msgstr ""
+
+#: db_engine_specs.py:196 db_engine_specs.py:229 db_engine_specs.py:321
+#: db_engine_specs.py:365 db_engine_specs.py:773 db_engine_specs.py:807
+#: db_engine_specs.py:841 db_engine_specs.py:885
+msgid "minute"
+msgstr ""
+
+#: db_engine_specs.py:197 db_engine_specs.py:233 db_engine_specs.py:323
+#: db_engine_specs.py:367 db_engine_specs.py:779 db_engine_specs.py:809
+#: db_engine_specs.py:843 db_engine_specs.py:891
+msgid "hour"
+msgstr ""
+
+#: db_engine_specs.py:198 db_engine_specs.py:238 db_engine_specs.py:270
+#: db_engine_specs.py:325 db_engine_specs.py:369 db_engine_specs.py:781
+#: db_engine_specs.py:811 db_engine_specs.py:845 db_engine_specs.py:893
+msgid "day"
+msgstr ""
+
+#: db_engine_specs.py:199 db_engine_specs.py:244 db_engine_specs.py:271
+#: db_engine_specs.py:326 db_engine_specs.py:371 db_engine_specs.py:783
+#: db_engine_specs.py:813 db_engine_specs.py:847
+msgid "week"
+msgstr ""
+
+#: db_engine_specs.py:200 db_engine_specs.py:246 db_engine_specs.py:273
+#: db_engine_specs.py:328 db_engine_specs.py:373 db_engine_specs.py:785
+#: db_engine_specs.py:815 db_engine_specs.py:849 db_engine_specs.py:895
+msgid "month"
+msgstr ""
+
+#: db_engine_specs.py:201 db_engine_specs.py:248 db_engine_specs.py:330
+#: db_engine_specs.py:375 db_engine_specs.py:787 db_engine_specs.py:817
+#: db_engine_specs.py:851 db_engine_specs.py:897
+msgid "quarter"
+msgstr ""
+
+#: db_engine_specs.py:202 db_engine_specs.py:252 db_engine_specs.py:332
+#: db_engine_specs.py:789 db_engine_specs.py:819 db_engine_specs.py:899
+msgid "year"
+msgstr ""
+
+#: db_engine_specs.py:334
+msgid "week_start_monday"
+msgstr ""
+
+#: db_engine_specs.py:377 db_engine_specs.py:853
+msgid "week_ending_saturday"
+msgstr ""
+
+#: db_engine_specs.py:380 db_engine_specs.py:856
+msgid "week_start_sunday"
+msgstr ""
+
+#: db_engine_specs.py:775 db_engine_specs.py:887
+msgid "5 minute"
+msgstr ""
+
+#: db_engine_specs.py:777
+msgid "half hour"
+msgstr ""
+
+#: db_engine_specs.py:889
+msgid "10 minute"
+msgstr ""
+
+#: utils.py:472
+#, python-format
+msgid "[Superset] Access to the datasource %(name)s was granted"
+msgstr ""
+
+#: viz.py:337
+msgid "Table View"
+msgstr ""
+
+#: viz.py:387
+msgid "Pivot Table"
+msgstr ""
+
+#: viz.py:442
+msgid "Markup"
+msgstr ""
+
+#: viz.py:461
+msgid "Separator"
+msgstr ""
+
+#: viz.py:477
+msgid "Word Cloud"
+msgstr ""
+
+#: viz.py:500
+msgid "Treemap"
+msgstr ""
+
+#: viz.py:526
+msgid "Calendar Heatmap"
+msgstr ""
+
+#: viz.py:584
+msgid "Box Plot"
+msgstr ""
+
+#: viz.py:673
+msgid "Bubble Chart"
+msgstr ""
+
+#: viz.py:723
+msgid "Bullet Chart"
+msgstr ""
+
+#: viz.py:772
+msgid "Big Number with Trendline"
+msgstr ""
+
+#: viz.py:801
+msgid "Big Number"
+msgstr ""
+
+#: viz.py:828
+msgid "Time Series - Line Chart"
+msgstr ""
+
+#: viz.py:955
+msgid "Time Series - Dual Axis Line Chart"
+msgstr ""
+
+#: viz.py:1030
+msgid "Time Series - Bar Chart"
+msgstr ""
+
+#: viz.py:1038
+msgid "Time Series - Percent Change"
+msgstr ""
+
+#: viz.py:1046
+msgid "Time Series - Stacked"
+msgstr ""
+
+#: viz.py:1055
+msgid "Distribution - NVD3 - Pie Chart"
+msgstr ""
+
+#: viz.py:1073
+msgid "Histogram"
+msgstr ""
+
+#: viz.py:1098
+msgid "Distribution - Bar Chart"
+msgstr ""
+
+#: viz.py:1165
+msgid "Sunburst"
+msgstr ""
+
+#: viz.py:1198
+msgid "Sankey"
+msgstr ""
+
+#: viz.py:1247
+msgid "Directed Force Layout"
+msgstr ""
+
+#: viz.py:1268
+msgid "Country Map"
+msgstr ""
+
+#: viz.py:1297
+msgid "World Map"
+msgstr ""
+
+#: viz.py:1347
+msgid "Filters"
+msgstr ""
+
+#: viz.py:1382
+msgid "iFrame"
+msgstr ""
+
+#: viz.py:1399
+msgid "Parallel Coordinates"
+msgstr ""
+
+#: viz.py:1424
+msgid "Heatmap"
+msgstr ""
+
+#: viz.py:1475
+msgid "Horizon Charts"
+msgstr ""
+
+#: viz.py:1486
+msgid "Mapbox"
+msgstr ""
+
+#: connectors/druid/models.py:945
+msgid "No data was returned."
+msgstr ""
+
+#: connectors/druid/views.py:37 connectors/sqla/views.py:73
+msgid "Column"
+msgstr ""
+
+#: connectors/druid/views.py:38 connectors/druid/views.py:97
+#: connectors/sqla/views.py:129
+msgid "Type"
+msgstr ""
+
+#: connectors/druid/views.py:39 views/core.py:309 views/core.py:358
+msgid "Datasource"
+msgstr ""
+
+#: connectors/druid/views.py:40 connectors/sqla/views.py:76
+msgid "Groupable"
+msgstr ""
+
+#: connectors/druid/views.py:41 connectors/sqla/views.py:77
+msgid "Filterable"
+msgstr ""
+
+#: connectors/druid/views.py:42 connectors/sqla/views.py:79
+msgid "Count Distinct"
+msgstr ""
+
+#: connectors/druid/views.py:43 connectors/sqla/views.py:80
+msgid "Sum"
+msgstr ""
+
+#: connectors/druid/views.py:44 connectors/sqla/views.py:81
+msgid "Min"
+msgstr ""
+
+#: connectors/druid/views.py:45 connectors/sqla/views.py:82
+msgid "Max"
+msgstr ""
+
+#: connectors/druid/views.py:48 connectors/sqla/views.py:42
+msgid ""
+"Whether this column is exposed in the `Filters` section of the explore "
+"view."
+msgstr ""
+
+#: connectors/druid/views.py:88 connectors/sqla/views.py:111
+msgid ""
+"Whether the access to this metric is restricted to certain roles. Only "
+"roles with the permission 'metric access on XXX (the name of this "
+"metric)' are allowed to access this metric"
+msgstr ""
+
+#: connectors/druid/views.py:94 connectors/sqla/views.py:126
+msgid "Metric"
+msgstr ""
+
+#: connectors/druid/views.py:95 connectors/druid/views.py:205
+#: connectors/sqla/views.py:75 connectors/sqla/views.py:127 views/core.py:359
+msgid "Description"
+msgstr ""
+
+#: connectors/druid/views.py:96 connectors/sqla/views.py:74
+#: connectors/sqla/views.py:128
+msgid "Verbose Name"
+msgstr ""
+
+#: connectors/druid/views.py:98 views/core.py:538
+msgid "JSON"
+msgstr ""
+
+#: connectors/druid/views.py:99
+msgid "Druid Datasource"
+msgstr ""
+
+#: connectors/druid/views.py:124 connectors/druid/views.py:204
+msgid "Cluster"
+msgstr ""
+
+#: connectors/druid/views.py:125
+msgid "Coordinator Host"
+msgstr ""
+
+#: connectors/druid/views.py:126
+msgid "Coordinator Port"
+msgstr ""
+
+#: connectors/druid/views.py:127
+msgid "Coordinator Endpoint"
+msgstr ""
+
+#: connectors/druid/views.py:128
+msgid "Broker Host"
+msgstr ""
+
+#: connectors/druid/views.py:129
+msgid "Broker Port"
+msgstr ""
+
+#: connectors/druid/views.py:130
+msgid "Broker Endpoint"
+msgstr ""
+
+#: connectors/druid/views.py:145
+msgid "Druid Clusters"
+msgstr ""
+
+#: connectors/druid/views.py:148 connectors/druid/views.py:244
+#: connectors/druid/views.py:283 connectors/sqla/views.py:318 views/core.py:278
+msgid "Sources"
+msgstr ""
+
+#: connectors/druid/views.py:173 connectors/sqla/views.py:212
+msgid ""
+"The list of slices associated with this table. By altering this "
+"datasource, you may change how these associated slices behave. Also note "
+"that slices need to point to a datasource, so this form will fail at "
+"saving if removing slices from a datasource. If you want to change the "
+"datasource for a slice, overwrite the slice from the 'explore view'"
+msgstr ""
+
+#: connectors/druid/views.py:181 connectors/sqla/views.py:220
+msgid "Timezone offset (in hours) for this datasource"
+msgstr ""
+
+#: connectors/druid/views.py:185
+msgid ""
+"Time expression to use as a predicate when retrieving distinct values to "
+"populate the filter component. Only applies when `Enable Filter Select` "
+"is on. If you enter `7 days ago`, the distinct list of values in the "
+"filter will be populated based on the distinct value over the past week"
+msgstr ""
+
+#: connectors/druid/views.py:192 connectors/sqla/views.py:242
+msgid ""
+"Whether to populate the filter's dropdown in the explore view's filter "
+"section with a list of distinct values fetched from the backend on the "
+"fly"
+msgstr ""
+
+#: connectors/druid/views.py:196 connectors/sqla/views.py:256
+msgid ""
+"Redirects to this endpoint when clicking on the datasource from the "
+"datasource list"
+msgstr ""
+
+#: connectors/druid/views.py:202 connectors/sqla/views.py:249
+msgid "Associated Slices"
+msgstr ""
+
+#: connectors/druid/views.py:203
+msgid "Data Source"
+msgstr ""
+
+#: connectors/druid/views.py:206
+msgid "Owner"
+msgstr ""
+
+#: connectors/druid/views.py:207
+msgid "Is Hidden"
+msgstr ""
+
+#: connectors/druid/views.py:208 connectors/sqla/views.py:254
+msgid "Enable Filter Select"
+msgstr ""
+
+#: connectors/druid/views.py:209
+msgid "Default Endpoint"
+msgstr ""
+
+#: connectors/druid/views.py:210
+msgid "Time Offset"
+msgstr ""
+
+#: connectors/druid/views.py:211 connectors/sqla/views.py:260 views/core.py:245
+#: views/core.py:355
+msgid "Cache Timeout"
+msgstr ""
+
+#: connectors/druid/views.py:242
+msgid "Druid Datasources"
+msgstr ""
+
+#: connectors/druid/views.py:280
+msgid "Refresh Druid Metadata"
+msgstr ""
+
+#: connectors/sqla/models.py:399
+msgid ""
+"Datetime column not provided as part table configuration and is required "
+"by this type of chart"
+msgstr ""
+
+#: connectors/sqla/models.py:404
+msgid "Metric '{}' is not valid"
+msgstr ""
+
+#: connectors/sqla/views.py:38
+msgid ""
+"Whether to make this column available as a [Time Granularity] option, "
+"column has to be DATETIME or DATETIME-like"
+msgstr ""
+
+#: connectors/sqla/views.py:45
+msgid ""
+"The data type that was inferred by the database. It may be necessary to "
+"input a type manually for expression-defined columns in some cases. In "
+"most case users should not need to alter this."
+msgstr ""
+
+#: connectors/sqla/views.py:78 connectors/sqla/views.py:131
+#: connectors/sqla/views.py:173 connectors/sqla/views.py:250 views/core.py:365
+msgid "Table"
+msgstr ""
+
+#: connectors/sqla/views.py:83
+msgid "Expression"
+msgstr ""
+
+#: connectors/sqla/views.py:84
+msgid "Is temporal"
+msgstr ""
+
+#: connectors/sqla/views.py:85
+msgid "Datetime Format"
+msgstr ""
+
+#: connectors/sqla/views.py:86
+msgid "Database Expression"
+msgstr ""
+
+#: connectors/sqla/views.py:130
+msgid "SQL Expression"
+msgstr ""
+
+#: connectors/sqla/views.py:172
+msgid "Hierarcy name"
+msgstr ""
+
+#: connectors/sqla/views.py:221
+msgid "Name of the table that exists in the source database"
+msgstr ""
+
+#: connectors/sqla/views.py:223
+msgid "Schema, as used only in some databases like Postgres, Redshift and DB2"
+msgstr ""
+
+#: connectors/sqla/views.py:229
+msgid ""
+"This fields acts a Superset view, meaning that Superset will run a query "
+"against this string as a subquery."
+msgstr ""
+
+#: connectors/sqla/views.py:233
+msgid ""
+"Predicate applied when fetching distinct value to populate the filter "
+"control component. Supports jinja template syntax. Applies only when "
+"`Enable Filter Select` is on."
+msgstr ""
+
+#: connectors/sqla/views.py:239
+msgid "Redirects to this endpoint when clicking on the table from the table list"
+msgstr ""
+
+#: connectors/sqla/views.py:251
+msgid "Changed By"
+msgstr ""
+
+#: connectors/sqla/views.py:252 views/core.py:241
+msgid "Database"
+msgstr ""
+
+#: connectors/sqla/views.py:253 views/core.py:243
+msgid "Last Changed"
+msgstr ""
+
+#: connectors/sqla/views.py:255
+msgid "Schema"
+msgstr ""
+
+#: connectors/sqla/views.py:259
+msgid "Offset"
+msgstr ""
+
+#: connectors/sqla/views.py:292
+msgid ""
+"The table was created. As part of this two phase configuration process, "
+"you should now click the edit button by the new table to configure it."
+msgstr ""
+
+#: connectors/sqla/views.py:316
+msgid "Tables"
+msgstr ""
+
+#: templates/appbuilder/navbar_right.html:41
+msgid "Profile"
+msgstr ""
+
+#: templates/appbuilder/navbar_right.html:42
+msgid "Logout"
+msgstr ""
+
+#: templates/appbuilder/navbar_right.html:47
+msgid "Login"
+msgstr ""
+
+#: templates/superset/import_dashboards.html:11
+msgid "Import"
+msgstr ""
+
+#: templates/superset/request_access.html:2
+msgid "No Access!"
+msgstr ""
+
+#: templates/superset/request_access.html:7
+#, python-format
+msgid "You do not have permissions to access the datasource(s): %(name)s."
+msgstr ""
+
+#: templates/superset/request_access.html:13
+msgid "Request Permissions"
+msgstr ""
+
+#: templates/superset/request_access.html:16
+msgid "Cancel"
+msgstr ""
+
+#: templates/superset/welcome.html:10
+msgid "Welcome!"
+msgstr ""
+
+#: templates/superset/welcome.html:20 views/core.py:357 views/core.py:511
+msgid "Dashboards"
+msgstr ""
+
+#: templates/superset/models/database/macros.html:4
+msgid "Test Connection"
+msgstr ""
+
+#: views/base.py:57
+#, python-format
+msgid "Datasource %(name)s already exists"
+msgstr ""
+
+#: views/base.py:256
+msgid "Delete"
+msgstr ""
+
+#: views/base.py:257
+msgid "Delete all Really?"
+msgstr ""
+
+#: views/core.py:59
+msgid "This endpoint requires the `all_datasource_access` permission"
+msgstr ""
+
+#: views/core.py:61
+msgid "The datasource seems to have been deleted"
+msgstr ""
+
+#: views/core.py:62
+msgid "The access requests seem to have been deleted"
+msgstr ""
+
+#: views/core.py:64
+msgid "The user seems to have been deleted"
+msgstr ""
+
+#: views/core.py:65
+msgid "You don't have access to this datasource"
+msgstr ""
+
+#: views/core.py:69
+#, python-format
+msgid ""
+"This view requires the database %(name)s or `all_datasource_access` "
+"permission"
+msgstr ""
+
+#: views/core.py:74
+#, python-format
+msgid ""
+"This endpoint requires the datasource %(name)s, database or "
+"`all_datasource_access` permission"
+msgstr ""
+
+#: views/core.py:209
+msgid "Expose this DB in SQL Lab"
+msgstr ""
+
+#: views/core.py:210
+msgid ""
+"Allow users to run synchronous queries, this is the default and should "
+"work well for queries that can be executed within a web request scope "
+"(<~1 minute)"
+msgstr ""
+
+#: views/core.py:214
+msgid ""
+"Allow users to run queries, against an async backend. This assumes that "
+"you have a Celery worker setup as well as a results backend."
+msgstr ""
+
+#: views/core.py:218
+msgid "Allow CREATE TABLE AS option in SQL Lab"
+msgstr ""
+
+#: views/core.py:219
+msgid ""
+"Allow users to run non-SELECT statements (UPDATE, DELETE, CREATE, ...) in"
+" SQL Lab"
+msgstr ""
+
+#: views/core.py:223
+msgid ""
+"When allowing CREATE TABLE AS option in SQL Lab, this option forces the "
+"table to be created in this schema"
+msgstr ""
+
+#: views/core.py:237
+msgid "Expose in SQL Lab"
+msgstr ""
+
+#: views/core.py:238
+msgid "Allow CREATE TABLE AS"
+msgstr ""
+
+#: views/core.py:239
+msgid "Allow DML"
+msgstr ""
+
+#: views/core.py:240
+msgid "CTAS Schema"
+msgstr ""
+
+#: views/core.py:242 views/core.py:356 views/core.py:458 views/core.py:522
+msgid "Creator"
+msgstr ""
+
+#: views/core.py:244
+msgid "SQLAlchemy URI"
+msgstr ""
+
+#: views/core.py:246
+msgid "Extra"
+msgstr ""
+
+#: views/core.py:264
+msgid "Import Dashboards"
+msgstr ""
+
+#: views/core.py:268 views/core.py:2311 views/sql_lab.py:22
+msgid "Manage"
+msgstr ""
+
+#: views/core.py:275
+msgid "Databases"
+msgstr ""
+
+#: views/core.py:306 views/core.py:535
+msgid "User"
+msgstr ""
+
+#: views/core.py:307
+msgid "User Roles"
+msgstr ""
+
+#: views/core.py:308
+msgid "Database URL"
+msgstr ""
+
+#: views/core.py:310
+msgid "Roles to grant"
+msgstr ""
+
+#: views/core.py:311
+msgid "Created On"
+msgstr ""
+
+#: views/core.py:317
+msgid "Access requests"
+msgstr ""
+
+#: views/core.py:319 views/core.py:546
+msgid "Security"
+msgstr ""
+
+#: views/core.py:344
+msgid ""
+"These parameters are generated dynamically when clicking the save or "
+"overwrite button in the explore view. This JSON object is exposed here "
+"for reference and for power users who may want to alter specific "
+"parameters."
+msgstr ""
+
+#: views/core.py:349
+msgid "Duration (in seconds) of the caching timeout for this slice."
+msgstr ""
+
+#: views/core.py:360
+msgid "Last Modified"
+msgstr ""
+
+#: views/core.py:361 views/core.py:457
+msgid "Owners"
+msgstr ""
+
+#: views/core.py:362
+msgid "Parameters"
+msgstr ""
+
+#: views/core.py:363 views/core.py:405
+msgid "Slice"
+msgstr ""
+
+#: views/core.py:364
+msgid "Name"
+msgstr ""
+
+#: views/core.py:366
+msgid "Visualization Type"
+msgstr ""
+
+#: views/core.py:393 views/core.py:456
+msgid "Slices"
+msgstr ""
+
+#: views/core.py:430
+msgid ""
+"This json object describes the positioning of the widgets in the "
+"dashboard. It is dynamically generated when adjusting the widgets size "
+"and positions by using drag & drop in the dashboard view"
+msgstr ""
+
+#: views/core.py:435
+msgid ""
+"The css for individual dashboards can be altered here, or in the "
+"dashboard view where changes are immediately visible"
+msgstr ""
+
+#: views/core.py:439
+msgid "To get a readable URL for your dashboard"
+msgstr ""
+
+#: views/core.py:440
+msgid ""
+"This JSON object is generated dynamically when clicking the save or "
+"overwrite button in the dashboard view. It is exposed here for reference "
+"and for power users who may want to alter specific parameters."
+msgstr ""
+
+#: views/core.py:445
+msgid "Owners is a list of users who can alter the dashboard."
+msgstr ""
+
+#: views/core.py:453 views/core.py:520
+msgid "Dashboard"
+msgstr ""
+
+#: views/core.py:454 views/core.py:521
+msgid "Title"
+msgstr ""
+
+#: views/core.py:455
+msgid "Slug"
+msgstr ""
+
+#: views/core.py:459 views/core.py:523
+msgid "Modified"
+msgstr ""
+
+#: views/core.py:460
+msgid "Position JSON"
+msgstr ""
+
+#: views/core.py:461
+msgid "CSS"
+msgstr ""
+
+#: views/core.py:462
+msgid "JSON Metadata"
+msgstr ""
+
+#: views/core.py:463
+msgid "Underlying Tables"
+msgstr ""
+
+#: views/core.py:486
+msgid "Export"
+msgstr ""
+
+#: views/core.py:486
+msgid "Export dashboards?"
+msgstr ""
+
+#: views/core.py:536
+msgid "Action"
+msgstr ""
+
+#: views/core.py:537
+msgid "dttm"
+msgstr ""
+
+#: views/core.py:544
+msgid "Action Log"
+msgstr ""
+
+#: views/core.py:774
+msgid "Access was requested"
+msgstr ""
+
+#: views/core.py:835
+#, python-format
+msgid ""
+"%(user)s was granted the role %(role)s that gives access to the "
+"%(datasource)s"
+msgstr ""
+
+#: views/core.py:851
+#, python-format
+msgid "Role %(r)s was extended to provide the access to the datasource %(ds)s"
+msgstr ""
+
+#: views/core.py:860
+msgid "You have no permission to approve this request"
+msgstr ""
+
+#: views/core.py:1610
+msgid ""
+"Malformed request. slice_id or table_name and db_name arguments are "
+"expected"
+msgstr ""
+
+#: views/core.py:1616
+#, python-format
+msgid "Slice %(id)s not found"
+msgstr ""
+
+#: views/core.py:1628
+#, python-format
+msgid "Table %(t)s wasn't found in the database %(d)s"
+msgstr ""
+
+#: views/core.py:1762
+#, python-format
+msgid "Can't find User '%(name)s', please ask your admin to create one."
+msgstr ""
+
+#: views/core.py:1769
+#, python-format
+msgid "Can't find DruidCluster with cluster_name = '%(name)s'"
+msgstr ""
+
+#: views/core.py:2308
+msgid "CSS Templates"
+msgstr ""
+
+#: views/core.py:2318
+msgid "SQL Editor"
+msgstr ""
+
+#: views/core.py:2323 views/core.py:2332
+msgid "SQL Lab"
+msgstr ""
+
+#: views/core.py:2327
+msgid "Query Search"
+msgstr ""
+
+#: views/sql_lab.py:20
+msgid "Queries"
+msgstr ""
+
+#: views/sql_lab.py:55
+msgid "Saved Queries"
+msgstr ""
+

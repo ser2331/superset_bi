@@ -1,0 +1,45 @@
+{% extends 'superset/fab_overrides/list_with_checkboxes.html' %}
+
+{% block begin_loop_values %}
+    {% for item in value_columns %}
+        {% set pk = pks[loop.index-1] %}
+
+        {% set can_delete = "can_delete" | is_can_do_action(modelview_name, pk, request) %}
+        {% set can_edit = "can_edit" | is_can_do_action(modelview_name, pk, request) %}
+
+
+        <tr>
+            {% if actions %}
+                <td>
+                    <input id="{{ pk }}" class="action_check" name="rowid" value="{{ pk }}" type="checkbox">
+                </td>
+            {% endif %}
+            {% if can_show or can_edit or can_delete %}
+                <td>
+                    <center>
+                        {{ lib.btn_crud(can_show, can_edit, can_delete, pk, modelview_name, filters) }}
+                    </center>
+                </td>
+            {% endif %}
+            {% for value in include_columns %}
+                <td>
+                    {% if item[value].__class__.__name__ == 'bool' %}
+                        <input
+                                class="form-control"
+                                type="checkbox"
+                                {{ 'checked' if item[value] }}
+                                name="{{ '{}__{}'.format(pk, value) }}"
+                                id="{{ '{}__{}'.format(pk, value) }}"
+                                data-checkbox-api-prefix="/superset/checkbox/{{ modelview_name }}/{{ pk }}/{{ value|replace('fake_', '') }}/">
+                    {% else %}
+                        {% if item[value] == '' or item[value].__class__.__name__ == 'Markup' %}
+                            {{ item[value]|safe }}
+                        {% else %}
+                            {{ _(item[value]|string)|safe }}
+                        {% endif %}
+                    {% endif %}
+                </td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+{% endblock %}

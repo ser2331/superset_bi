@@ -1,0 +1,8 @@
+:root {
+    --transformValX: 0px;
+    --transformValY: 0px
+}
+
+.transformLegendBtn {
+    transform: translate(var(--transformValX), var(--transformValY));
+}

@@ -1,0 +1,56 @@
+{% extends 'superset/fab_overrides/list.html' %}
+
+{% macro lnk_show(my_href) %}
+    <a href="{{my_href}}/{{rel_item_type}}/{{rel_item_id}}" class="btn btn-sm btn-default" data-toggle="tooltip" rel="tooltip"
+       title="{{_('Show record')}}">
+        <i class="fa fa-search"></i>
+    </a>
+{% endmacro %}
+
+{% macro lnk_edit(my_href) %}
+    <a href="{{my_href}}/{{rel_item_type}}/{{rel_item_id}}" class="btn btn-sm btn-default" data-toggle="tooltip" rel="tooltip"
+       title="{{_('Edit record')}}">
+        <i class="fa fa-edit"></i>
+    </a>
+{% endmacro %}
+
+
+{% macro btn_crud(pk, modelview_name, filters) %}
+    <div class="btn-group btn-group-xs" style="display: flex;">
+        {% set path = url_for(modelview_name + '.edit',pk=pk) %}
+        {% set path = path | set_link_filters(filters) %}
+        {{ lnk_edit(path) }}
+    </div>
+{% endmacro %}
+
+{% block add_new_record %}
+{% endblock %}
+
+{% block begin_loop_values %}
+    {% for item in value_columns %}
+        {% set pk = pks[loop.index-1] %}
+        <tr>
+            {% if actions %}
+            <td>
+                <input id="{{pk}}" class="action_check" name="rowid" value="{{pk}}" type="checkbox">
+            </td>
+            {% endif %}
+            <td><center>
+                {{ btn_crud(pk, modelview_name, filters) }}
+            </center></td>
+            {% for value in include_columns %}
+                {% set formatter = formatters_columns.get(value) %}
+                {% set item_value = item[value] %}
+                {% if formatter %}
+                    <td>{{ _((formatter(item_value)|string).replace('%', '%%')) if item_value not in ('', None) else formatter(item_value) }}</td>
+                {% else %}
+                    {% if item_value == '' or item_value.__class__.__name__ == 'Markup' %}
+                        <td>{{ item_value|safe }}</td>
+                    {% else %}
+                        <td>{{ _(item_value|string)|safe }}</td>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </tr>
+    {% endfor %}
+{% endblock %}

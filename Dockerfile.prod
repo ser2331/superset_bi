@@ -1,0 +1,54 @@
+FROM registry.zdrav.netrika.ru:443/superset-bi-base:latest
+                                                                                                                   
+# Caravel setup options                           
+ENV SUPERSET_VERSION=0.23 \                            
+    SUPERSET_HOME=/home/superset
+               
+ENV PYTHONPATH=$SUPERSET_HOME:$PYTHONPATH                      
+                                            
+ENV LANGUAGE=en_US.UTF-8 \
+    LANG=en_US.UTF-8 \            
+    LC_ALL=en_US.UTF-8 \     
+    LC_CTYPE=en_US.UTF-8 \                  
+    LC_MESSAGES=en_US.UTF-8
+                                     
+# remove build dependencies
+RUN mkdir -p $SUPERSET_HOME/pre_src
+
+COPY . $SUPERSET_HOME/pre_src
+
+# satisfy requirements
+RUN cd $SUPERSET_HOME/pre_src && ls -la && pip install -r requirements.txt
+# install from local src
+RUN \
+    cd $SUPERSET_HOME/pre_src/superset/static/assets/ \
+    && npm install \
+    && npm run build \
+    && fabmanager collect-static \
+    && cd $SUPERSET_HOME/pre_src && sed -i "s/BASE_DIR, 'assets'/BASE_DIR, 'static', 'assets'/g" superset/config.py \
+    && python setup.py install
+
+COPY Docker/entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+COPY Docker/superset_template_config.py $SUPERSET_HOME/superset_config.py
+
+#cleanup
+RUN \
+    apt-get purge --auto-remove -yqq $buildDeps \
+    && apt-get clean \
+    && rm -rf \
+        /var/lib/apt/lists/* \
+        /tmp/* \
+        /var/tmp/* \
+        /usr/share/man \
+    && rm -r $SUPERSET_HOME/pre_src \
+    && yarn cache clean \
+    && npm cache clean --force
+
+VOLUME $SUPERSET_HOME
+EXPOSE 8888
+
+# since this can be used as a base image adding the file /docker-entrypoint.sh
+# is all you need to do and it will be run *before* Caravel is set up
+ENTRYPOINT [ "/entrypoint.sh" ]

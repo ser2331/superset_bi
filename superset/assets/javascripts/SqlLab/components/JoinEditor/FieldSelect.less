@@ -1,0 +1,31 @@
+.field-select {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  border-bottom: 1px solid rgb(221, 221, 221);
+
+  &:first-child {
+    border-top: 1px solid rgb(221, 221, 221);
+  }
+}
+
+.field-select-container {
+  flex: 1;
+}
+
+.field-select__value {
+  max-width: 180px;
+  text-overflow: hidden;
+  overflow: ellipsis;
+}
+
+.field-select .caret {
+  align-self: center;
+}
+
+.field-select__menu {
+  overflow-y: auto;
+  max-height: 300px;
+}

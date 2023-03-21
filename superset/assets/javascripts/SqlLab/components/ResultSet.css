@@ -1,0 +1,21 @@
+.result-set__page-size {
+  width: 100px;
+  height: 41px;
+}
+
+.result-set__page-size-container {
+  display: flex;
+  float: right;
+  margin-top: 20px;
+  margin-right: 24px;
+}
+
+.result-set__page-size-label {
+  align-self: center;
+  margin-right: 10px;
+  margin-left: 16px;
+}
+
+.result-set__limit-warning {
+  margin-left: 8px;
+}

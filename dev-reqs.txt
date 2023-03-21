@@ -1,0 +1,18 @@
+codeclimate-test-reporter
+coveralls
+flake8
+flask_cors
+mock
+mysqlclient
+nose
+psycopg2
+pylint
+pythrifthiveapi
+pyyaml
+redis
+statsd
+openpyxl==2.4.9
+# Also install everything we need to build Sphinx docs
+-r dev-reqs-for-docs.txt
+git+https://github.com/JustOnce/sqlalchemy-clickhouse.git
+StyleFrame

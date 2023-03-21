@@ -1,0 +1,27 @@
+.join-editor-join {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.join-editor-tables {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.join-editor-join__table {
+  margin-right: 16px;
+}
+
+.join-editor-join__operations {
+  margin-right: 16px;
+}
+
+.join-editor-join__remove {
+  font-size: 24px;
+  height: 52px;
+  padding: 15px;
+  color: #009186;
+  border: 1px solid rgba(221, 221, 221, 1);
+}
+

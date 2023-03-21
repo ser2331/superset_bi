@@ -1,0 +1,19 @@
+.node-card {
+  margin-bottom: 16px;
+  margin-top: 16px;
+  padding-left: 8px;
+  border-left: 4px solid rgb(0, 165, 152);
+}
+
+.node-children {
+  margin-left: 24px;
+}
+
+.node-controls-make {
+  float: right;
+}
+
+.node-controls-conjuction {
+  margin-top: 8px;
+  text-align: center;
+}

@@ -1,0 +1,76 @@
+{% extends 'appbuilder/general/widgets/list.html' %}
+
+{% block begin_content scoped %}
+    <div class="table-responsive">
+    <table class="table table-hover">
+{% endblock %}
+
+   {% block begin_loop_header scoped %}
+       <thead>
+       <tr>
+       {% if actions %}
+       <th class="action_checkboxes">
+           <input id="check_all" class="action_check_all" name="check_all" type="checkbox">
+       </th>
+       {% endif %}
+       <th class="col-md-1 col-lg-1 col-sm-1" ></th>
+       {% for item in include_columns %}
+           {% if item in order_columns %}
+               {% set res = item | get_link_order(modelview_name) %}
+                   {% if res == 2 %}
+                   <th><a href={{ item | link_order(modelview_name) }}>{{label_columns.get(item)}}
+                   <i class="fa fa-chevron-up pull-right"></i></a></th>
+               {% elif res == 1 %}
+                   <th><a href={{ item | link_order(modelview_name) }}>{{label_columns.get(item)}}
+                   <i class="fa fa-chevron-down pull-right"></i></a></th>
+               {% else %}
+                   <th><a href={{ item | link_order(modelview_name) }}>{{label_columns.get(item)}}
+                   <i class="fa fa-arrows-v pull-right"></i></a></th>
+               {% endif %}
+           {% else %}
+               <th>{{label_columns.get(item)}}</th>
+           {% endif %}
+       {% endfor %}
+       </tr>
+       </thead>
+   {% endblock %}
+
+
+{% block begin_loop_values %}
+    {% for item in value_columns %}
+        {% set pk = pks[loop.index-1] %}
+        {% set can_add = "can_add" | is_item_visible(modelview_name, pk) %}
+        {% set can_show = "can_show" | is_item_visible(modelview_name, pk) %}
+        {% set can_edit = "can_edit" | is_item_visible(modelview_name, pk) %}
+        {% set can_delete = "can_delete" | is_item_visible(modelview_name, pk) %}
+
+        <tr>
+            {% if actions %}
+            <td>
+                <input id="{{pk}}" class="action_check" name="rowid" value="{{pk}}" type="checkbox">
+            </td>
+            {% else %}
+            <td hidden>
+                <input id="{{pk}}" class="action_check" name="rowid" value="{{pk}}" type="hidden">
+            </td>
+            {% endif %}
+
+            <td><center>
+                {{ lib.btn_crud(can_show, can_edit, can_delete, pk, modelview_name, filters) }}
+            </center></td>
+            {% for value in include_columns %}
+                {% set formatter = formatters_columns.get(value) %}
+                {% set item_value = item[value] %}
+                {% if formatter %}
+                    <td>{{ _((formatter(item_value)|string).replace('%', '%%')) if item_value not in ('', None) else formatter(item_value) }}</td>
+                {% else %}
+                    {% if item_value == '' or item_value.__class__.__name__ == 'Markup' %}
+                        <td>{{ item_value|safe }}</td>
+                    {% else %}
+                        <td>{{ _(item_value|string)|safe }}</td>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </tr>
+    {% endfor %}
+{% endblock %}

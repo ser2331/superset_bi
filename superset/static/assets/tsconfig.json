@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    // не оставлять недостижимый код
+    "allowUnreachableCode": false,
+    // разрешить импорт по умолчанию
+    //"allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "outDir": "./dist/",
+    "sourceMap": true,
+    // выдать ошибку при выводе типа any (при добавления TS в старые модули можно переключать)
+    "noImplicitAny": true,
+    // не используемые локальные переменные
+    "noUnusedLocals": true,
+    // если может быть null | undefined выкинуть ошибку
+    "strictNullChecks": true,
+    "module": "commonjs",
+    "target": "es5",
+    // получать ошибки TS в JS модулях , для отдельных файлов // @ts-check в начале файла
+    //"checkJs": true,
+    // контроль регистра при импорте моудлей (чтобы не ошибится)
+    "forceConsistentCasingInFileNames": true,
+    // подавить ошибки индексной сигнатуры обьектов
+    "suppressImplicitAnyIndexErrors": true,
+    "jsx": "react",
+    // печать имен файлов комплияции в консоль (позже можно выключить)
+    "listFiles": true,
+    // разрешить импорт JS файлов
+    "allowJs": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

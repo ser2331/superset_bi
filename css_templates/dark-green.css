@@ -1,0 +1,260 @@
+/* dark green theme */
+
+/* Основные свойства темы. Начало */
+
+:root {
+  /* цвет фона страницы */
+  --color-main: #003d42;
+  /* цвет плашки с графиком */
+  --color-primary: #003338;
+  /* цвет шапки */
+  --color-secondary: #009982;
+  /* служебные плашки и активные кнопки */
+  --color-active: #009982;
+  /* основной текст и загаловки */
+  --text-color: #ffffff;
+  /* дополнтиельный цвет текста */
+  --text-color2: #000000;
+  /* некоторые элементы */
+  --color-items: #555555;
+  /* неактивные кнопки и второстепенный текст */
+  --color-items2: #a8a8a8;
+  /* цвет фона графика */
+  --color-chart-body: #004749;
+  /* скругление отчётов возможно в процентах (напр. 2%) */
+  --border-radius: 6px;
+  /* размер заголовка дашборда */
+  --main-header-size: 28px;
+  /* размер заголовка отчета */
+  --chart-header-size: 18px;
+  /* размер текста в отчете */
+  --text-size: 10px;
+  /* нижний цвет градиента */
+  --color-gradint-bottom: lightgrey;
+  /* верхний цвет градиента */
+  --color-gradint-top: white;
+}
+
+.navbar > .container-fluid .navbar-brand,
+.navbar > .container .navbar-brand {
+  background: var(--color-secondary);
+  padding-left: 13px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-top: 10px;
+  height: 42px;
+}
+
+.chart-container .slice_container {
+  background: var(--color-chart-body);
+  border-radius: var(--border-radius) !important;
+  /* возможность добавить градиент подложки отчёта */
+  /* background: linear-gradient(to top right, var(--color-gradint-bottom), var(--color-gradint-top)); */
+}
+
+.chart-container .slice_container text {
+  fill: var(--text-color) !important;
+  font-size: var(--text-size);
+}
+
+.header > .editable-title > input {
+  font-size: var(--chart-header-size);
+}
+
+div[data-slice-id] {
+  border-radius: var(--border-radius) !important;
+}
+
+.dashboard-header h1 {
+  font-size: var(--main-header-size);
+}
+
+.navbar {
+  background: var(--color-secondary);
+  border: none;
+}
+
+.navbar div div:nth-child(2) ul li a {
+  color: var(--text-color);
+}
+
+.navbar-inverse .navbar-nav > li.active > a,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: var(--text-color);
+  border-bottom: 3px solid var(--text-color);
+}
+
+.navbar div div:nth-child(2) ul li a b {
+  color: var(--text-color);
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background-color: var(--color-main);
+  color: var(--text-color);
+}
+
+.navbar-nav > li > .dropdown-menu {
+  background: var(--color-secondary);
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  background: var(--color-main);
+}
+
+.nav .navbar-nav li a i,
+.nav .navbar-nav li a b {
+  color: var(--text-color);
+}
+
+.gridster div.widget {
+  transition: background-color 0.5s ease;
+  background-color: var(--color-primary);
+  box-shadow: 0 0 9px 1px var(--color-primary);
+}
+
+.editable-title input[type="button"] {
+  color: var(--text-color);
+}
+
+.editable-title input[type="text"] {
+  color: var(--color-secondary);
+}
+
+.dashboard a i {
+  color: var(--text-color);
+  transition: all 0.2s;
+}
+
+.dashboard a i:hover {
+  opacity: 0.7;
+}
+
+body {
+  background: linear-gradient(to top right, var(--color-main), #0e6868);
+  color: var(--text-color);
+  /* изменение типа шрифта на странице */
+  font-family: Proxima Nova Light;
+}
+
+.widget.table tr > td,
+.widget.table tr > th {
+  color: var(--text-color2);
+}
+
+.widget.pivot_table tr > td,
+.widget.pivot_table tr > th {
+  color: var(--text-color2);
+}
+
+.dashboard .filter_box .slice_container > div {
+  color: var(--text-color2);
+}
+
+.nvtooltip table {
+  color: var(--text-color2);
+}
+
+.speedometer span {
+  color: var(--text-color2);
+}
+
+.dashboard .slice_container > div > div > ul > li > button {
+  color: var(--text-color1) !important;
+}
+
+.dropdown-menu-right li a span {
+  color: var(--color-items);
+}
+
+.dropdown-menu-right li a span i {
+  color: var(--color-items);
+}
+
+.dropdown-menu-right li a:hover span {
+  color: var(--text-color);
+}
+
+.dropdown-menu-right li a:hover span i {
+  color: var(--text-color);
+}
+
+.react-bootstrap-table-page-btns-ul.pagination li a {
+  color: var(--color-items);
+}
+
+.react-bs-container-header.table-header-wrapper table {
+  color: var(--color-items);
+}
+
+.modal-header {
+  color: var(--color-items);
+}
+
+.react-bs-container-body table {
+  color: var(--color-items);
+}
+
+.react-bs-container-body table tbody tr td div a {
+  color: var(--color-main);
+}
+
+.modal-dialog {
+  color: var(--color-items);
+}
+
+/* Основные свойства темы. Конец */
+
+/* filter box. Начало */
+
+.slice_container.filter_box .scrollbar-content .row.space-1 .ControlHeader {
+  color: var(--text-color);
+}
+
+.slice_container.filter_box .scrollbar-content span.label {
+  background-color: var(--color-secondary) !important;
+}
+
+/* состояния кнопок - изменение цвета */
+.slice_container.filter_box button {
+  color: var(--text-color);
+  background-color: var(--color-active);
+  border-color: var(--color-active);
+}
+
+.slice_container.filter_box button[disabled] {
+  background-color: var(--color-items2);
+  border-color: var(--color-items2);
+}
+
+/* filter box. Конец */
+
+/* Кастомные изменения стилей пользователем. Начало */
+
+/* Возможность визуально выделить любой отчёт визуально: задать цвета, отличающиеся от общей темы, для пользователей, знакомых с версткой */
+/* как пример, изменяем цвета в отчет с id = slice_9999 */
+
+#slice_9999 {
+  /* цвет плашки с графиком */
+  background-color: green;
+}
+
+#slice_9999 #slice-container-9999 {
+  /* цвет фона графика */
+  background-color: lightgreen;
+}
+
+#slice_9999 #slice-container-9999 text {
+  /* цвет текста */
+  fill: black;
+}
+
+#slice_9999 .header > .editable-title > input {
+  /* Размер заголовка отчета */
+  font-size: 10px;
+}
+
+/* Кастомные изменения стилей пользователем. Конец */

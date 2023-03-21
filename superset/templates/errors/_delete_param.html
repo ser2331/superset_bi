@@ -1,0 +1,36 @@
+{% if slices %}
+    {{ _('Can`t delete an object that has slices attached to it.') }}
+    {{ _('Here`s the list of associated charts:') }}
+    <ul>
+        {% for slice in slices %}
+            <li>{{ slice.slice_link }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% if metrics %}
+    {{ _('Can`t delete an object that is used in metrics.') }}
+    {{ _('Here`s the list of associated metrics:') }}
+    <ul>
+        {% for metric in metrics %}
+            <li>{{ metric.table_link }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% if calc_cols %}
+    {{ _('Can`t delete an object that is used in calculated metrics.') }}
+    {{ _('Here`s the list of associated calculated metrics:') }}
+    <ul>
+        {% for calc_col in calc_cols %}
+            <li>{{ calc_col.show_link }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% if hierarchies %}
+    {{ _('Can`t delete an object used in hierarchies.') }}
+    {{ _('Here`s the list of associated hierarchies:') }}
+    <ul>
+        {% for hierarchie in hierarchies %}
+            <li>{{ hierarchie.hier.table_link }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}

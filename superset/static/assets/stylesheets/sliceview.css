@@ -1,0 +1,164 @@
+.row-flex-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+/* кнопка добавить папку */
+#folder_tree .list-add-action {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+#folder_tree {
+  padding: 15px;
+  top: 0;
+  width: 100%;
+  position: sticky;
+  min-height: 200px;
+  position: sticky;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.loading:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  background-image: url("../images/loading.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+}
+
+
+/* таблица */
+.table tr > td > a {
+  overflow-wrap: anywhere;
+}
+.jstree {
+    flex-shrink: 1;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+/* стили папок */
+.jstree [data-type=folder] .jstree-icon { background:url('../images/file_sprite.png') right bottom no-repeat; }
+.jstree [data-type=slice] .jstree-icon { background:url('../images/file_sprite.png') 0 0 no-repeat; }
+
+#folder_tree label {
+  position: relative;
+  margin: 0 0 5px 20px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#folder_tree [type="radio"] + label:before {
+    position: absolute;
+    top: .3rem;
+    left: -2rem;
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    pointer-events: none;
+    content: "";
+    background-color: #fff;
+    border: #adb5bd solid 1px;
+    border-radius: 50%;
+}
+
+#folder_tree [type="radio"] + label:after {
+    position: absolute;
+    top: .3rem;
+    left: -2rem;
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    content: "";
+    background: no-repeat 50% / 50% 50%;
+}
+
+#folder_tree [type="radio"]:checked + label:before {
+    color: #fff;
+    border-color: #00A699;
+    background-color: #00A699;
+}
+
+#folder_tree [type="radio"]:checked + label:after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+#custom_folders, #default_folders {
+  margin-top: 20px;
+  display: none;
+}
+
+#byCustom:checked ~ #custom_folders, #byDefault:checked ~ #default_folders {
+  display: block;
+}
+
+.control-button-node {
+  margin-left: 10px;
+  visibility: hidden;
+}
+
+#default_folders .control-button-node {
+    display: none;
+}
+
+.control-button-node span:not(:first-child) {
+  margin-left: 5px;
+}
+
+.jstree-clicked .control-button-node {
+  visibility: visible;
+}
+
+.ajax-loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.draggable {
+    cursor: no-drop;
+}
+
+.draggable.allowed {
+    cursor: grab;
+}
+.paths {
+    padding: 0 1%;
+}
+
+.paths .title {
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+
+.paths span:not(.title):after {
+    content: '/';
+    margin-left: 5px;
+}
+
+.paths span:last-of-type:after {
+    content: '';
+}
+
+.disabled {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/*корневые папки*/
+#\#-\#_folder> .jstree-icon {
+    display: none;
+}
+
+.folder_tree_wrapper {
+    z-index: 1;
+}

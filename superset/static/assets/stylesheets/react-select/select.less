@@ -1,0 +1,163 @@
+@import "~react-select/less/select.less";
+@select-primary-color:              black;
+@select-input-height:               30px;
+
+// imports
+@import "~react-select/less/control.less";
+@import "~react-select/less/menu.less";
+@import "~react-select/less/mixins.less";
+@import "~react-select/less/multi.less";
+@import "~react-select/less/spinner.less";
+
+.Select--multi {
+  &.is-focused, &.is-open {
+    .Select-multi-value-wrapper {
+      .Select-input {
+        width: 100%;
+      }
+    }
+  }
+  .Select-multi-value-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .Select-input {
+      flex: 1;
+      height: 24px;
+      width: 0;
+      & > input {
+        width: 1px!important;
+        &:focus {
+          width: 100%!important;
+        }
+      }
+    }
+  }
+
+  .Select-value {
+    margin: 2px;
+    word-break: break-all;
+    display: flex;
+    align-items: center;
+  }
+
+  .Select-input > input {
+    width: initial;
+  }
+
+  .option-label {
+    white-space: pre-line !important;
+    overflow: hidden;
+    word-break: break-all;
+  }
+  .Select-value-icon {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.Select-option {
+  .load-more {
+    cursor: pointer;
+  }
+}
+
+.VirtualSelectGrid {
+  z-index: 1;
+}
+.VirtualizedSelectOption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 .5rem;
+}
+.VirtualizedSelectFocusedOption {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.VirtualizedSelectFocusedOption:hover {
+  cursor: pointer;
+}
+.VirtualizedSelectDisabledOption {
+  opacity: 0.5;
+}
+.VirtualizedSelectSelectedOption {
+  font-weight: bold;
+}
+
+//перенос строк в селектах
+.Select-option {
+  .level {
+    margin-left: 10px;
+  }
+  word-wrap: break-word;
+  .type-label {
+    word-wrap: normal;
+  }
+}
+.Select--single {
+  position: relative;
+  .Select-value-label {
+    white-space: normal;
+    display: inline-block;
+    word-break: break-all!important;
+  }
+  .Select-control {
+    .Select-input {
+      width: 100%;
+      padding-right: 39px;
+      position: absolute;
+      top: 0;
+    }
+    .Select-value {
+      min-height: 28px;
+      display: flex;
+      align-items: center;
+      position: unset;
+      line-height: 1.2;
+      padding-right: 10px!important;
+    }
+    .option-label {
+      white-space: pre-line !important;
+      overflow: hidden;
+      word-break: break-all;
+    }
+  }
+}
+
+.metrics-select {
+  & .Select-control {
+    & .Select-multi-value-wrapper {
+      display: flex;
+      & .Select-value{
+        padding-right: unset!important;
+      }
+      & .Select-input {
+        flex: 1;
+        width: unset;
+        padding-right: unset;
+        top: unset;
+        position: static;
+      }
+    }
+  }
+}
+
+.sortable-fallback {
+  opacity: 1!important;
+}
+
+/*.level {
+  margin-left: 30px;
+}*/
+
+.control-panel-section {
+  &.table, &.pivot_table {
+    .metrics-select .option-label {
+      cursor: pointer;
+    }
+    
+  }
+}

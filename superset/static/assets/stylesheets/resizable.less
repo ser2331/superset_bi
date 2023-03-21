@@ -1,0 +1,38 @@
+.re-resize {
+  margin-right: 10px;
+}
+
+.draggable-handle {
+  display: block;
+  background-color: #ddd;
+  transition: background-color ease-in .1s;
+  transition-delay: 0.05s;
+  cursor: row-resize;
+  position: absolute;
+  &.right {
+    width: 2px!important;
+  }
+  &.bottom {
+    height: 2px!important;
+    bottom: 0!important;
+    transform: translateY(-100%);
+    &:after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 4px;
+      width: 30px;
+      border-bottom: 4px double #ddd;
+      transition-delay: 0.05s;
+    }
+    &:hover:after, &:hover:after, &:focus:after, &:active:after {
+      border-bottom: 4px double #333;
+    }
+    &.bottom-zero {
+      bottom: unset!important;
+    }
+  }
+  &:hover, &:focus, &:active {
+    background-color: #333;
+  }
+}

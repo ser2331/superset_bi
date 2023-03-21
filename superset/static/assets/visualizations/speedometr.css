@@ -1,0 +1,20 @@
+.speedometerLabel{
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(102, 102, 102);
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+.pointer-description {
+  position: absolute;
+  display: block;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.segment-value:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,111 @@
+/* Pastel */
+:root {
+  --color-main: #ffffff;
+  --color-primary: #eff1f0;
+  --color-base: #d7dfe9;
+  --color-base2: #e1e6f9;
+  --color-secondary: #7070ca;
+  --text-color: #9996a8;
+  --text-color2: #000000;
+}
+
+.navbar > .container-fluid .navbar-brand,
+.navbar > .container .navbar-brand {
+  background: var(--color-main);
+  padding-left: 13px;
+  padding-bottom: 5px;
+  border-radius: 18px;
+  padding-top: 5px;
+  margin-top: 10px;
+  height: 42px;
+}
+
+.navbar {
+  background: var(--text-color);
+  border: none;
+}
+
+.navbar div div:nth-child(2) ul li a {
+  color: var(--color-base2);
+}
+
+.navbar-inverse .navbar-nav > li.active > a,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: var(--color-base2);
+  border-bottom: 3px solid var(--color-base2);
+}
+
+.navbar div div:nth-child(2) ul li a b {
+  color: var(--color-base2);
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background-color: var(--text-color);
+  color: var(--color-base2);
+}
+
+.navbar-nav > li > .dropdown-menu {
+  background: var(--text-color);
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  background: var(--color-base2);
+  color: var(--text-color) !important;
+}
+
+.nav .navbar-nav li a i,
+.nav .navbar-nav li a b {
+  color: var(--text-color);
+}
+
+.gridster div.widget {
+  transition: background-color 0.5s ease;
+  background-color: var(--color-secondary);
+  box-shadow: none;
+}
+
+.slice-grid .slice_container {
+  border: 2px solid var(--color-primary);
+}
+
+.editable-title input[type='button'] {
+  color: var(--text-color2);
+}
+
+.outer-container.pull-left .editable-title input {
+  color: var(--text-color2);
+}
+
+.dashboard a i {
+  color: var(--text-color2);
+  transition: all 0.2s;
+}
+
+.dashboard a i:hover {
+  opacity: 0.7;
+}
+
+body {
+  background: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.dashboard .slice_container > div > div > ul > li > button {
+  color: var(--color-secondary) !important;
+}
+
+.react-bs-container-body table {
+  color: var(--color-items);
+}
+
+.react-bs-container-body table tbody tr td div a {
+  color: var(--text-color);
+}
+
+.react-bootstrap-table-page-btns-ul.pagination li a {
+  color: var(--color-secondary);
+}

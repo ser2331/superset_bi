@@ -1,0 +1,144 @@
+version: "3.9"
+services:
+
+  redis:
+    image: "redis:alpine"
+
+  postgres:
+    image: postgis/postgis:12-3.2
+    environment:
+      POSTGRES_PASSWORD: superset
+      POSTGRES_USER: superset
+    volumes:
+      - superset_postgres:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+  clickhouse:
+    image: yandex/clickhouse-server:19.14.3.3
+    volumes:
+      - ./clickhouse_data:/var/lib/clickhouse/
+      - ./clickhouse_log:/var/log/clickhouse-server/
+
+  statsd:
+    image: graphiteapp/graphite-statsd
+
+  url-to-pdf:
+    image: registry.zdrav.netrika.ru:443/url-to-pdf
+    environment:
+      SKYEER_FRONT_HOST: http://10.16.22.24:10888/
+
+  superset:
+    build: .
+    command: flask run -p 9999 --with-threads --reload --debugger --host=0.0.0.0
+    working_dir: /home/superset
+    platform: linux/amd64
+    environment:
+      SUPERSET_ADMIN_USERNAME: admin
+      SUPERSET_ADMIN_EMAIL: zdrav-support@netrika.ru
+      SUPERSET_ADMIN_PASSWORD: admin
+      SUPERSET_WEB_PORT: 8888
+      SUPERSET_WEB_THREADS: 1
+      SUPERSET_WEB_TIMEOUT: 90
+      SUPERSET_ROW_LIMIT: 5000
+      SUPERSET_POSTGRES_HOST: postgres
+      SUPERSET_POSTGRES_PORT: 5432
+      SUPERSET_POSTGRES_USER: superset
+      SUPERSET_POSTGRES_DB: superset
+      SUPERSET_POSTGRES_PASSWORD: superset
+      REDIS_URL: redis://redis:6379/1
+      SUPERSET_CSRF_ENABLED: 'False'
+      SUPERSET_GUNICORN_TIMEOUT: 240
+      SUPERSET_REDIS_RESULTS_BACKEND: host='redis',port=6379,key_prefix='superset_results',db=1
+      SUPERSET_PUBLICATION_HOST: r78-trash-superset
+      SUPERSET_IDENTIFIER: r78-trash-superset
+      CACHE_TIMEOUT: 60 * 60 * 4
+      YANDEX_API_KEY: 3a62a115-31f3-44f0-8e2e-ce4a483ca0ab
+      FLASK_APP: __init__.py
+      TZ: Europe/Minsk
+      UPDATE_PENDING_QUERIES_TIME_SECONDS: 1800
+      SUPERSET_URL_PDF: http://url-to-pdf:8080/api/render
+    ports:
+      - "9999:9999"
+    volumes:
+      - ./superset:/home/superset
+      - ./tests:/home/tests
+    depends_on:
+      - postgres
+
+
+  celery:
+    build: .
+    platform: linux/amd64
+    command: celery worker --app=superset.cli:celery_app -l DEBUG
+    working_dir: /home
+    environment:
+      SUPERSET_ADMIN_USERNAME: admin
+      SUPERSET_ADMIN_EMAIL: zdrav-support@netrika.ru
+      SUPERSET_ADMIN_PASSWORD: admin
+      SUPERSET_WEB_PORT: 9999
+      SUPERSET_WEB_THREADS: 8
+      SUPERSET_WEB_TIMEOUT: 90
+      SUPERSET_ROW_LIMIT: 5000
+      SUPERSET_POSTGRES_HOST: postgres
+      SUPERSET_POSTGRES_PORT: 5432
+      SUPERSET_POSTGRES_USER: superset
+      SUPERSET_POSTGRES_DB: superset
+      SUPERSET_POSTGRES_PASSWORD: superset
+      REDIS_URL: redis://redis:6379/1
+      # SUPERSET_STATSD_HOST: statsd
+      # SUPERSET_STATSD_PORT: 8125
+      SUPERSET_CSRF_ENABLED: 'False'
+      SUPERSET_GUNICORN_TIMEOUT: 240
+      SUPERSET_URL_PDF: http://localhost/renderer
+      SUPERSET_REDIS_RESULTS_BACKEND: host='redis',port=6379,key_prefix='superset_results',db=1
+      SUPERSET_PUBLICATION_HOST: r78-trash-superset
+      SUPERSET_IDENTIFIER: r78-trash-superset
+      CACHE_TIMEOUT: 60 * 60 * 4
+      SUPERSET_CELERY_CONCURRENCY: 1
+      UPDATE_PENDING_QUERIES_TIME_SECONDS: 1800
+    volumes:
+      - ./superset:/home/superset
+    depends_on:
+      - superset
+      - postgres
+
+  celery_beat:
+    build: .
+    platform: linux/amd64
+    command: celery beat --app=superset.cli:celery_app -l DEBUG
+    working_dir: /home
+    environment:
+      SUPERSET_ADMIN_USERNAME: admin
+      SUPERSET_ADMIN_EMAIL: zdrav-support@netrika.ru
+      SUPERSET_ADMIN_PASSWORD: admin
+      SUPERSET_WEB_PORT: 9999
+      SUPERSET_WEB_THREADS: 8
+      SUPERSET_WEB_TIMEOUT: 90
+      SUPERSET_ROW_LIMIT: 5000
+      SUPERSET_POSTGRES_HOST: postgres
+      SUPERSET_POSTGRES_PORT: 5432
+      SUPERSET_POSTGRES_USER: superset
+      SUPERSET_POSTGRES_DB: superset
+      SUPERSET_POSTGRES_PASSWORD: superset
+      REDIS_URL: redis://redis:6379/1
+      # SUPERSET_STATSD_HOST: statsd
+      # SUPERSET_STATSD_PORT: 8125
+      SUPERSET_CSRF_ENABLED: 'False'
+      SUPERSET_GUNICORN_TIMEOUT: 240
+      SUPERSET_URL_PDF: http://localhost/renderer
+      SUPERSET_REDIS_RESULTS_BACKEND: host='redis',port=6379,key_prefix='superset_results',db=1
+      SUPERSET_PUBLICATION_HOST: r78-trash-superset
+      SUPERSET_IDENTIFIER: r78-trash-superset
+      CACHE_TIMEOUT: 60 * 60 * 4
+      SUPERSET_CELERY_CONCURRENCY: 1
+      UPDATE_PENDING_QUERIES_TIME_SECONDS: 1800
+    volumes:
+      - ./superset:/home/superset
+    depends_on:
+      - superset
+      - postgres
+
+
+volumes:
+  superset_postgres:

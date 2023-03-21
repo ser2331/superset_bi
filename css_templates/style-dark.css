@@ -1,0 +1,148 @@
+/* Dark */
+:root {
+  --color-main: #2a272a;
+  --color-primary: #5e5e5e;
+  --color-primary2: #82a0aa;
+  --color-secondary: #2a272a;
+  --text-color: #ffffff;
+  --text-color2: #000000;
+}
+
+.navbar > .container-fluid .navbar-brand,
+.navbar > .container .navbar-brand {
+  background: var(--text-color);
+  padding-left: 13px;
+  padding-bottom: 5px;
+  border-radius: 18px;
+  padding-top: 5px;
+  margin-top: 10px;
+  height: 42px;
+}
+
+.navbar {
+  background: var(--color-secondary);
+  border: none;
+}
+
+.navbar div div:nth-child(2) ul li a {
+  color: var(--text-color);
+}
+
+.navbar-inverse .navbar-nav > li.active > a,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: var(--text-color);
+  border-bottom: 3px solid var(--color-primary2);
+}
+
+.navbar div div:nth-child(2) ul li a b {
+  color: var(--text-color);
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background-color: var(--color-main);
+  color: var(--text-color);
+}
+
+.navbar-nav > li > .dropdown-menu {
+  background: var(--color-secondary);
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  background: var(--color-primary2);
+}
+
+.nav .navbar-nav li a i,
+.nav .navbar-nav li a b {
+  color: var(--text-color);
+}
+
+.gridster div.widget {
+  transition: background-color 0.5s ease;
+  background-color: var(--color-primary);
+  border-radius: 15px;
+  box-shadow: none;
+}
+
+.editable-title input[type='button'] {
+  color: var(--text-color);
+}
+
+.editable-title input[type='text'] {
+  color: var(--color-primary);
+}
+
+.dashboard a i {
+  color: var(--text-color);
+  transition: all 0.2s;
+}
+
+.dashboard a i:hover {
+  opacity: 0.7;
+}
+
+body {
+  background: var(--color-main);
+  color: var(--text-color);
+}
+
+.widget.table tr > td,
+.widget.table tr > th {
+  color: var(--text-color2);
+}
+
+.widget.pivot_table tr > td,
+.widget.pivot_table tr > th {
+  color: var(--text-color2);
+}
+
+.dashboard .filter_box .slice_container > div {
+  color: var(--text-color2);
+}
+
+.nvtooltip table {
+  color: var(--text-color2);
+}
+
+.speedometer span {
+  color: var(--text-color2);
+}
+
+.dashboard .slice_container > div > div > ul > li > button {
+  color: var(--text-color2) !important;
+}
+
+.dropdown-menu-right li a span i {
+  color: var(--color-primary);
+}
+
+.dropdown-menu-right li a:hover span i {
+  color: var(--text-color);
+}
+
+.react-bootstrap-table-page-btns-ul.pagination li a {
+  color: var(--color-main);
+}
+
+.react-bs-container-header.table-header-wrapper table {
+  color: var(--color-main);
+}
+
+.modal-header {
+  color: var(--color-main);
+}
+
+.react-bs-container-body table {
+  color: var(--color-main);
+}
+
+.react-bs-container-body table tbody tr td div a {
+  color: var(--color-primary2);
+}
+
+.modal-dialog {
+  color: var(--color-main);
+}

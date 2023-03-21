@@ -1,0 +1,49 @@
+.node-card {
+  margin-bottom: 16px;
+  margin-top: 16px;
+  padding-left: 8px;
+  border-left: 4px solid rgb(0, 165, 152);
+}
+
+.node-children {
+  margin-left: 24px;
+}
+
+.node-controls-make {
+  float: right;
+}
+
+.node-controls-conjuction {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.select-from-to-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.select-from-to {
+  width: 50%;
+}
+.fullwidth {
+  width: 100%;
+}
+.flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.node-card.error {
+  border-left: 4px solid rgb(254, 74, 73);
+}
+
+.select-from-to.error .form-control {
+  background-color: rgb(254, 74, 73);
+}
+
+.select-from-to.error .form-control::placeholder {
+  color: #000;
+}

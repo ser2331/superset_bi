@@ -1,0 +1,25 @@
+[class$="customControl"] {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0.95;
+}
+.customControl-legend{
+  color: #797676d0;
+}
+.customControl-bar {
+  min-width: 200px;
+  height: 6px;
+  margin: 8px 0;
+  border-radius: 10px;
+  background: linear-gradient( 90deg , lime, yellow, orange, red );
+}
+.customControl-bar.reversed {
+  background: linear-gradient(-90deg , lime, yellow, orange, red );
+}
+.customControl-minmax{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

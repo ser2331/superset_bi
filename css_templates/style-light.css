@@ -1,0 +1,114 @@
+/* Light*/
+:root {
+  --color-main: #ffffff;
+  --color-primary: #00cca8;
+  --color-base: #004946;
+  --color-base2: #7e7e7e;
+  --color-secondary: #2f4858;
+  --text-color: #ffffff;
+  --text-color2: #000000;
+}
+
+.navbar > .container-fluid .navbar-brand,
+.navbar > .container .navbar-brand {
+  background: var(--text-color);
+  padding-left: 13px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-top: 10px;
+  height: 42px;
+}
+
+.navbar {
+  background: var(--text-color);
+  border: none;
+}
+
+.navbar div div:nth-child(2) ul li a {
+  color: var(--color-base2);
+}
+
+.navbar-inverse .navbar-nav > li.active > a,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: var(--color-base2);
+  border-bottom: 3px solid var(--color-base2);
+}
+
+.navbar div div:nth-child(2) ul li a b {
+  color: var(--color-base2);
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background-color: var(--text-color);
+  color: var(--color-base2);
+}
+
+.navbar-nav > li > .dropdown-menu {
+  background: var(--text-color);
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  background: var(--color-base2);
+  color: var(--text-color) !important;
+}
+
+.nav .navbar-nav li a i,
+.nav .navbar-nav li a b {
+  color: var(--text-color);
+}
+
+.gridster div.widget {
+  transition: background-color 0.5s ease;
+  background-color: var(--color-primary);
+  box-shadow: none;
+}
+
+.slice-grid .slice_container {
+  border: 2px solid var(--color-primary);
+}
+
+.editable-title input[type='button'] {
+  color: var(--text-color);
+}
+
+.outer-container.pull-left .editable-title input {
+  color: var(--text-color2);
+}
+
+.fave-unfave-icon i:before {
+  color: var(--color-primary);
+}
+
+.dashboard a i {
+  color: var(--text-color);
+  transition: all 0.2s;
+}
+
+.dashboard a i:hover {
+  opacity: 0.7;
+}
+
+body {
+  background: var(--color-main);
+  color: var(--color-base2);
+}
+
+.dashboard .slice_container > div > div > ul > li > button {
+  color: var(--color-base2) !important;
+}
+
+.dropdown-menu-right li a span i {
+  color: var(--color-base2);
+}
+
+.dropdown-menu-right li a:hover span i {
+  color: var(--text-color);
+}
+
+.dashboard-header__back {
+  color: var(--color-primary) !important;
+}

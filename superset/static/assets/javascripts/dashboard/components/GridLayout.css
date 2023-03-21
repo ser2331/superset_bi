@@ -1,0 +1,57 @@
+.popup-drilldown {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px 0;
+  z-index: 1000;
+}
+
+.popup-drilldown-controlpanel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  cursor: grab;
+  border: 1px solid rgb(145, 143, 143);
+  z-index: 1;
+}
+
+.popup-drilldown-dashboard {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 2;
+}
+
+.drilldown-cell{ 
+  width: 100%;
+}
+
+.popup-drilldown-button {
+  position: absolute;
+  padding: 2px;
+  top: 0;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  color: #000;
+  opacity: 1;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.popup-drilldown-button:hover {
+  opacity: .4;
+}
+
+.close-popup{
+  right: 0;
+}
+
+.open-link{
+  left: 0;
+}

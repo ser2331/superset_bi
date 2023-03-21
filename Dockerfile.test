@@ -1,0 +1,7 @@
+FROM python:3.6-slim-stretch
+
+COPY requirements.txt /
+
+RUN apt-get update && apt-get install build-essential libssl-dev libffi-dev libsasl2-dev libldap2-dev libpq-dev unixodbc-dev unzip git curl -yqq  \
+&& pip install -r /requirements.txt && pip install mock nose2 && curl -sL https://deb.nodesource.com/setup_12.x | bash - && apt-get install -y nodejs
+

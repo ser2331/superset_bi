@@ -1,0 +1,183 @@
+.contextMenuCursor {
+  cursor: url("./contextMenuCursor.png"), help !important;
+}
+
+@keyframes changeOutlineColor {
+  0% {
+    outline-color: #f60000;
+  }
+
+  20% {
+    outline-color: rgb(2, 24, 255);
+  }
+
+  40% {
+    outline-color: rgb(33, 255, 0);
+  }
+
+  60% {
+    outline-color: #000000;
+  }
+
+  80% {
+    outline-color: #00c1fc;
+  }
+
+  100% {
+    outline-color: #fc00da;
+  }
+}
+
+@keyframes changeStrokeColor {
+  0% {
+    stroke: #f60000;
+  }
+
+  20% {
+    stroke: rgb(2, 24, 255);
+  }
+
+  40% {
+    stroke: rgb(33, 255, 0);
+  }
+
+  60% {
+    stroke: #000000;
+  }
+
+  80% {
+    stroke: #00c1fc;
+  }
+
+  100% {
+    stroke: #fc00da;
+  }
+}
+
+
+.circleDDVisualization {
+  & g.contextMenuCursor circle {
+    outline: 2px dashed #FF0000;
+    animation: changeOutlineColor 2s ease-out infinite;
+    border-radius: 50px;
+    outline-offset: 5px;
+  }
+}
+
+
+.svgNvd3Container {
+  & .nvGroupDD rect {
+    outline: 1px dashed #FF0000;
+    animation: changeOutlineColor 2s ease-out infinite;
+    filter: grayscale(0.5);
+    outline-offset: -1px;
+  }
+
+  & .nvSliceDD path {
+    filter: grayscale(0.5);
+    stroke: #FF0000;
+    animation: changeStrokeColor 2s ease-out infinite;
+    stroke-dasharray: 8px;
+  }
+}
+
+.secondStrokeDDPath {
+  display: none;
+}
+
+.svgNvd3ContainerPathGroups {
+  & .groupPathsDD .secondStrokeDDPath {
+    display: initial;
+    stroke: #FF0000;
+    animation: changeStrokeColor 2s ease-out infinite;
+    stroke-dasharray: 10px;
+    stroke-width: 3px;
+  }
+}
+
+.nvGroupDD {
+  & rect {
+    cursor: url("./contextMenuCursor.png"), help !important;
+  }
+}
+
+.nvSliceDD {
+  & path {
+    cursor: url("./contextMenuCursor.png"), help !important;
+  }
+}
+
+.tableDDContainer {
+  & .contextMenuCursor {
+    outline: 1px dashed #FF0000;
+    animation: changeOutlineColor 2s ease-out infinite;
+    outline-offset: -1px;
+  }
+}
+
+.tablePivotDDContainer {
+  & .contextMenuCursor {
+    outline: 1px dashed #FF0000;
+    animation: changeOutlineColor 2s ease-out infinite;
+    outline-offset: -1px;
+  }
+}
+
+
+.bigNumberDD {
+  outline: 2px dashed #FF0000;
+  animation: changeOutlineColor 2s ease-out infinite;
+}
+
+.speedometerDD {
+  outline-offset: -2px;
+  outline: 2px dashed #FF0000;
+  animation: changeOutlineColor 2s ease-out infinite;
+}
+
+.noneTouchCursor {
+  filter: grayscale(1);
+  pointer-events: none;
+}
+
+@keyframes bubbleMapDDVisualization {
+  0% {
+    filter: hue-rotate(0deg) drop-shadow(4px -2px 3px red);
+  }
+
+  20% {
+    filter: hue-rotate(50deg) drop-shadow(4px -2px 3px green);
+  }
+
+  40% {
+    filter: hue-rotate(100deg) drop-shadow(4px -2px 3px blue);
+  }
+
+  60% {
+    filter: hue-rotate(150deg) drop-shadow(4px -2px 3px black);
+  }
+
+  80% {
+    filter: hue-rotate(200deg) drop-shadow(4px -2px 3px orange);
+  }
+
+  100% {
+    filter: hue-rotate(250deg) drop-shadow(4px -2px 3px #5c016d);
+  }
+}
+
+.bubbleMapDDContainer [class*='placemark-overlay'] > ymaps > [class*='placemark'],
+.bubbleMapDDContainer [class*='placemark-overlay'] > [class*='cluster'],
+.bubbleMapDDContainer [class*='placemark-overlay'] > ymaps > [class*='image-with-content'] {
+   animation: bubbleMapDDVisualization 2s ease infinite;
+}
+
+.popupDDContainer,
+.bubbleMapDDContainer {
+  .balloonContentDD {
+    outline: 1px dashed #FF0000;
+    animation: changeOutlineColor 2s ease-out infinite;
+    outline-offset: -1px;
+  }
+}
+

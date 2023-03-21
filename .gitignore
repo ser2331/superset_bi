@@ -1,23 +1,48 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
+*.pyc
+yarn-error.log
+_modules
+superset/assets/coverage/*
+clickhouse_data/*
+clickhouse_log/*
+changelog.sh
+clickhouse_data/*
+clickhouse_log/*
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
+.coverage
+_build
+_static
+_images
+superset/bin/supersetc
+env_py3
+.eggs
+build
+*.db
+tmp
+superset_config.py
+local_config.py
+env
+superset.egg-info/
+app.db
+*.bak
+.idea
+*.sqllite
+.vscode
+.python-version
+.tox
+dump.rdb
+app/static/appbuilder
+# Node.js, webpack artifacts
+node_modules
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+dist
+superset/assets/version_info.json
+.terser-plugin-cache
+
+/Lib/
+=======
+# IntelliJ
+*.iml
+venv
+@eaDir/
+superset/utils.py
+superset_log/

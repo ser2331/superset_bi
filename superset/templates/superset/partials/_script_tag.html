@@ -1,0 +1,7 @@
+{% block tail_js %}
+  <!-- Bundle js {{ filename }} START -->
+  {% for entry in get_unloaded_chunks(js_manifest(filename), loaded_chunks) %}
+    <script src="{{ entry }}"></script>
+  {% endfor %}
+  <!-- Bundle js {{ filename }} END -->
+{% endblock %}

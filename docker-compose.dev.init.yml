@@ -1,0 +1,46 @@
+version: "3.9"
+services:
+
+  postgres:
+    image: postgis/postgis:12-3.2
+    environment:
+      POSTGRES_PASSWORD: superset
+      POSTGRES_USER: superset
+    volumes:
+      - superset_postgres:/var/lib/postgresql/data
+
+  superset-init:
+    build: .
+    command: bash -c "flask db upgrade && python superset/cli.py init && python superset/cli.py load_examples && fabmanager create-admin --firstname te --lastname last_name --username admin --password admin --email zdrav-support@netrika.ru --app superset"
+    working_dir: /home
+    platform: linux/amd64
+    environment:
+      SUPERSET_ADMIN_USERNAME: admin
+      SUPERSET_ADMIN_EMAIL: zdrav-support@netrika.ru
+      SUPERSET_ADMIN_PASSWORD: admin
+      SUPERSET_WEB_PORT: 8888
+      SUPERSET_WEB_THREADS: 1
+      SUPERSET_WEB_TIMEOUT: 90
+      SUPERSET_ROW_LIMIT: 5000
+      SUPERSET_POSTGRES_HOST: postgres
+      SUPERSET_POSTGRES_PORT: 5432
+      SUPERSET_POSTGRES_USER: superset
+      SUPERSET_POSTGRES_DB: superset
+      SUPERSET_POSTGRES_PASSWORD: superset
+      REDIS_URL: redis://redis:6379/1
+      SUPERSET_CSRF_ENABLED: 'False'
+      SUPERSET_GUNICORN_TIMEOUT: 240
+      SUPERSET_URL_PDF: http://localhost/renderer
+      SUPERSET_REDIS_RESULTS_BACKEND: host='redis',port=6379,key_prefix='superset_results',db=1
+      SUPERSET_PUBLICATION_HOST: r78-trash-superset
+      SUPERSET_IDENTIFIER: r78-trash-superset
+      CACHE_TIMEOUT: 60 * 60 * 4
+      FLASK_APP: superset
+      INIT_PROCESS: 1
+    volumes:
+      - ./superset:/home/superset
+    depends_on:
+      - postgres
+
+volumes:
+  superset_postgres:

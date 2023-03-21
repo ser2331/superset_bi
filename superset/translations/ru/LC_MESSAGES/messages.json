@@ -1,0 +1,2244 @@
+{
+  "domain": "superset",
+  "locale_data": {
+    "superset": {
+      "": {
+        "domain": "superset",
+        "plural_forms": "nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;",
+        "lang": "ru"
+      },
+      "control": ["Контрольный"],
+      "No matching records found": ["Совпадающие записи не найдены"],
+      "There is no data to display": ["Нет данных для отображения"],
+      "The size of the square cell, in pixels": [
+        "Размер квадратной ячейки в пикселях"
+      ],
+      "The distance between cells, in pixels": [
+        "Расстояние между ячейками в пикселях"
+      ],
+      "The pixel radius": ["Пиксельный радиус"],
+      "The number color steps": ["Число градации цвета"],
+      "Add an item": ["Добавить"],
+      "Remove item": ["Удалить"],
+      "linear": ["линейный"],
+      "basis": ["базис"],
+      "cardinal": ["кардинал"],
+      "monotone": ["монотонный"],
+      "step-before": ["шаг до"],
+      "step-after": ["шаг после"],
+      "Empty collection": ["Пустая коллекция"],
+      "Time Column": ["Показатель с датой"],
+      "key": ["Название категории"],
+      "percent": ["Процент"],
+      "percent_tenths": ["Процент с округлением до десятых"],
+      "key_value": ["Категория и значения"],
+      "key_percent": ["Категория и процент"],
+      "PT1M": ["минута"],
+      "PT5M": ["5 минут"],
+      "PT10M": ["10 минут"],
+      "PT1H": ["час"],
+      "P1D": ["день"],
+      "P1M": ["месяц"],
+      "P0.25Y": ["квартал"],
+      "P1Y": ["год"],
+      "second": ["секунда", "секунды", "секунд"],
+      "minute": ["минута", "минуты", "минут"],
+      "hour": ["час", "часа", "часов"],
+      "day": ["день", "дня", "дней"],
+      "week": ["неделя", "недели", "недель"],
+      "month": ["месяц", "месяца", "месяцев"],
+      "quarter": ["квартал", "квартала", "кварталов"],
+      "year": ["год", "года", "лет"],
+      "week_start_monday": ["Неделя (начиная с понедельника)"],
+      "week_ending_saturday": ["неделя_конец_суббота"],
+      "week_start_sunday": ["Неделя (начиная с воскресенья)"],
+      "5 minute": ["5 минут"],
+      "half hour": ["полчаса"],
+      "10 minute": ["10 минут"],
+      "Table Name": ["Имя Витрины"],
+      "Name of table to be created from csv data.": [
+        "Имя витрины, которая будет сформирована из данных csv."
+      ],
+      "CSV File": ["CSV Файл"],
+      "Select a CSV file to be uploaded to a database. Column names should contain only numbers, latin letters and underscore. Column names should not begin with number.": [
+        "Выберите файл CSV, который будет загружен в БД. Названия показателей должны содержать цифры, латинские буквы и символ подчеркивания. Названия показателей не должны начинаться с цифры."
+      ],
+      "CSV Files Only!": ["Только CSV-файлы!"],
+      "Delimiter": ["Разделитель"],
+      "Delimiter used by CSV file (for whitespace use \\s+).": [
+        "Разделитель, используемый CSV-файлом (для пробелов используется \\s+)."
+      ],
+      "Table Exists": ["Метод добавления"],
+      "If table exists do one of the following: Fail (do nothing), Replace (drop and recreate table) or Append (insert data).": [
+        "Если витрина уже существует, выполните одно из следующих действий: Fail (ничего не делать), Replace (удалить и заново создать витрину) или Append (добавить данные)."
+      ],
+      "Fail": [""],
+      "Replace": [""],
+      "Append": [""],
+      "Schema": ["Схема"],
+      "Specify a schema (if database flavour supports this).": [
+        "Укажите схему (если это поддерживается базой данных)."
+      ],
+      "Header Row": ["Строка заголовков"],
+      "Row containing the headers to use as column names (0 is first line of data). Leave empty if there is no header row.": [
+        "Строка, содержащая заголовки для использования в качестве имен показателей (0 - первая строка данных). Оставьте пустым, если строка заголовка отсутствует."
+      ],
+      "Index Column": ["Индексный показатель"],
+      "Column to use as the row labels of the dataframe. Leave empty if no index column.": [
+        "Показатель для использования в качестве меток строк данных. Оставьте пустым, если индексный показатель отсутствует."
+      ],
+      "Mangle Duplicate Columns": ["Дубликаты"],
+      "Specify duplicate columns as \"X.0, X.1\".": [
+        "Если есть показатели с одинаковым именем, то присвоить им порядковые номера - показатель1, показатель2, … и т.д."
+      ],
+      "Skip Initial Space": ["Убрать пробелы"],
+      "Skip spaces after delimiter.": ["Пропустить пробелы после разделителя."],
+      "Skip Rows": ["Игнорировать"],
+      "Number of rows to skip at start of file.": [
+        "Количество первых строк, которые нужно проигнорировать."
+      ],
+      "Rows to Read": ["Строки для чтения"],
+      "Number of rows of file to read.": ["Количество строк файла для чтения."],
+      "Skip Blank Lines": ["Пропустить пустые строки"],
+      "Skip blank lines rather than interpreting them as NaN values.": [
+        "Пропустите пустые строки, а не интерпретировать их как значения NaN."
+      ],
+      "Parse Dates": ["Разбор Дат"],
+      "Parse date values.": ["Разбор значений дат."],
+      "Infer Datetime Format": ["Формат даты и времени"],
+      "Use Pandas to interpret the datetime format automatically.": [
+        "Используйте Pandas для автоматической интерпретации формата даты и времени."
+      ],
+      "Decimal Character": ["Десятичный символ"],
+      "Character to interpret as decimal point.": [
+        "Символ, который интерпретируется как десятичная точка."
+      ],
+      "Dataframe Index": ["Индекс"],
+      "Write dataframe index as a column.": [
+        "Записывайте индекс данных в виде показателя."
+      ],
+      "Column Label(s)": ["Обозначения показателей"],
+      "Column label for index column(s). If None is given and Dataframe Index is True, Index Names are used.": [
+        "Обозначение показателя для показателей с индексами. Если поле пустое, а настройка [Индекс] включена, то используются имена индексов."
+      ],
+      "[Superset] Access to the datasource %(name)s was granted": [
+        "Доступ к базе данных предоставлен для пользователя — %(name)s"
+      ],
+      "Viz is missing a datasource": [
+        "У визуализации отсутствует источник данных"
+      ],
+      "From date cannot be larger than to date": [
+        "Невозможно выбрать дату [from], которая позже текущего дня"
+      ],
+      "Table View": ["Таблица"],
+      "Pick a granularity in the Time section or uncheck 'Include Time'": [
+        "Выберите показатель с датой и необходимый период в секции «Время» или снимите флажок «Включая дату»"
+      ],
+      "Choose either fields to [Group By] and [Metrics] or [Columns], not both": [
+        "Выберите срез данных в полях [Метрики] или [Показатели], но не в обоих одновременно"
+      ],
+      "Time Table View": [""],
+      "Pick at least one metric": ["Выберите хотя бы одно значение"],
+      "When using 'Group By' you are limited to use a single metric": [
+        "При использовании поля [Группировка] вы не ограничены использованием одной метрики"
+      ],
+      "Pivot Table": ["Таблица среза"],
+      "Please choose at least one 'Group by' field ": [
+        "Выберите хотя бы один срез в поле [Группировка]"
+      ],
+      "Please choose at least one metric": [
+        "Пожалуйста, выберите хотя бы одну метрику"
+      ],
+      "Group By' and 'Columns' can't overlap": [
+        "Нельзя использовать один и тот же срез в двух полях"
+      ],
+      "Markup": ["HTML-разметка"],
+      "Separator": ["Разделитель"],
+      "Word Cloud": ["Облако тегов"],
+      "Treemap": ["Горизонтальное дерево"],
+      "Calendar Heatmap": ["Календарная тепловая карта"],
+      "Box Plot": ["Диаграмма размаха"],
+      "Bubble Chart": ["Пузырьковая диаграмма"],
+      "Bubble map, Yandex.Map": ["Bubble map, Яндекс.Карта"],
+      "HeatMap, Yandex.Map": ["HeatMap, Яндекс.Карта"],
+      "Pick a metric for x, y and size": ["Выберите срез для X, Y и размер"],
+      "Bullet Chart": ["Шкала"],
+      "Pick a metric to display": ["Выберите метрику для отображения"],
+      "Big Number with Trendline": ["Число с линией тренда"],
+      "Pick a metric!": ["Выберите метрику!"],
+      "Big Number": ["Число"],
+      "Time Series - Line Chart": ["Линейная временная диаграмма"],
+      "Pick a time granularity for your time series": [
+        "Выберите период для временных рядов"
+      ],
+      "`Since` and `Until` time bounds should be specified when using the `Time Shift` feature.": [
+        "Границы `Начиная с` и `до` должны быть указаны при использовании временного сдвига"
+      ],
+      "Time Series - Dual Axis Line Chart": [
+        "Временные ряды - линейный график с двумя осями"
+      ],
+      "Pick a metric for left axis!": ["Выберите значение для левой оси!"],
+      "Pick a metric for right axis!": ["Выберите значение для правой оси!"],
+      "Please choose different metrics on left and right axis": [
+        "Пожалуйста, выберите разные срезы данных для левой и правой оси"
+      ],
+      "Time Series - Bar Chart": ["Временная гистограмма"],
+      "Time Series - Period Pivot": ["Временные ряды - сводная по периоду"],
+      "Time Series - Percent Change": ["Временные ряды - процентное изменение"],
+      "Time Series - Stacked": ["Временные ряды - с накоплением"],
+      "Distribution - NVD3 - Pie Chart": [
+        "Распределение - NVD3 - круговая диаграмма"
+      ],
+      "Histogram": ["Гистограмма частот"],
+      "Must have one numeric column specified": [
+        "Должен быть указан хотя бы один числовой показатель"
+      ],
+      "Distribution - Bar Chart": ["Гистограмма"],
+      "Can't have overlap between Series and Breakdowns": [
+        "Срезы в полях [Столбцы данных] и [Ряды данных] должны быть разными"
+      ],
+      "Pick at least one field for [Series]": [
+        "Выберите хотя бы одно значение для поля [Столбцы данных]"
+      ],
+      "Sunburst": ["Солнечные лучи"],
+      "Sankey": ["Диаграмма Санкея"],
+      "Pick exactly 2 columns as [Source / Target]": [
+        "Выберите ровно два среза в поле [Источник / Назначение]"
+      ],
+      "There's a loop in your Sankey, please provide a tree. Here's a faulty link: {}": [
+        "В полях [Источника] и [Назначения] есть одинаковый срез данных - {}. Срезы не должны пересекаться!"
+      ],
+      "Directed Force Layout": ["Граф перемещений"],
+      "Pick exactly 2 columns to 'Group By'": [
+        "Выберите ровно два показателя в поле [Группировка]"
+      ],
+      "Country Map": ["Карта стран"],
+      "World Map": ["Карта мира"],
+      "Filters": ["Фильтры"],
+      "Pick at least one filter field": [
+        "Выберите хотя бы одно значение из списка"
+      ],
+      "iFrame": [""],
+      "Parallel Coordinates": ["Параллельные координаты"],
+      "Heatmap": ["Тепловая карта"],
+      "Horizon Charts": ["Диаграммы с тепловой картой на временных рядах"],
+      "Mapbox": ["Масштабируемая карта"],
+      "Must have a [Group By] column to have 'count' as the [Label]": [""],
+      "Choice of [Label] must be present in [Group By]": [""],
+      "Choice of [Point Radius] must be present in [Group By]": [
+        "Срез [Радиуса точки] должен присутствовать в поле [Группировка]"
+      ],
+      "[Longitude] and [Latitude] columns must be present in [Group By]": [
+        "Показатели [Долгота] и [Широта] должны присутствовать в поле [Группировка]"
+      ],
+      "Deck.gl - Multiple Layers": ["Многослойная диаграмма"],
+      "Bad spatial key": [""],
+      "Deck.gl - Scatter plot": ["Пузырьковая диаграмма на карте"],
+      "Deck.gl - Screen Grid": ["Экранная сетка"],
+      "Deck.gl - 3D Grid": ["3D сетка"],
+      "Deck.gl - Paths": ["Пути"],
+      "Deck.gl - Polygon": ["Полигоны"],
+      "Deck.gl - 3D HEX": ["3D HEX"],
+      "Deck.gl - GeoJSON": ["GeoJSON"],
+      "Deck.gl - Arc": ["Дуговая диаграмма по карте"],
+      "Event flow": ["Поток событий"],
+      "Time Series - Paired t-test": [
+        "Временные ряды - t-тест для парных выборок"
+      ],
+      "Time Series - Nightingale Rose Chart": [
+        "Временные ряды - полярная диаграмма"
+      ],
+      "Partition Diagram": ["Диаграмма разделов"],
+      "Your query was saved": ["Ваш запрос был сохранен"],
+      "Your query could not be saved": ["Ваш запрос не может быть сохранен"],
+      "Failed at retrieving results from the results backend": [
+        "Невозможно выполнить запрос"
+      ],
+      "Unknown error": ["Неизвестная ошибка"],
+      "Your session timed out, please refresh your page and try again.": [
+        "Время сессии истекло, пожалуйста, обновите страницу и попробуйте снова."
+      ],
+      "Query was stopped.": ["Запрос прерван."],
+      "Failed at stopping query.": ["Не получилось прервать запрос."],
+      "Error occurred while fetching table metadata": [
+        "Произошла ошибка при получении метаданных из витрины"
+      ],
+      "shared query": ["общий запрос"],
+      "The query couldn't be loaded": ["Запрос невозможно загрузить"],
+      "An error occurred while creating the data source": [
+        "Произошла ошибка при создании источника данных"
+      ],
+      "Pick a chart type!": ["Выберите тип отчета!"],
+      "To use this chart type you need at least one column flagged as a date": [
+        "Для использования этого типа отчета необходимо выбрать хотя бы один показатель со значением даты или времени"
+      ],
+      "To use this chart type you need at least one dimension": [
+        "Для использования этого типа отчета необходимо выбрать хотя бы один срез данных"
+      ],
+      "To use this chart type you need at least one aggregation function": [
+        "Для использования данного типа отчета выберите хотя бы один вычисляемый срез данных"
+      ],
+      "Untitled Query": ["Запрос без имени"],
+      "Copy of %s": ["Копирование %s"],
+      "share query": ["Скопировать запрос"],
+      "copy URL to clipboard": ["скопировать ссылку в буфер обмена"],
+      "Raw SQL": ["Raw SQL"],
+      "Source SQL": ["Источник SQL"],
+      "SQL": ["SQL"],
+      "No query history yet...": ["История запросов пуста…"],
+      "It seems you don't have access to any database": [
+        "Кажется у Вас нет доступа к базе данных"
+      ],
+      "Search Results": ["Результаты поиска"],
+      "[From]-": ["[С]-"],
+      "[To]-": ["[До]-"],
+      "[Query Status]": ["[Статус запроса]"],
+      "Search": ["Поиск"],
+      "Open in SQL Editor": ["Открыть редакторе"],
+      "view results": ["посмотреть результаты"],
+      "Data preview": ["Предпросмотр данных"],
+      "Visualize the data out of this query": [
+        "Построить отчет на основе запроса"
+      ],
+      "Overwrite text in editor with a query on this table": [
+        "Перезаписать текст в редакторе с запросом к этой витрине"
+      ],
+      "Run query in a new tab": ["Выполнить запрос на новой вкладке"],
+      "Remove query from log": ["Удалить запрос из журнала"],
+      ".CSV": ["Экспорт в CSV"],
+      "Visualize": ["Построить отчет"],
+      "Table": ["Витрина"],
+      "was created": ["создан"],
+      "Query in a new tab": ["Запрос в отдельной вкладке"],
+      "Fetch data preview": ["Получить данные для просмотра"],
+      "Track Job": ["Отслеживать работу"],
+      "Loading...": ["Идет загрузка…"],
+      "Run Selected Query": ["Выполнить выбранный запрос"],
+      "Run Query": ["Выполнить запрос"],
+      "Run query synchronously": ["Выполнить синхронный запрос"],
+      "Run query asynchronously": ["Выполнить асинхронный запрос"],
+      "Stop": ["Стоп"],
+      "Undefined": ["Не определено"],
+      "undefined": ["Не определено"],
+      "Query name": ["Название запроса"],
+      "Label": ["Метка"],
+      "Label for your query": ["Название вашего запроса"],
+      "Description": ["Описание"],
+      "Write a description for your query": [
+        "Заполните описание к вашему запросу"
+      ],
+      "Save": ["Сохранить"],
+      "Cancel": ["Отменить"],
+      "Save Query": ["Сохранить запрос"],
+      "Run a query to display results here": [
+        "Выполнить запрос для отображения результатов"
+      ],
+      "Preview for %s": ["Предпросмотр %s"],
+      "Results": ["Результаты"],
+      "Query History": ["История запросов"],
+      "Create table as with query results": [
+        "Создать витрину на основе запроса"
+      ],
+      "new table name": ["Новое название витрины"],
+      "Error while fetching table list": ["Ошибка при получении списка витрин"],
+      "Error while fetching schema list": ["Ошибка при получении списка схем"],
+      "Error while fetching database list": [
+        "Ошибка при получении списка баз данных"
+      ],
+      "Database:": ["База данных:"],
+      "Select a database": ["Выберите базу данных"],
+      "Select a schema (%s)": ["Выберите схему (%s)"],
+      "Schema:": ["Схема:"],
+      "Add a table (%s)": ["Добавить витрину (%s)"],
+      "Type to search ...": ["Введите для поиска…"],
+      "Reset State": ["Сбросить текущее состояние"],
+      "Enter a new title for the tab": ["Введите название для витрины"],
+      "Untitled Query %s": ["Запрос без имени %s"],
+      "close tab": ["Закрыть вкладку"],
+      "rename tab": ["Переименовать вкладку"],
+      "expand tool bar": ["Показать панель инструментов"],
+      "hide tool bar": ["Скрыть панель инструментов"],
+      "Copy partition query to clipboard": [
+        "Скопировать часть запроса в буфер обмена"
+      ],
+      "latest partition:": ["последний раздел:"],
+      "Keys for table": ["Ключевые поля витрины"],
+      "View keys & indexes (%s)": ["Посмотреть ключи и индексы (%s)"],
+      "Sort columns alphabetically": [
+        "Отсортировать показатели в алфавитном порядке"
+      ],
+      "Original table column order": [
+        "Расположение показателей как в исходной витрине"
+      ],
+      "Sort a-z from": ["А"],
+      "Sort a-z to": ["Я"],
+      "Copy SELECT statement to clipboard": [
+        "Скопировать выражение SELECT в буфер обмена"
+      ],
+      "Remove table preview": ["Убрать предпросмотр витрины"],
+      "Template Parameters": ["Параметры шаблона"],
+      "Edit template parameters": ["Изменить параметры шаблона"],
+      "Invalid JSON": ["Недопустимый формат json"],
+      "%s is not right as a column name, please alias it (as in SELECT count(*) ": [
+        "%s неверно в качестве имени показателя, пожалуйста, используйте его например, в SELECT COUNT (*) "
+      ],
+      "AS my_alias": ["AS новое_название_показателя"],
+      "using only alphanumeric characters and underscores": [
+        "разрешается использование только букв, цифр и знака нижнего подчеркивание"
+      ],
+      "Creating a data source and popping a new tab": [
+        "Создание источника данных и добавление новой вкладки"
+      ],
+      "No results available for this query": [
+        "Результаты для этого запроса недоступны"
+      ],
+      "Chart Type": ["Тип отчета"],
+      "[Chart Type]": ["[Тип отчета]"],
+      "Datasource Name": ["Название витрины"],
+      "datasource name": ["название источника данных"],
+      "Create a new slice": ["Создать новый отчет"],
+      "Choose a datasource": ["Выберите источник данных"],
+      "Choose a visualization type": ["Выберите тип диаграммы"],
+      "Create new slice": ["Создать новый отчет"],
+      "Updating chart was stopped": ["Обновление отчета остановлено"],
+      "new chart name": ["Название новой витрины"],
+      "Create new Chart based on the current": [
+        "Создать новую витрину на основе текущего отчета"
+      ],
+      "New Chart successfully created. Go to <a href='/superset/explore/table/%s'>Chart</a>": [
+        "Витрина успешно создана. Перейти к <a href='/superset/explore/table/%s'>Витрине</a>"
+      ],
+      "An error occurred while rendering the visualization: %s": [
+        "Произошла ошибка при построении графика: %s"
+      ],
+      "Perhaps your data has grown, your database is under unusual load, or you are simply querying a data source that is too large to be processed within the timeout range. If that is the case, we recommend that you summarize your data further.": [
+        "База данных находится под высокой нагрузкой. Возможно, объём данных сильно вырос, или вы запрашиваете источник данных, который достаточно большой, чтобы обрабатывать запрос в диапазоне тайм-аута. Если это так, мы рекомендуем вам агрегировать ваши данные или оптимизировать запрос."
+      ],
+      "Network error.": ["Ошибка сети."],
+      "Click to see difference": ["Нажмите, чтобы увидеть разницу"],
+      "Altered": ["Изменения"],
+      "Slice changes": ["Изменения отчета"],
+      "Select ...": ["Выбрать …"],
+      "Loaded data cached": ["Данные были загружены в кэш"],
+      "Loaded from cache": ["Загружается из кэша"],
+      "Click to force-refresh": ["Нажмите для принудительного обновления"],
+      "Copy to clipboard": ["Скопировать в буфер обмена"],
+      "Not successful": ["Неудачно"],
+      "Sorry, your browser does not support copying. Use Ctrl / Cmd + C!": [
+        "Извините, Ваш браузер не поддерживание копирование. Используйте сочетание клавиш [CTRL + C] для WIN или [CMD + C] для MAC"
+      ],
+      "Copied!": ["Копирование завершено"],
+      "Title": ["Заголовок"],
+      "click to edit title": ["Нажмите для изменения заголовка"],
+      "You don't have the rights to alter this title.": [
+        "Недостаточно прав для изменения заголовка."
+      ],
+      "Click to favorite/unfavorite": ["Отметить как избранное"],
+      "Active Dashboard Filters": ["Фильтр активной информационной панели"],
+      "Checkout this dashboard: %s": ["Отладка информационной панели: %s"],
+      "Save as": ["Сохранить как"],
+      "Force Refresh": ["Принудительное обновление"],
+      "Force refresh the whole dashboard": [
+        "Принудительно обновить информационную панель"
+      ],
+      "Set autorefresh": ["Интервал обновления"],
+      "Set the auto-refresh interval for this session": [
+        "Установите интервал автоматического обновления для этого сеанса"
+      ],
+      "Save the dashboard": ["Сохранить информационную панель"],
+      "Edit properties": ["Редактирование свойств"],
+      "Edit the dashboards's properties": [
+        "Редактировать свойства информационной панели"
+      ],
+      "Email": ["Отправить ссылку по почте"],
+      "Email a link to this dashboard": [
+        "Отправить ссылку на эту информационную панель"
+      ],
+      "Add Slices": ["Добавить отчет"],
+      "Add some slices to this dashboard": [
+        "Добавить отчет на информационную панель"
+      ],
+      "Edit CSS": ["Редактировать CSS"],
+      "Change the style of the dashboard using CSS code": [
+        "Измените оформление информационной панели с помощью CSS-кода"
+      ],
+      "Load a template": ["Загрузить шаблон"],
+      "Load a CSS template": ["Загрузить шаблон стилей (CSS)"],
+      "CSS": ["CSS"],
+      "Live CSS Editor": ["Редактор CSS"],
+      "You have unsaved changes.": ["У вас есть несохраненные изменения."],
+      "Unsaved changes": ["Изменения не сохранены"],
+      "Don't refresh": ["Не обновлять"],
+      "10 seconds": ["10 секунд"],
+      "30 seconds": ["30 секунд"],
+      "1 minute": ["1 минута"],
+      "5 minutes": ["5 минут"],
+      "Refresh Interval": ["Интервал обновления"],
+      "Choose the refresh frequency for this dashboard": [
+        "Выберите частоту обновления для этой информационной панели"
+      ],
+      "This dashboard was saved successfully.": [
+        "Информационная панель успешно сохранена."
+      ],
+      "Sorry, there was an error saving this dashboard: ": [
+        "К сожалению, произошла ошибка при сохранении этой информационной панели: "
+      ],
+      "Error": ["Ошибка"],
+      "You must pick a name for the new dashboard": [
+        "Вы должны выбрать имя для новой информационной панели"
+      ],
+      "Save Dashboard": ["Сохранить информационную панель"],
+      "Overwrite Dashboard [%s]": ["Перезаписать информационную панель [%s]"],
+      "Save as:": ["Сохранить как:"],
+      "[dashboard name]": ["[название информационной панели]"],
+      "Sorry, there was an error fetching slices to this dashboard: ": [
+        "К сожалению, произошла ошибка при загрузке отчета: "
+      ],
+      "Sorry, there was an error adding slices to this dashboard: ": [
+        "К сожалению, возникла ошибка при добавлении отчета на информационную панель: "
+      ],
+      "Name": ["Название"],
+      "Viz": ["Визуализация"],
+      "Datasource": ["Источник данных"],
+      "Modified": ["Изменено"],
+      "Add a new slice to the dashboard": [
+        "Добавить новый отчет на информационную панель"
+      ],
+      "Add Slices to Dashboard": ["Добавить отчеты на информационную панель"],
+      "Served from data cached %s . Click to force refresh.": [
+        "Данные находятся в кэше %s. Нажмите кнопку для принудительного обновления."
+      ],
+      "Force refresh data": ["Принудительное обновление данных"],
+      "Asynchronous mode": ["Асинхронный режим"],
+      "Synchronous mode": ["Синхронный режим"],
+      "Annotation layers are still loading.": ["Слои аннотаций загружаются."],
+      "One ore more annotation layers failed loading.": [
+        "Один или несколько слоев аннотации не удалось загрузить."
+      ],
+      "Move chart": ["Переместить отчет"],
+      "Toggle chart description": ["Переключить описание отчета"],
+      "Edit chart": ["Редактировать отчет"],
+      "Export CSV": ["Экспорт CSV"],
+      "Export PDF": ["Экспорт PDF"],
+      "Start export PDF": ["Начат экспорт PDF. дождитесь окончания"],
+      "Error export PDF": [
+        "Произошла ошибка при обработке данных, повторите попытку позже"
+      ],
+      "Explore chart": ["Обзор отчета"],
+      "Remove chart from dashboard": ["Удалить отчет с информационной панели"],
+      "is expected to be a number": ["ожидается число"],
+      "is expected to be an integer": [
+        "ожидается целочисленное значение (integer)"
+      ],
+      "cannot be empty": ["Не может быть пустым"],
+      "description": ["описание"],
+      "bolt": [""],
+      "Changing this control takes effect instantly": [
+        "Изменение этого элемента применяется сразу"
+      ],
+      "Error...": ["Ошибка…"],
+      "Query": ["Запрос"],
+      "Height": ["Высота"],
+      "Width": ["Ширина"],
+      "Export to .json": ["Экспортировать в JSON формат"],
+      "Export to .csv format": ["Экспортировать в CSV формат"],
+      "%s - untitled": ["%s - без названия"],
+      "Edit slice properties": ["Редактировать свойства отчета"],
+      "Limit reached": ["Достигнут предел"],
+      "Please enter a slice name": ["Введите название отчета"],
+      "Please select a dashboard": ["Выберите информационную панель"],
+      "Please enter a dashboard name": [
+        "Введите название информационной панели"
+      ],
+      "Save A Slice": ["Сохранить отчет"],
+      "Overwrite slice %s": ["Перезаписать отчет %s"],
+      "[slice name]": ["[название отчета]"],
+      "Do not add to a dashboard": ["Не добавлять на информационную панель"],
+      "Add slice to existing dashboard": [
+        "Добавить отчет на существующую информационную панель"
+      ],
+      "Add to new dashboard": ["Добавить на новую информационную панель"],
+      "Save & go to dashboard": ["Сохранить и перейти к информационной панели"],
+      "Check out this slice: %s": ["Проверка отчета: %s"],
+      "Add Annotation Layer": ["Добавить слой аннотаций"],
+      "`Min` value should be numeric or empty": [
+        "Значение «Минимум» должно быть числовым или пустым"
+      ],
+      "`Max` value should be numeric or empty": [
+        "Значение « Максимум» должно быть числовым или пустым"
+      ],
+      "Min": ["Минимум"],
+      "Max": ["Максимум"],
+      "Something went wrong while fetching the datasource list": [
+        "Что-то пошло не так при получении списка источников данных"
+      ],
+      "Select a datasource": ["Выбор источника данных"],
+      "Search / Filter": ["Поиск / Фильтр"],
+      "Click to point to another datasource": [
+        "Нажмите, чтобы указать на другой источник данных"
+      ],
+      "Edit the datasource's configuration": ["Изменение настроек витрины"],
+      "Show datasource configuration": [
+        "Показать конфигурацию источника данных"
+      ],
+      "Filter value": ["Значение фильтра"],
+      "Select metric": ["Выбрать метрику"],
+      "Select column": ["Выбрать показатель"],
+      "Select operator": ["Выбрать оператор"],
+      "Add Filter": ["Добавить фильтр"],
+      "Error while fetching data": ["Возникла ошибка при получение данных"],
+      "%s option(s)": ["%s параметр(ы)"],
+      "Invalid lat/long configuration.": [
+        "Неверная конфигурация широты и долготы."
+      ],
+      "Longitude & Latitude columns": ["Долгота и Широта"],
+      "Delimited long & lat single column": [
+        "Широта и Долгота в одном показателе с разделителем"
+      ],
+      "Multiple formats accepted, look the geopy.points Python library for more details": [
+        "Для уточнения форматов и получения более подробной информации, посмотрите Python-библиотеку geopy.points"
+      ],
+      "Reverse lat/long ": ["Поменять местами широту и долготу"],
+      "Geohash": ["Геохэш"],
+      "textarea": ["текстовая область"],
+      "Edit": ["Редактировать"],
+      "in modal": ["в модальном окне"],
+      "Select a visualization type": ["Выберите тип визуализации"],
+      "A reference to the [Time] configuration, taking granularity into account": [
+        ""
+      ],
+      "Group by": ["Показатели"],
+      "One or many controls to group by": [
+        "Выберите один или несколько срезов в поле группировки данных"
+      ],
+      "For more information about objects are in context in the scope of this function, refer to the": [
+        ""
+      ],
+      " source code of Superset's sandboxed parser": [
+        " source code of sandboxed parser"
+      ],
+      "This functionality is disabled in your environment for security reasons.": [
+        "Из соображений безопасности эта функция отключена в вашей среде."
+      ],
+      "Visualization Type": ["Тип диаграммы"],
+      "The type of visualization to display": [
+        "Выберите необходимый тип диаграммы"
+      ],
+      "Metrics": ["Метрики"],
+      "One or many metrics to display": [
+        "Выберите одну или несколько метрик для отображения"
+      ],
+      "Percentage Metrics": ["Процентные метрики"],
+      "Metrics for which percentage of total are to be displayed": [
+        "Метрики, для которых будет отображаться процент от общего количества"
+      ],
+      "Y Axis Bounds": ["Границы оси Y"],
+      "Bounds for the Y axis. When left empty, the bounds are dynamically defined based on the min/max of the data. Note that this feature will only expand the axis range. It won't narrow the data's extent.": [
+        "Установить жесткие границы для оси Y. Когда границы не заданы, производится их автоматическая подстройка на основе минимальных и максимальных значениях исходных данных."
+      ],
+      "Ordering": ["Упорядоченность"],
+      "Fixed Color": ["Цвет"],
+      "Use this to define a static color for all circles": [
+        "Используйте это цвет для заливки всех кругов одним цветом"
+      ],
+      "Fill Color": ["Цвет заливки"],
+      " Set the opacity to 0 if you do not want to override the color specified in the GeoJSON": [
+        "Установите непрозрачность на 0, если вы не хотите переопределять цвет, указанный в GeoJSON"
+      ],
+      "Stroke Color": ["Цвет обводки"],
+      "Metric": ["Метрика"],
+      "Choose the metric": ["Выберите метрику"],
+      "Right Axis Metric": ["Метрика для правой оси"],
+      "Choose a metric for right axis": ["Выберите метрику для правой оси"],
+      "Stacked Style": ["Стиль области"],
+      "Sort X Axis": ["Сортировать по оси X"],
+      "Sort Y Axis": ["Сортировать по оси Y"],
+      "Linear Color Scheme": ["Цветовая Схема"],
+      "Normalize Across": ["Нормализовать по"],
+      "Color will be rendered based on a ratio of the cell against the sum of across this criteria": [
+        "Цвет будет рассчитываться на основе отношения ячейки к сумме"
+      ],
+      "Horizon Color Scale": ["Расчет цвета"],
+      "Defines how the color are attributed.": [
+        "Определяет, как рассчитывается цвет."
+      ],
+      "Rendering": ["Рендеринг"],
+      "image-rendering CSS attribute of the canvas object that defines how the browser scales up the image": [
+        "CSS-атрибут объекта canvas, который определяет, как браузер будет масштабировать изображение"
+      ],
+      "XScale Interval": ["Интевал оси X"],
+      "Number of steps to take between ticks when displaying the X scale": [
+        "Количество шагов между делениями горизонтальной оси X"
+      ],
+      "YScale Interval": ["Интервал оси Y"],
+      "Number of steps to take between ticks when displaying the Y scale": [
+        "Количество шагов между делениями на вертикальной оси X"
+      ],
+      "Include Time": ["Включая дату"],
+      "Whether to include the time granularity as defined in the time section": [
+        "Установить временной период, как указано в разделе «Время»"
+      ],
+      "Auto Zoom": ["Автомасштаб"],
+      "When checked, the map will zoom to your data after each query": [
+        "Если этот флажок установлен, карта будет масштабироваться после каждого запроса"
+      ],
+      "Show percentage": ["Показать процент"],
+      "Whether to include the percentage in the tooltip": [
+        "Включить значение процента в всплывающую подсказку"
+      ],
+      "Stacked Bars": ["С накоплением"],
+      "Show totals": ["Показать итоги"],
+      "Display total row/column": ["Показать итоги строк / показателей"],
+      "Show Markers": ["Показать маркеры"],
+      "Show data points as circle markers on the lines": [
+        "Показывать на линиях точки данных в виде небольших окружностей"
+      ],
+      "Bar Values": ["Подписи"],
+      "Show the value on top of the bar": [
+        "Добавить в отчет значение данных в виде подписи"
+      ],
+      "Sort Bars": ["Сортировка гистограммы"],
+      "Sort bars by x labels.": [
+        "Сортировать гистограмму по названию показателей."
+      ],
+      "Combine Metrics": ["Сгруппировать метрики"],
+      "Display metrics side by side within each column, as opposed to each column being displayed side by side for each metric.": [
+        "Сгруппировать и отобразить метрики в рамках значения одного колоночного среза."
+      ],
+      "Extra Controls": ["Доп. элементы"],
+      "Whether to show extra controls or not. Extra controls include things like making mulitBar charts stacked or side by side.": [
+        "Показывать дополнительные элементы управления, которые позволяют переключаться между разными видами графика - гистограмма с накоплением или с группировкой."
+      ],
+      "Reduce X ticks": ["Сжать шкалу X"],
+      "Reduces the number of X axis ticks to be rendered. If true, the x axis wont overflow and labels may be missing. If false, a minimum width will be applied to columns and the width may overflow into an horizontal scroll.": [
+        "Если опция включена, то график будет сжат по горизонтали, таким образом, чтобы уместиться целиком на одном виджете, при этом промежуточные подписи на оси X могут пропасть. При выключенной опции, графики с большим количеством данных отображаются с горизонтальной полосой прокрутки."
+      ],
+      "Include Series": ["Включить название"],
+      "Include series name as an axis": [
+        "Включить название метрики в подписи оси"
+      ],
+      "Color Metric": ["Цвет метрики"],
+      "A metric to use for color": ["Метрика, используемая для расчета цвета"],
+      "Country Name": ["Страна"],
+      "The name of country that Superset should display": [
+        "Выберите страну, которую хотите визуализировать"
+      ],
+      "Country Field Type": ["Стандарт кода страны"],
+      "The country code standard that Superset should expect to find in the [country] column": [
+        "Выберите стандарт с помощью которого, кодируются страны в поле [Страна]"
+      ],
+      "Frequency": ["Частота"],
+      "The periodicity over which to pivot time. Users can provide\n      \"Pandas\" offset alias.\n      Click on the info bubble for more details on accepted \"freq\" expressions.": [
+        "Периодичность для оси времени."
+      ],
+      "Dimension": ["Измерение"],
+      "Select a dimension": ["Выбор измерения"],
+      "Columns": ["Показатели"],
+      "One or many controls to pivot as columns": [
+        "Выберите один или несколько срезов для отображения метрик в показателях таблицы среза"
+      ],
+      "Columns to display": ["Показатели для отображения"],
+      "Longitude & Latitude": ["Долгота и Широта"],
+      "Point to your spatial columns": [
+        "Выберите показатели, содержащие геоданные"
+      ],
+      "Start Longitude & Latitude": ["Долгота и Широта [Начало]"],
+      "End Longitude & Latitude": ["Долгота и Широта [Конец]"],
+      "Longitude": ["Укажите долготу"],
+      "Select the longitude column": ["Выберите показатель долготы"],
+      "Latitude": ["Укажите широту"],
+      "Select the latitude column": ["Выберите показатель широты"],
+      "GeoJson Column": ["Показатель GeoJSON"],
+      "Select the geojson column": ["Выберите показатель GeoJSON"],
+      "Polygon Column": ["Показатель полигонов"],
+      "Select the polygon column. Each row should contain JSON.array(N) of [longitude, latitude] points": [
+        "Выберите показатель с массивом полигонов. Каждая строка должна содержать JSON.array(N) [долгота, широта]."
+      ],
+      "Point Radius Scale": ["Точечный радиус"],
+      "Stroke Width": ["Ширина обводки"],
+      "Origin": ["Источник"],
+      "Defines the origin where time buckets start, accepts natural dates as in `now`, `sunday` or `1970-01-01`": [
+        ""
+      ],
+      "Bottom Margin": ["Нижняя граница"],
+      "Bottom margin, in pixels, allowing for more room for axis labels": [
+        "Высота нижней области графика в пикселах, позволяющая регулировать место под подписи данных горизонтальной оси X"
+      ],
+      "Left Margin": ["Левая область"],
+      "Left margin, in pixels, allowing for more room for axis labels": [
+        "Ширина левой области графика в пикселах, позволяющая регулировать место под подписи данных вертикальной оси Y"
+      ],
+      "Time Granularity": ["Временной интервал"],
+      "The time granularity for the visualization. Note that you can type and use simple natural language as in `10 seconds`, `1 day` or `56 weeks`": [
+        "Интервал времени, в границах которого строится график. Обратите внимание, что для определения диапазона времени, вы можете использовать естественный язык. Например, можно указать словосочетания - «10 seconds», «1 day» или «56 weeks»"
+      ],
+      "Domain": ["Домен"],
+      "The time unit used for the grouping of blocks": [
+        "Единица времени, используемая для группировки"
+      ],
+      "Subdomain": ["Субдомен"],
+      "The time unit for each block. Should be a smaller unit than domain_granularity. Should be larger or equal to Time Grain": [
+        "Единица времени для каждого блока. Должнa быть меньше временной шкалы домена."
+      ],
+      "Link Length": ["Длина связи"],
+      "Link length in the force layout": [
+        "Устанавливает указанное расстояние между связанными узлами"
+      ],
+      "Charge": ["Сила заряда узла"],
+      "Charge in the force layout": [
+        "Отрицательное значение силы заряда приводит к отталкиванию узлов, а положительное значение приводит к притяжению узлов. Установка силы заряда равной 0 отключает вычисление дерева квадрантов, что может заметно улучшить производительность, если вам такая функциональность не требуется."
+      ],
+      "The time column for the visualization. Note that you can define arbitrary expression that return a DATETIME column in the table. Also note that the filter below is applied against this column or expression": [
+        "Показатель данных с датой или временем."
+      ],
+      "Time Grain": ["Период времени"],
+      "The time granularity for the visualization. This applies a date transformation to alter your time column and defines a new time granularity. The options here are defined on a per database engine basis in the Superset source code.": [
+        "Группировка по периоду времени - день, месяц, год, … и т.д"
+      ],
+      "Resample Rule": ["Правила ресемплирования (Resample Rule)"],
+      "Pandas resample rule": [
+        "Одна из функций (Resample) библиотеки Pandas, которая определяет период, к которому применяется функция агрегации."
+      ],
+      "Resample How": ["Метод ресемплирования (Resample How)"],
+      "Pandas resample how": [
+        "Одна из функций (Resample) библиотеки Pandas, которая определяет способ агрегации данных."
+      ],
+      "Resample Fill Method": [
+        "Тип заполнения ресемплирования (Resample Fill)"
+      ],
+      "Pandas resample fill method": [
+        "Одна из функций (Resample) библиотеки Pandas, которая определяет метод обработки данных."
+      ],
+      "Since": ["Начиная с"],
+      "7 days ago": ["7 дней назад"],
+      "Until": ["До"],
+      "Max Bubble Size": ["Макс. размер пузырька"],
+      "Whisker/outlier options": ["Варианты биржевого графика"],
+      "Determines how whiskers and outliers are calculated.": [
+        "Определяет вид и параметры отображения свечного графика (японские свечи)."
+      ],
+      "Ratio": ["Соотношение"],
+      "Target aspect ratio for treemap tiles.": [
+        "Соотношение сторон для составных прямоугольников графика."
+      ],
+      "Number format": ["Формат числа"],
+      "Row limit": ["Лимит рядов"],
+      "Series limit": ["Лимит кол-ва рядов"],
+      "Limits the number of time series that get displayed. A sub query (or an extra phase where sub queries are not supported) is applied to limit the number of time series that get fetched and displayed. This feature is useful when grouping by high cardinality dimension(s).": [
+        "Ограничивает количество отображаемых временных рядов."
+      ],
+      "Sort By": ["Сортировка"],
+      "Metric used to define the top series": [
+        "Метрика, используемая для определения какие временные ряды будут отображаться при ограничении количества выводимых рядов"
+      ],
+      "Sort Descending": ["Сортировать"],
+      "Whether to sort descending or ascending": [
+        "Сортировка по убыванию или по возрастанию"
+      ],
+      "Rolling": ["Скольжение (rolling)"],
+      "Defines a rolling window function to apply, works along with the [Periods] text box": [
+        "Одна из функций (Rolling) библиотеки Pandas, которая определяет способ агрегации данных."
+      ],
+      "Multiplier": ["Множитель"],
+      "Factor to multiply the metric by": ["Коэффициент умножения"],
+      "Periods": ["Период"],
+      "Defines the size of the rolling window function, relative to the time granularity selected": [
+        "Одна из функций (Rolling) библиотеки Pandas, которая определяет период, к которому применяется функция агрегации."
+      ],
+      "Grid Size": ["Размер сетки"],
+      "Defines the grid size in pixels": ["Определяет размер сетки в пикселях"],
+      "Min Periods": ["Скрыть периоды"],
+      "The minimum number of rolling periods required to show a value. For instance if you do a cumulative sum on 7 days you may want your \"Min Period\" to be 7, so that all data points shown are the total of 7 periods. This will hide the \"ramp up\" taking place over the first 7 periods": [
+        "Скрыть необходимое количество периодов. Например, если вы делаете накопительную сумму метрики за 7 дней, но хотите скрыть нарастающий итог за первые 6 дней, то указав в данном показателе «6», вы скроете нарастание, происходящее в течение первых 6 периодов."
+      ],
+      "Series": ["Показатель"],
+      "Defines the grouping of entities. Each series is shown as a specific color on the chart and has a legend toggle": [
+        "Группировка в ряды данных. Каждый ряд отображается в виде определенного цвета и имеет легенду."
+      ],
+      "Entity": ["Элемент"],
+      "This defines the element to be plotted on the chart": [
+        "Элемент, который будет отражен в отчете"
+      ],
+      "X Axis": ["Ось X"],
+      "Metric assigned to the [X] axis": ["Метрика, отраженная на оси X"],
+      "Y Axis": ["Ось Y"],
+      "Metric assigned to the [Y] axis": ["Метрика, отраженная на оси Y"],
+      "Bubble Size": ["Размер пузырька"],
+      "URL": ["Ссылка (URL)"],
+      "The URL, this control is templated, so you can integrate {{ width }} and/or {{ height }} in your URL string.": [
+        "URL-адрес, в который вы можете интегрировать переменные {{ width }} или {{ height }}."
+      ],
+      "X Axis Label": ["Подпись оси X"],
+      "Y Axis Label": ["Подпись оси Y"],
+      "Custom WHERE clause": ["Пользовательское условие WHERE"],
+      "The text in this box gets included in your query's WHERE clause, as an AND to other criteria. You can include complex expression, parenthesis and anything else supported by the backend it is directed towards.": [
+        "Текст в этом поле включается в секцию WHERE SQL-запроса. Вы можете включить сколь угодно сложное выражение. Главное чтобы оно поддерживалось вашей БД."
+      ],
+      "Custom HAVING clause": ["Пользовательское условие HAVING"],
+      "The text in this box gets included in your query's HAVING clause, as an AND to other criteria. You can include complex expression, parenthesis and anything else supported by the backend it is directed towards.": [
+        "Текст в этом поле включается в секцию HAVING SQL-запроса. Вы можете включить сколь угодно сложное выражение. Главное чтобы оно поддерживалось вашей БД."
+      ],
+      "Comparison Period Lag": ["Временной лаг"],
+      "Based on granularity, number of time periods to compare against": [
+        "Сдвиг временного периода, с которым производится сравнение метрики. Единица периода, устанавливается в разделе [Время]."
+      ],
+      "Comparison suffix": ["Постфикс"],
+      "Suffix to apply after the percentage display": [
+        "Текст для отображения после процента сравнения. Например - «год к году»"
+      ],
+      "Table Timestamp Format": ["Формат Даты / Времени"],
+      "Timestamp Format": ["Формат Даты / Времени"],
+      "Series Height": ["Высота ряда данных"],
+      "Pixel height of each series": ["Высота в пикселях каждого ряда данных"],
+      "Page Length": ["Длина страницы"],
+      "Rows per page, 0 means no pagination": [
+        "Количество строк на странице. Значение 0 означает отсутствие разбиения на страницы."
+      ],
+      "X Axis Format": ["Формат оси X"],
+      "Y Axis Format": ["Формат оси Y"],
+      "Right Axis Format": ["Формат правой оси"],
+      "Date Time Format": ["Формат даты"],
+      "Time Format": ["Формат времени"],
+      "Markup Type": ["Тип Разметки"],
+      "Pick your favorite markup language": [
+        "Выберите свой любимый язык разметки"
+      ],
+      "Rotation": ["Вращение"],
+      "Rotation to apply to words in the cloud": [
+        "Тип поворота для применения к словам в облаке"
+      ],
+      "Line Style": ["Тип линии"],
+      "Line interpolation as defined by d3.js": [
+        "Методы интерполяции и сглаживания графиков. Линейный - идентичен стандартному графику, где точки соединены линиями. Базис - образует b-сплайн с дублированием контрольных точек на концах отрезков. Кардинал - образует открытый кардинал-сплайн. Монотонный: кубическая интерполяция. Шаг до: пошаговая интерполяция между вертикальными и горизонтальными сегментами. Шаг после: пошаговая интерполяция между горизонтальными и вертикальными сегментами."
+      ],
+      "Label Type": ["Тип подписи"],
+      "What should be shown on the label?": [
+        "Здесь можно выбрать, как будут подписаны сектора круга"
+      ],
+      "Code": ["Редактор"],
+      "Put your code here": [
+        "Введите произвольный текст в формате html или markdown"
+      ],
+      "Aggregation function": ["Функция агрегации"],
+      "Aggregate function to apply when pivoting and computing the total rows and columns": [
+        "Агрегатная функция, применяемая при вычислении итоговых строк и показателей"
+      ],
+      "Font Size From": ["Мин. Размер Шрифта"],
+      "Font size for the smallest value in the list": [
+        "Размер шрифта для наименьшего значения в списке"
+      ],
+      "Font Size To": ["Макс. Размер Шрифта"],
+      "Font size for the biggest value in the list": [
+        "Размер шрифта для наибольшего значения в списке"
+      ],
+      "Instant Filtering": ["Мгновенная Фильтрация"],
+      "Extruded": ["3D-вытягивание"],
+      "Range Filter": ["Диапазон"],
+      "Whether to display the time range interactive selector": [
+        "Отображение интерактивного слайдера для выбора на графике определенного временного диапазона."
+      ],
+      "Date Filter": ["Временной фильтр"],
+      "Whether to include a time filter": [
+        "Включить фильтр на определенный интервал/диапазон времени"
+      ],
+      "Show SQL Granularity Dropdown": ["Показать список SQL-гранулярностей"],
+      "Check to include SQL Granularity dropdown": [
+        "Отметьте, чтобы добавить список SQL-гранулярностей"
+      ],
+      "Show SQL Time Column": ["Показывать временной показатель SQL"],
+      "Check to include Time Column dropdown": [
+        "Отметье, чтобы добавить список временных показателей"
+      ],
+      "Show Druid Granularity Dropdown": [
+        "Показать список Druid-гранулярностей"
+      ],
+      "Check to include Druid Granularity dropdown": [
+        "Отметьте, чтобы добавить список Druid-гранулярностей"
+      ],
+      "Show Druid Time Origin": ["Показывать начало отсчета времени Druid"],
+      "Check to include Time Origin dropdown": [
+        "Отметьте, чтобы добавить список начала отсчета времени"
+      ],
+      "Data Table": ["Таблица данных"],
+      "Whether to display the interactive data table": [
+        "Отображение интерактивной таблицы данных"
+      ],
+      "Search Box": ["Поиск"],
+      "Whether to include a client side search box": [
+        "Включить текстовое поле для фильтрации данных в витрине"
+      ],
+      "Table Filter": ["Глобальный фильтр"],
+      "Whether to apply filter when table cell is clicked": [
+        "Применять глобальный фильтр при выборе метрики в витрине"
+      ],
+      "Show Bubbles": ["Отображать окружность"],
+      "Whether to display bubbles on top of countries": [
+        "Отображать окружность отдельным слоем поверх стран"
+      ],
+      "Legend": ["Легенда"],
+      "Legend of conditional formatting": ["Легенда условного форматирования"],
+      "Show labels": ["Выводить метки"],
+      "Don't show labels": ["Не выводить метки"],
+      "Show labels on the right": ["Выводить метки справа"],
+      "Show labels on the left": ["Выводить метки слева"],
+      "Show only limit labels (left)": ["Выводить предельные метки слева"],
+      "Show only limit labels (right)": ["Выводить предельные метки справа"],
+      "Whether to display labels for conditional formatting": [
+        "Отображение меток условного форматирования"
+      ],
+      "Whether to display the legend (toggles)": ["Отображение легенды"],
+      "Show Values": ["Показать значения"],
+      "Whether to display the numerical values within the cells": [
+        "Отображать ли числовые значения в ячейках"
+      ],
+      "X bounds": ["Границы X"],
+      "Whether to display the min and max values of the X axis": [
+        "Отображать минимальные и максимальные значения оси X"
+      ],
+      "Y bounds": ["Границы Y"],
+      "Whether to display the min and max values of the Y axis": [
+        "Отображать минимальные и максимальные значения оси Y"
+      ],
+      "Rich Tooltip": ["Расширенная подсказка"],
+      "The rich tooltip shows a list of all series for that point in time": [
+        "Во всплывающей подсказке отображается список всех рядов данных на выбранный момент времени"
+      ],
+      "Y Log Scale": ["Log шкала Y"],
+      "Use a log scale for the Y axis": [
+        "Использовать логарифмическую шкалу для оси Y"
+      ],
+      "X Log Scale": ["Log шкала Х"],
+      "Use a log scale for the X axis": [
+        "Использовать логарифмическую шкалу для оси Х"
+      ],
+      "Log Scale": ["Log масштаб"],
+      "Use a log scale": ["Использовать логарифмическую шкалу"],
+      "Donut": ["Кольцевая диаграмма"],
+      "Do you want a donut or a pie?": ["Преобразовать в кольцевую диаграмму"],
+      "Put labels outside": ["Метки снаружи"],
+      "Put the labels outside the pie?": ["Показать подписи снаружи графика"],
+      "Contribution": ["Доля"],
+      "Compute the contribution to the total": [
+        "Вычислить вклад в общую сумму (долю). Установите формат метрики в проценты."
+      ],
+      "Period Ratio": ["Период для сравнения"],
+      "[integer] Number of period to compare against, this is relative to the granularity selected": [
+        "Сдвиг временного периода, с которым производится сравнение метрики. Единица периода, устанавливается в разделе [Время]."
+      ],
+      "Period Ratio Type": ["Тип сравнения"],
+      "`factor` means (new/previous), `growth` is ((new/previous) - 1), `value` is (new-previous)": [
+        "«factor» означает (текущий / предыдущий)%, «growth» - (текущий / предыдущий - 1)% , «value» - (текущий-предыдущий)"
+      ],
+      "Time Shift": ["Временной сдвиг"],
+      "Overlay a timeseries from a relative time period. Expects relative time delta in natural language (example:  24 hours, 7 days, 56 weeks, 365 days)": [
+        ""
+      ],
+      "Subheader": ["Постфикс"],
+      "Description text that shows up below your Big Number": [
+        "Tекст, который отображается ниже вашего числа"
+      ],
+      "label": ["Подпись"],
+      "`count` is COUNT(*) if a group by is used. Numerical columns will be aggregated with the aggregator. Non-numerical columns will be used to label points. Leave empty to get a count of points in each cluster.": [
+        "«count» это тоже самое, что и COUNT(*) если используются группы. Числовые показатели будут агрегированы. Не числовые показатели будут использоваться для подписи точек. Оставьте пустым, чтобы получить количество элементов в каждом кластере."
+      ],
+      "Map Style": ["Стиль карты"],
+      "Base layer map style": ["Выбрать стиль карты"],
+      "Clustering Radius": ["Радиус кластеризации"],
+      "The radius (in pixels) the algorithm uses to define a cluster. Choose 0 to turn off clustering, but beware that a large number of points (>1000) will cause lag.": [
+        "Радиус (в пикселях), используемый алгоритмом для группировки отдельных точек в кластера. Выберите 0, чтобы отключить кластеризацию, но помните, что большое количество точек (>1000) вызовет существенную задержку при рендеринге карты."
+      ],
+      "Point Size": ["Размер точки"],
+      "Fixed point radius": ["Радиус точки"],
+      "Point Radius": ["Радиус точки"],
+      "The radius of individual points (ones that are not in a cluster). Either a numerical column or `Auto`, which scales the point based on the largest cluster": [
+        "Радиус отдельных точек (тех, которые не находятся в кластере). Числовой показатель или режим «авто», который масштабирует точку на основе наибольшего кластера."
+      ],
+      "Point Radius Unit": ["Единица измерения"],
+      "The unit of measure for the specified point radius": [
+        "Единица измерения для указанной точки"
+      ],
+      "Point Unit": ["Единица измерения"],
+      "Opacity": ["Прозрачность"],
+      "Opacity of all clusters, points, and labels. Between 0 and 1.": [
+        "Установить прозрачность для кластеров и точек. Значения прозрачности лежат в диапазоне [0,1]."
+      ],
+      "Viewport": ["Область просмотра"],
+      "Parameters related to the view and perspective on the map": [
+        "Параметры, относящиеся к отображению и перспективе на карте"
+      ],
+      "Zoom": ["Масштаб"],
+      "Zoom level of the map": ["Уровень масштабирования карты"],
+      "Default latitude": ["Широта по умолчанию"],
+      "Latitude of default viewport": [
+        "Широта, которая используется при первом отображении карты"
+      ],
+      "Default longitude": ["Долгота по умолчанию"],
+      "Longitude of default viewport": [
+        "Долгота, которая используется при первом отображении карты"
+      ],
+      "Live render": ["Рендер в реальном времени"],
+      "Points and clusters will update as viewport is being changed": [
+        "Точки и кластеры будут обновляться по мере изменения окна просмотра"
+      ],
+      "RGB Color": ["Цвет"],
+      "The color for points and clusters in RGB": [
+        "Цвет точек и кластеров в RGB"
+      ],
+      "Color": ["Цвет"],
+      "Pick a color": ["Выберите цвет"],
+      "Ranges": ["Диапазон"],
+      "Ranges to highlight with shading": [
+        "Диапазон для выделения с затенением"
+      ],
+      "Range labels": ["Подписи диапазона"],
+      "Labels for the ranges": ["Добавить подписи диапазона"],
+      "Markers": ["Маркеры"],
+      "List of values to mark with triangles": [
+        "Список значений для маркировки треугольниками"
+      ],
+      "Marker labels": ["Подписи маркеров"],
+      "Labels for the markers": ["Добавить подписи к маркерам"],
+      "Marker lines": ["Линии маркеров"],
+      "List of values to mark with lines": [
+        "Список значений для маркировки линиями"
+      ],
+      "Marker line labels": ["Подписи линий маркеров"],
+      "Labels for the marker lines": ["Метки для линий маркеров"],
+      "Slice ID": ["Идентификатор отчета"],
+      "The id of the active slice": ["Идентификатор активного отчета"],
+      "Cache Timeout (seconds)": ["Тайм-аут кэша (секунды)"],
+      "The number of seconds before expiring the cache": [
+        "Количество секунд до истечения срока действия кэша"
+      ],
+      "Order by entity id": ["Упорядочить по идентификатору элемента"],
+      "Important! Select this if the table is not already sorted by entity id, else there is no guarantee that all events for each entity are returned.": [
+        "Важно! Выберите этот параметр, если витрина еще не отсортирована по идентификатору, иначе нет гарантии, что будут возвращены все события для каждого элемента."
+      ],
+      "Minimum leaf node event count": ["Минимальное количество событий"],
+      "Leaf nodes that represent fewer than this number of events will be initially hidden in the visualization": [
+        "Конечные узлы, представляющие меньшее количество событий, будут изначально скрыты"
+      ],
+      "bnbColors": ["bnb схема"],
+      "d3Category10": ["d3 10 схема"],
+      "d3Category20": ["d3 20 схема"],
+      "d3Category20b": ["d3 20b схема"],
+      "d3Category20c": ["d3 20c схема"],
+      "googleCategory10c": ["Google 10c схема"],
+      "googleCategory20c": ["Google 20c схема"],
+      "lyftColors": ["Lyft схема"],
+      "Color Scheme": ["Цветовая схема"],
+      "The color scheme for rendering chart": [
+        "Цветовая схема, применяемая для раскрашивания отчета"
+      ],
+      "Significance Level": ["Уровень значимости"],
+      "Threshold alpha level for determining significance": [
+        "Пороговый уровень для определения значимости"
+      ],
+      "p-value precision": ["Точность p-значения"],
+      "Number of decimal places with which to display p-values": [
+        "Количество знаков после запятой, для отображаения p-значения"
+      ],
+      "Lift percent precision": ["Точность процента поднятия (Lift)"],
+      "Number of decimal places with which to display lift values": [
+        "Число десятичных значений для отображения lift-значений"
+      ],
+      "Time Series Columns": ["Показатели временных рядов"],
+      "Use Area Proportions": ["Площадь сегмента"],
+      "Check if the Rose Chart should use segment area instead of segment radius for proportioning": [
+        "Отчет использует площадь сегмента вместо радиуса"
+      ],
+      "Options": ["Опции"],
+      "Not Time Series": ["Не временный ряд"],
+      "Ignore time": ["Игнорировать время"],
+      "Time Series": ["Временные ряды"],
+      "Standard time series": ["Стандартные временные ряды"],
+      "Aggregate Mean": ["Среднее"],
+      "Mean of values over specified period": [
+        "Среднее значений за указанный период"
+      ],
+      "Aggregate Sum": ["Сумма"],
+      "Sum of values over specified period": [
+        "Сумма значений за указанный период"
+      ],
+      "Difference": ["Разница"],
+      "Metric change in value from `since` to `until`": ["Разница значения"],
+      "Percent Change": ["Процентное изменение"],
+      "Metric percent change in value from `since` to `until`": [
+        "Процент изменения значения метрики"
+      ],
+      "Factor": ["Фактор"],
+      "Metric factor change from `since` to `until`": ["Изменения фактора"],
+      "Advanced Analytics": ["Расширенный анализ"],
+      "Use the Advanced Analytics options below": [
+        "Используйте дополнительные параметры расчета"
+      ],
+      "Settings for time series": ["Настройки временных рядов"],
+      "Equal Date Sizes": ["Равные диапазоны дат"],
+      "Check to force date partitions to have the same height": [""],
+      "Partition Limit": ["Ограничение разделов"],
+      "The maximum number of subdivisions of each group; lower values are pruned first": [
+        "Максимальное число разбиений для каждой группы. Сначала убираются более низкие значения"
+      ],
+      "Partition Threshold": ["Порог размера"],
+      "Partitions whose height to parent height proportions are below this value are pruned": [
+        "Части, размеры которых ниже этого значения, обрезаются"
+      ],
+      "Lines column": ["Столбец линий"],
+      "The database columns that contains lines information": [
+        "Показатели БД, содержащие информацию о строках"
+      ],
+      "Lines encoding": ["Кодирование строк"],
+      "The encoding format of the lines": ["Формат кодирования строк"],
+      "Line width": ["Толщина линии"],
+      "The width of the lines": ["Задать толщину линии"],
+      "Reverse Lat & Long": ["Поменять Широту и Долготу"],
+      "deck.gl charts": ["Диаграммы"],
+      "Pick a set of deck.gl charts to layer on top of one another": [
+        "Выберите набор диаграмм deck.gl, чтобы наложить их друг на друга"
+      ],
+      "Select charts": ["Выбрать отчеты"],
+      "Error while fetching charts": ["Ошибка при загрузке отчетов"],
+      "Javascript data interceptor": ["Перехватчик данных Javascript"],
+      "Define a javascript function that receives the data array used in the visualization and is expected to return a modified version of that array. This can be used to alter properties of the data, filter, or enrich the array.": [
+        "Определите функцию javascript, которая получает массив данных, используемый в визуализации, и, как ожидается, возвратит измененную версию этого массива. Это может пригодиться для изменения свойств данных, фильтра или обогащения массива."
+      ],
+      "Javascript data mutator": ["Мутатор данных Javascript"],
+      "Define a function that receives intercepts the data objects and can mutate it": [
+        "Определите функцию, которая перехватывает объекты данных для последующей мутации"
+      ],
+      "Javascript tooltip generator": ["Генератор подсказок Javascript"],
+      "Define a function that receives the input and outputs the content for a tooltip": [
+        "Определение функции, которая получает входные данные и выводит содержимое подсказки"
+      ],
+      "Javascript onClick href": ["JavaScript onclick атрибут"],
+      "Define a function that returns a URL to navigate to when user clicks": [
+        "Определение функции, возвращающей URL для перехода при нажатии"
+      ],
+      "Extra data for JS": ["Доп. данные для JS"],
+      "List of extra columns made available in Javascript functions": [
+        "Список дополнительных показателей, доступных в функциях Javascript"
+      ],
+      "Stroked": ["Штриховать"],
+      "Whether to display the stroke": ["Отображать штриховать"],
+      "Filled": ["Закраска"],
+      "Whether to fill the objects": ["Закрашивать объекты"],
+      "Time": ["Время"],
+      "Time related form attributes": [
+        "В этом разделе можно установить параметры отчета, связанные с временем"
+      ],
+      "Datasource & Chart Type": ["Источник данных и тип отчета"],
+      "This section exposes ways to include snippets of SQL in your query": [
+        "В этом разделе представлены способы включения фрагментов кода SQL в ваш запрос."
+      ],
+      "Annotations and Layers": ["Аннотация"],
+      "This section contains options that allow for advanced analytical post processing of query results": [
+        "В этом разделе содержатся параметры, которые позволяют производить аналитическую пост-обработку результатов запроса"
+      ],
+      "Result Filters": ["Фильтр результатов"],
+      "The filters to apply after post-aggregation.Leave the value control empty to filter empty strings or nulls": [
+        "Фильтры, применяемые после агрегации."
+      ],
+      "Chart Options": ["Параметры отчета"],
+      "Breakdowns": ["Показатель (сегментировать)"],
+      "Defines how each series is broken down": [
+        "Определяет на какие сегменты будет разбит каждый столбец данных"
+      ],
+      "Pie Chart": ["Круговая диаграмма"],
+      "Time Series - Periodicity Pivot": [
+        "Временные ряды - сводная по периодичности"
+      ],
+      "Dual Axis Line Chart": ["Линейный график с двумя осями"],
+      "Y Axis 1": ["Первая ось Y"],
+      "Y Axis 2": ["Вторая ось Y"],
+      "Left Axis Metric": ["Метрика для левой оси"],
+      "Choose a metric for left axis": ["Выбрать метрику для левой оси"],
+      "Left Axis Format": ["Формат левой оси"],
+      "Axes": ["Оси"],
+      "Map": ["Карта"],
+      "Deck.gl - Hexagons": ["Гексагоны"],
+      "Advanced": ["Дополнительно"],
+      "Metric used to control height": [
+        "Метрика используемый для контроля высоты"
+      ],
+      "Deck.gl - Grid": ["Сетка"],
+      "Deck.gl - Screen grid": ["Экранная сетка"],
+      "Grid": ["Сетка"],
+      "Weight": ["Вес"],
+      "Metric used as a weight for the grid's coloring": [
+        "Метрика, используемый в качестве веса для раскраски сетки"
+      ],
+      "Deck.gl - geoJson": ["GeoJSON"],
+      "GeoJson Settings": ["Настройки GeoJSON "],
+      "Polygon Settings": ["Параметры Полигона"],
+      "Arc": ["Дуга"],
+      "Point Color": ["Цвет Точки"],
+      "Categorical Color": ["Цвет категории"],
+      "Pick a dimension from which categorical colors are defined": [
+        "Выберите измерение, которое определяет цвета категорий"
+      ],
+      "GROUP BY": ["Агрегация"],
+      "Use this section if you want a query that aggregates": [
+        "Используйте этот раздел, если необходимо предварительно агрегировать данные"
+      ],
+      "NOT GROUPED BY": ["Без агрегации"],
+      "Limits and Orders": ["Лимиты и сортировка"],
+      "Use this section if you want to query atomic rows": [
+        "Используйте этот раздел, если необходимо использовать исходные данные как есть, без предварительной агрегации"
+      ],
+      "Time Series Table": ["Таблица временных рядов"],
+      "Templated link, it's possible to include {{ metric }} or other values coming from the controls.": [
+        "Шаблонная ссылка, можно включить {{ metric }} или другие значения, поступающие из элементов управления."
+      ],
+      "Pivot Options": ["Опции"],
+      "Bubbles": ["Пузырьки"],
+      "Numeric Column": ["Числовой показатель"],
+      "Select the numeric column to draw the histogram": [
+        "Выберите числовой показатель, чтобы построить гистограмму"
+      ],
+      "No of Bins": ["Количество ячеек"],
+      "Select number of bins for the histogram": ["Выберите количество ячеек"],
+      "Primary Metric": ["Первая метрика"],
+      "The primary metric is used to define the arc segment sizes": [
+        "Первая метрика используется для определения размеров сегмента дуги"
+      ],
+      "Secondary Metric": ["Вторая метрика"],
+      "[optional] this secondary metric is used to define the color as a ratio against the primary metric. When omitted, the color is categorical and based on labels": [
+        "Необязательный параметр. Используется для формирования цвета на основе отношения к первой метрике. "
+      ],
+      "Hierarchy": ["Иерархическая структура"],
+      "This defines the level of the hierarchy": [
+        "Каждый срез определяет уровень иерархии"
+      ],
+      "Source / Target": ["Показатели (Источник / Назначение)"],
+      "Choose a source and a target": [
+        "Выберите срез данных для источника и назначения"
+      ],
+      "Chord Diagram": ["Хордовая диаграмма"],
+      "Choose a number format": ["Выберите формат чисел"],
+      "Source": ["Источник"],
+      "Choose a source": ["Выберите срез источника"],
+      "Target": ["Назначение"],
+      "Choose a target": ["Выберите срез назначения"],
+      "ISO 3166-2 codes of region/province/department": [
+        "Геокод по стандарту ISO 3166-2"
+      ],
+      "It's ISO 3166-2 of your region/province/department in your table. (see documentation for list of ISO 3166-2)": [
+        "Стандарт ISO 3166-2 — часть стандарта ISO 3166, определяющего геокоды для основных единиц первого и второго уровня деления территории всех стран."
+      ],
+      "Country Control": ["Геокод страны"],
+      "3 letter code of the country": ["Трехбуквенный код страны"],
+      "Metric for color": ["Метрика / Цвет"],
+      "Metric that defines the color of the country": [
+        "Метрика, определяющая цвет страны"
+      ],
+      "Bubble size": ["Размер маркера"],
+      "Metric that defines the size of the bubble": [
+        "Метрика, определяющий размер маркера (окружность)"
+      ],
+      "Filter Box": ["Фильтр"],
+      "Filter controls": ["Фильтруемые показатели"],
+      "The controls you want to filter on. Note that only columns checked as \"filterable\" will show up on this list.": [
+        "Показатели, на которые вы хотите включить фильтр. Обратите внимание, что в этом списке будут отображаться только показатели, отмеченные в свойствах витрины как «фильтруемые»."
+      ],
+      "Heatmap Options": ["Параметры тепловой карты"],
+      "Value bounds": ["Границы значения"],
+      "Value Format": ["Формат значения"],
+      "Horizon": ["Временные ряды - тепловая карта"],
+      "Points": ["Точки"],
+      "Labelling": ["Маркировка"],
+      "Visual Tweaks": ["Визуальные твики"],
+      "Column containing longitude data": [
+        "Показатель, содержащий данные долготы"
+      ],
+      "Column containing latitude data": [
+        "Показатель, содержащий данные широты"
+      ],
+      "Cluster label aggregator": ["Агрегатор меток кластера"],
+      "Aggregate function applied to the list of points in each cluster to produce the cluster label.": [
+        "Агрегатная функция применяется к списку точек в каждом кластере для создания метки кластера."
+      ],
+      "Tooltip": ["Подсказка"],
+      "Show a tooltip when hovering over points and clusters describing the label": [
+        "Показывать всплывающую подсказку при наведении курсора на точки и кластеры"
+      ],
+      "One or many controls to group by. If grouping, latitude and longitude columns must be present.": [
+        "Один или несколько элементов в группе. Должны присутствовать показатели широты и долготы."
+      ],
+      "Event definition": ["Определение события"],
+      "Additional meta data": ["Дополнительные метаданные"],
+      "Column containing entity ids": ["Показатель, содержащий идентификатор"],
+      "e.g., a \"user id\" column": ["Например, показатель «user id»"],
+      "Column containing event names": ["Показатель, содержащий имена событий"],
+      "Event count limit": ["Ограничение количества событий"],
+      "The maximum number of events to return, equivalent to number of rows": [
+        "Максимальное число возвращаемых событий, эквивалентное числу строк"
+      ],
+      "Meta data": ["Показатели метаданных"],
+      "Select any columns for meta data inspection": [
+        "Выберите любые показатели для проверки метаданных"
+      ],
+      "Paired t-test": ["t-test для парных выборок"],
+      "Time Series Options": ["Настройки временных рядов"],
+      "Favorites": ["Избранное"],
+      "Created Content": ["Изменено"],
+      "Recent Activity": ["Последние действия"],
+      "Security & Access": ["Безопасность и Доступ"],
+      "No slices": ["Нет отчетов"],
+      "No dashboards": ["Нет информационных панелей"],
+      "Dashboards": ["Информационные панели"],
+      "Slices": ["Отчеты"],
+      "No favorite charts yet, go click on stars!": [
+        "Нет избранных отчетов. Нажмите звёздочку напротив названия необходимого отчета, чтобы он появился в списке избранных отчетов."
+      ],
+      "No favorite dashboards yet, go click on stars!": [
+        "Нет избранных информационных панелей. Нажмите звёздочку напротив названия необходимой информационной панели, чтобы она появилась в этом списке."
+      ],
+      "Charts": ["Отчеты"],
+      "Roles": ["Роли"],
+      "Databases": ["Базы данных"],
+      "Datasources": ["Источники данных"],
+      "Profile picture provided by Gravatar": [
+        "Изображение профиля, сгенерированное сервисом Gravatar"
+      ],
+      "joined": ["присоединился"],
+      "id:": ["идентификатор:"],
+      "Sorry, there appears to be no data": ["Извините, похоже, нет данных"],
+      "Data has no time steps": ["Данные не имеют временной шкалы"],
+      "Select starting date": ["Выберите дату начала"],
+      "Select end date": ["Выберите дату окончания"],
+      "Select [%s]": ["Выбрать [%s]"],
+      "Enter [%s]": ["Введите [%s]"],
+      "Apply": ["Применить"],
+      "No data was returned.": ["Данных не было."],
+      "List Druid Column": ["Список показателей Druid"],
+      "Show Druid Column": ["Показать показатель Druid"],
+      "Add Druid Column": ["Добавить показатель Druid"],
+      "Edit Druid Column": ["Редактировать показатель Druid"],
+      "Column": ["Показатель"],
+      "Type": ["Тип"],
+      "Groupable": ["Группируемый"],
+      "Filterable": ["Фильтрующийся"],
+      "Count Distinct": ["Count Distinct"],
+      "Sum": ["Sum"],
+      "Whether this column is exposed in the `Filters` section of the explore view.": [
+        "Необходимо отметить, если показатель должен быть доступен в разделе «Фильтры»."
+      ],
+      "List Druid Metric": ["Список Druid Метрик"],
+      "Show Druid Metric": ["Показать Druid Метрики"],
+      "Add Druid Metric": ["Добавить Druid Метрику"],
+      "Edit Druid Metric": ["Редактировать Druid Метрику"],
+      "Whether the access to this metric is restricted to certain roles. Only roles with the permission 'metric access on XXX (the name of this metric)' are allowed to access this metric": [
+        "Ограничен ли доступ к этой метрике определенными ролями. Только роли с разрешением «metric access on [название этой метрики]» могут получить доступ к этой метрике."
+      ],
+      "Verbose Name": ["Полное имя"],
+      "JSON": ["JSON"],
+      "Druid Datasource": ["Druid - Источники Данных"],
+      "Warning Message": ["Предупреждающее сообщение"],
+      "List Druid Cluster": ["Список Кластеров Druid"],
+      "Show Druid Cluster": ["Показать Кластер Druid"],
+      "Add Druid Cluster": ["Добавить Кластер Druid"],
+      "Edit Druid Cluster": ["Редактировать Кластер Druid"],
+      "Cluster": ["Кластер"],
+      "Coordinator Host": ["Координатор Хост"],
+      "Coordinator Port": ["Координатор Порт"],
+      "Coordinator Endpoint": ["Координатор Конечная Точка"],
+      "Broker Host": ["Брокер-Хост"],
+      "Broker Port": ["Брокер-Порт"],
+      "Broker Endpoint": ["Брокер-Конечная Точка"],
+      "Druid Clusters": ["Список Кластеров Druid"],
+      "Sources": ["Источники"],
+      "List Druid Datasource": ["Список Источников Данных Druid"],
+      "Show Druid Datasource": ["Показать Источники Данных Druid"],
+      "Add Druid Datasource": ["Добавить Источник Данных Druid"],
+      "Edit Druid Datasource": ["Редактировать Источник Данных Druid"],
+      "The list of slices associated with this table. By altering this datasource, you may change how these associated slices behave. Also note that slices need to point to a datasource, so this form will fail at saving if removing slices from a datasource. If you want to change the datasource for a slice, overwrite the slice from the 'explore view'": [
+        "Список отчетов, связанных с этой витриной. Изменяя этот источник данных, можно изменить поведение связанных с ним отчетов. Также обратите внимание, что отчеты должны указывать на источник данных, поэтому эта форма не будет сохранена при удалении отчетов из источника данных. Если вы хотите изменить источник данных для отчета, сделайте это в свойствах самого отчета."
+      ],
+      "Timezone offset (in hours) for this datasource": [
+        "Смещение часового пояса (в часах) для этого источника данных"
+      ],
+      "Time expression to use as a predicate when retrieving distinct values to populate the filter component. Only applies when `Enable Filter Select` is on. If you enter `7 days ago`, the distinct list of values in the filter will be populated based on the distinct value over the past week": [
+        "Выражение времени для использования в качестве предиката при получении различных значений для заполнения компонента фильтра. Применяется только в том случае, если включен параметр «включить выбор фильтра». Если Вы введете «7 дней назад», то список различных значений в фильтре будет заполнен на основе определенного значения за последнюю неделю"
+      ],
+      "Whether to populate the filter's dropdown in the explore view's filter section with a list of distinct values fetched from the backend on the fly": [
+        "Получение списка фильтруемых значений, выполняя онлайн-запрос к серверу"
+      ],
+      "Redirects to this endpoint when clicking on the datasource from the datasource list": [
+        "Перенаправление на эту конечную точку при нажатии на источник данных из списка источников данных"
+      ],
+      "Associated Charts": ["Связанные диаграммы"],
+      "Data Source": ["Источник данных"],
+      "Owner": ["Владелец"],
+      "Is Hidden": ["Скрыто"],
+      "Enable Filter Select": ["Включить Онлайн Фильтр"],
+      "Default Endpoint": ["Конечная точка по умолчанию"],
+      "Time Offset": ["Смещение Времени"],
+      "Cache Timeout": ["Тайм-аут кэша"],
+      "Druid Datasources": ["Источники Данных Druid"],
+      "Scan New Datasources": ["Сканирование Новых Источников"],
+      "Refresh Druid Metadata": ["Обновить Метаданные Druid"],
+      "Datetime column not provided as part table configuration and is required by this type of chart": [
+        "Для данной диаграммы необходим временной ряд. Укажите показатель с датой в соответствующем поле раздела [Время]"
+      ],
+      "Empty query?": ["Пустой запрос?"],
+      "Metric '{}' is not valid": ["Метрика ‘{}’ не является допустимым"],
+      "Table [{}] doesn't seem to exist in the specified database, couldn't fetch column information": [
+        "Витрина [{}], похоже, не существует в указанной базе данных. Не удается получить сведения о показателе."
+      ],
+      "List Columns": ["Список показателей"],
+      "Show Column": ["Показать показатель"],
+      "Add Column": ["Добавить показатель"],
+      "Edit Column": ["Редактировать показатель"],
+      "Whether to make this column available as a [Time Granularity] option, column has to be DATETIME or DATETIME-like": [
+        "Сделать этот показатель доступным в разделе [Время]. Показатель должен быть в формате DATETIME"
+      ],
+      "The data type that was inferred by the database. It may be necessary to input a type manually for expression-defined columns in some cases. In most case users should not need to alter this.": [
+        "Задать тип данных. В некоторых случаях может потребоваться ввести тип вручную для показателей, которые формируются специальными запросами. В большинстве случаев изменять содержимое этого поля не обязательно."
+      ],
+      "Expression": ["Выражение SQL"],
+      "Is temporal": ["Содержит дату /время"],
+      "Datetime Format": ["Формат Datetime"],
+      "Database Expression": ["Database Expression"],
+      "List Metrics": ["Список метрик"],
+      "Show Metric": ["Показать метрику"],
+      "Add Metric": ["Добавить метрику"],
+      "Edit Metric": ["Редактировать метрику"],
+      "SQL Expression": ["Выражение SQL"],
+      "D3 Format": ["Формат D3"],
+      "Is Restricted": ["Ограничено"],
+      "List Tables": ["Список витрин"],
+      "Show Table": ["Показать витрину"],
+      "Add Table": ["Добавить витрину"],
+      "Edit Table": ["Редактировать витрину"],
+      "Name of the table that exists in the source database": [
+        "Имя витрины, которая существует в исходной базе данных"
+      ],
+      "Schema, as used only in some databases like Postgres, Redshift and DB2": [
+        "Схема, используется только в некоторых базах данных, таких как Postgres, Redshift и DB2"
+      ],
+      "This fields acts a Superset view, meaning that Superset will run a query against this string as a subquery.": [
+        "Это поле будет выполнять запрос в качестве подзапроса."
+      ],
+      "Predicate applied when fetching distinct value to populate the filter control component. Supports jinja template syntax. Applies only when `Enable Filter Select` is on.": [
+        "Предикат применяется при получении значений для компонента - «Фильтр». Поддерживает синтаксис jinja. Применяется только в том случае, если включен параметр «Включить Онлайн Фильтр»."
+      ],
+      "Redirects to this endpoint when clicking on the table from the table list": [
+        "Перенаправление на эту конечную точку при нажатии на витрину в общем списке"
+      ],
+      "Changed By": ["Изменено"],
+      "Database": ["БД"],
+      "Last Changed": ["Последнее изменение"],
+      "Offset": ["Смещение"],
+      "Fetch Values Predicate": ["Извлечь Значения Предиката"],
+      "Main Datetime Column": ["Основной показатель с датой"],
+      "Table [{}] could not be found, please double check your database connection, schema, and table name": [
+        "Не удалось найти витрину [{}]. Проверьте подключение к базе данных, схему и имя витрины."
+      ],
+      "The table was created. As part of this two phase configuration process, you should now click the edit button by the new table to configure it.": [
+        "Витрина была создана. Нажмите на кнопку редактирования напротив новой витрины, чтобы настроить её."
+      ],
+      "Refresh Metadata": ["Обновить метаданные"],
+      "Refresh column metadata": ["Обновить метаданные показателей"],
+      "Metadata refreshed for the following table(s): %(tables)s": [
+        "Метаданные обновлены для следующих витрин: %(tables)s"
+      ],
+      "Tables": ["Витрины"],
+      "Profile": ["Профиль"],
+      "Logout": ["Выход из системы"],
+      "Login": ["Вход в систему"],
+      "Record Count": ["Количество записей"],
+      "No records found": ["Записи не найдены"],
+      "Import": ["Импорт"],
+      "No Access!": ["Нет доступа!"],
+      "You do not have permissions to access the datasource(s): %(name)s.": [
+        "У вас нет разрешений на доступ к источнику данных: %(name)s."
+      ],
+      "Request Permissions": ["Запросить права доступа"],
+      "Test Connection": ["Тестовое соединение"],
+      "Annotation Layers": ["Слои аннотаций"],
+      "Manage": ["Управление"],
+      "Annotations": ["Аннотации"],
+      "Datasource %(name)s already exists": [
+        "Источник данных %(name)s уже существует"
+      ],
+      "json isn't valid": ["json не валиден"],
+      "Export to YAML": ["Экспорт в YAML"],
+      "Export to YAML?": ["Экспорт в YAML?"],
+      "Delete": ["Удалить"],
+      "Delete all Really?": ["Удалить все?"],
+      "This endpoint requires the `all_datasource_access` permission": [
+        "Эта конечная точка требует разрешения «all_datasource_access»"
+      ],
+      "The datasource seems to have been deleted": [
+        "Источник данных, похоже, был удален"
+      ],
+      "The access requests seem to have been deleted": [
+        "Запросы доступа, похоже, были удалены"
+      ],
+      "The user seems to have been deleted": [
+        "Пользователь, кажется, был удален"
+      ],
+      "You don't have access to this datasource. <a href='{}'>(Gain access)</a>": [
+        "У вас нет доступа к этому источнику данных. <a href=‘{}’>(Gain access)</a>"
+      ],
+      "You don't have access to this datasource": [
+        "У вас нет доступа к этому источнику данных"
+      ],
+      "This view requires the database %(name)s or `all_datasource_access` permission": [
+        "Для просмотра базы данных %(name)s необходимо иметь соответствующий доступ или разрешение «all_datasource_access»"
+      ],
+      "This endpoint requires the datasource %(name)s, database or `all_datasource_access` permission": [
+        "Для этой конечной точки %(name)s необходимо иметь соответствующий доступ или разрешение «all_datasource_access»"
+      ],
+      "List Databases": ["Список БД"],
+      "Show Database": ["Показать Базу Данных"],
+      "Add Database": ["Добавить Базу Данных"],
+      "Edit Database": ["Редактировать Базу Данных"],
+      "Expose this DB in SQL Lab": ["Показать базу данных в SQL Редакторе"],
+      "Allow users to run synchronous queries, this is the default and should work well for queries that can be executed within a web request scope (<~1 minute)": [
+        "Разрешить пользователям выполнять синхронные запросы. Это значение установлено по умолчанию и должно хорошо работать для запросов, которые могут быть выполнены в пределах одной минуты."
+      ],
+      "Allow users to run queries, against an async backend. This assumes that you have a Celery worker setup as well as a results backend.": [
+        "Разрешить пользователям выполнять асинхронные запросы к серверной части. Это предполагает, что у вас настроена очередь запросов Celery Worker."
+      ],
+      "Allow CREATE TABLE AS option in SQL Lab": [
+        "Разрешить выполнять инструкцию CREATE TABLE AS в редакторе SQL"
+      ],
+      "Allow users to run non-SELECT statements (UPDATE, DELETE, CREATE, ...) in SQL Lab": [
+        "Позволяет пользователям запускать инструкции (UPDATE, DELETE, CREATE, …) без SELECT в редакторе SQL"
+      ],
+      "When allowing CREATE TABLE AS option in SQL Lab, this option forces the table to be created in this schema": [
+        "При разрешении опции CREATE TABLE AS в редакторе SQL эта опция создаст витрину в выбранной схеме"
+      ],
+      "If Presto, all the queries in SQL Lab are going to be executed as the currently logged on user who must have permission to run them.<br/>If Hive and hive.server2.enable.doAs is enabled, will run the queries as service account, but impersonate the currently logged on user via hive.server2.proxy.user property.": [
+        "Если вы используете Presto, все запросы в SQL-Редакторе будут выполняться от авторизованного пользователя, который должен иметь разрешение на их выполнение. <br/> Если включен Hive, то запросы будут выполняться через техническую учетную запись, но ассоциировать зарегистрированного пользователя можно через свойство hive.server2.proxy.user."
+      ],
+      "Expose in SQL Lab": ["Открыть в SQL редакторе"],
+      "Allow CREATE TABLE AS": ["Разрешить CREATE TABLE AS"],
+      "Allow DML": ["Allow DML"],
+      "CTAS Schema": ["Схема по умолчанию"],
+      "Creator": ["Автор"],
+      "SQLAlchemy URI": ["SQLAlchemy URI"],
+      "Extra": ["Дополнительные параметры"],
+      "Allow Run Sync": ["Allow Run Sync"],
+      "Allow Run Async": ["Allow Run Async"],
+      "Impersonate the logged on user": ["Ассоциировать пользователя"],
+      "Import Dashboards": ["Импорт информационных панелей"],
+      "CSV to Database configuration": ["Настройка CSV для БД"],
+      "CSV file \"{0}\" uploaded to table \"{1}\" in database \"{2}\"": [
+        "CSV-файл \"{0}\" загружен в витрину \"{1}\" базы данных \"{2}\""
+      ],
+      "User": ["Пользователь"],
+      "User Roles": ["Роли пользователей"],
+      "Database URL": ["URL базы данных"],
+      "Roles to grant": ["Роли для предоставления"],
+      "Created On": ["Дата создания"],
+      "Access requests": ["Запросы доступа"],
+      "Security": ["Безопасность"],
+      "List Charts": ["Список отчетов"],
+      "Show Chart": ["Показать диаграмму"],
+      "Add Chart": ["Добавить диаграмму"],
+      "Edit Chart": ["Редактировать диаграмму"],
+      "These parameters are generated dynamically when clicking the save or overwrite button in the explore view. This JSON object is exposed here for reference and for power users who may want to alter specific parameters.": [
+        "Эти параметры генерируются автоматически при нажатии кнопки сохранения. Опытные пользователи могут изменить определенные объекты в формате JSON."
+      ],
+      "Duration (in seconds) of the caching timeout for this slice.": [
+        "Продолжительность (в секундах) таймаута кэширования для этого отчета."
+      ],
+      "Last Modified": ["Изменено"],
+      "Owners": ["Владельцы"],
+      "Parameters": ["Параметры"],
+      "Chart": ["Отчет"],
+      "List Dashboards": ["Список информационных панелей"],
+      "Show Dashboard": ["Показать информационную панель"],
+      "Add Dashboard": ["Добавить информационную панель"],
+      "Edit Dashboard": ["Редактировать информационную панель"],
+      "This json object describes the positioning of the widgets in the dashboard. It is dynamically generated when adjusting the widgets size and positions by using drag & drop in the dashboard view": [
+        "Этот объект JSON описывает расположение виджетa на информационной панели. Он автоматически генерируется при настройке размера и позиций виджета на листе отчёта."
+      ],
+      "The css for individual dashboards can be altered here, or in the dashboard view where changes are immediately visible": [
+        "В этом поле можно задать индивидуальный стиль для информационной панели с помощью CSS"
+      ],
+      "To get a readable URL for your dashboard": [
+        "Получить читаемый URL-адрес для информационной панели"
+      ],
+      "This JSON object is generated dynamically when clicking the save or overwrite button in the dashboard view. It is exposed here for reference and for power users who may want to alter specific parameters.": [
+        "Параметры информационной панели в формате JSON."
+      ],
+      "Owners is a list of users who can alter the dashboard.": [
+        "Владельцы - это список пользователей, которые могут изменять отчёт."
+      ],
+      "Dashboard": ["Информационная панель"],
+      "Slug": ["Читаемый URL"],
+      "Position JSON": ["Позиция JSON"],
+      "JSON Metadata": ["Параметры JSON"],
+      "Underlying Tables": ["Базовые витрины"],
+      "Export": ["Экспорт"],
+      "Export dashboards?": ["Экспортировать информационную панель?"],
+      "Action": ["Действия"],
+      "dttm": ["Время"],
+      "Action Log": ["Журнал Действий"],
+      "Access was requested": ["Запрошен доступ"],
+      "%(user)s was granted the role %(role)s that gives access to the %(datasource)s": [
+        "%(user)s была предоставлена роль %(role)s, которая дает доступ к ресурсам %(datasource)s"
+      ],
+      "Role %(r)s was extended to provide the access to the datasource %(ds)s": [
+        "Роль %(r) s была расширена для обеспечения доступа к источнику данных %(ds)s"
+      ],
+      "You have no permission to approve this request": [
+        "У вас нет разрешения на утверждение этого запроса"
+      ],
+      "You don't have the rights to ": ["У вас нет прав на "],
+      "alter this ": ["изменить этот "],
+      "chart": ["отчет"],
+      "create a ": ["создать "],
+      "dashboard": ["информационная панель"],
+      "Malformed request. slice_id or table_name and db_name arguments are expected": [
+        "Неправильный запрос. Ожидаются аргументы slice_id или table_name и db_name"
+      ],
+      "Slice %(id)s not found": ["Отчёт %(id)s не найден"],
+      "Table %(t)s wasn't found in the database %(d)s": [
+        "Витрина %(t)s не найдена в базе данных %(d)s"
+      ],
+      "Can't find User '%(name)s', please ask your admin to create one.": [
+        "Не удалось найти пользователя ‘%(name)s’. Обратитесь к администратору, чтобы создать его."
+      ],
+      "Can't find DruidCluster with cluster_name = '%(name)s'": [
+        "Не удалось найти DruidCluster с именем cluster_name = ‘%(name)s’"
+      ],
+      "Query record was not created as expected.": [
+        "Запись запроса не была создана должным образом."
+      ],
+      "Template Name": ["Имя Шаблона"],
+      "CSS Templates": ["Шаблоны CSS"],
+      "SQL Editor": ["Редактор SQL"],
+      "SQL Lab": ["Лаборатория"],
+      "Query Search": ["Поиск запросов"],
+      "Upload a CSV": ["Загрузить CSV"],
+      "Status": ["Статус"],
+      "Start Time": ["Время начала"],
+      "End Time": ["Время окончания"],
+      "Queries": ["Запросы"],
+      "List Saved Query": ["Список сохраненных запросов"],
+      "Show Saved Query": ["Показать сохраненный запрос"],
+      "Add Saved Query": ["Добавить сохраненный запрос"],
+      "Edit Saved Query": ["Изменить сохраненный запрос"],
+      "Pop Tab Link": ["Открыть"],
+      "Changed on": ["Изменено"],
+      "Saved Queries": ["Сохраненные запросы"],
+      "Query results limited to %s rows by server": [
+        "Число строк, отображаемых в результатах запроса могло быть ограничено на стороне сервера значением %s."
+      ],
+      "CSV export will be limited by [%s] records": [
+        "В csv будет выгружено не более %s записей"
+      ],
+      "Back": ["Назад"],
+      "Disabled hierarchy": ["Отключить иерархию"],
+      "One or many controls to ignore hieararchy": [
+        "Один или несколько компонентов, игнорирующих иерархию"
+      ],
+      "URL Drilldowns": ["Переходы по ссылке"],
+      "also copy (duplicate) slices": [
+        "также копировать отчеты (создать дубликаты)"
+      ],
+      "Annotation Layer": ["Слой аннотаций"],
+      "Select the Annotation Layer you would like to use.": [
+        "Выберите слой аннотаций, который вы хотите использовать"
+      ],
+      "Slice": ["Отчет"],
+      "Use a pre defined Superset Slice as a source for annotations and overlays.": [
+        "Используйте преопределенный отчет в качестве источника данных для аннотаций и наложений."
+      ],
+      "your Slice must be one of these visualization types: %s": [
+        "ваш отчет должен относиться к одному из следующих типов визуализаций: %s"
+      ],
+      "Formula": ["Формула"],
+      "Expects a formula with depending time parameter 'x' in milliseconds since epoch. mathjs is used to evaluate the formulas. Example: '2x+5'": [
+        "Ожидается формула с зависимым аргументом 'x' в миллисекундах (Unix time). Для вычисления формулы используется mathjs. Пример: '2x+5'"
+      ],
+      "Mandatory": ["Обязательно для заполнения"],
+      "Bad formula.": ["Некорректная формула."],
+      "Annotation Slice Configuration": ["Настройки аннотации отчета"],
+      "This section allows you to configure how to use the slice to generate annotations.": [
+        "Этот раздел позволяет настраивать как использовать отчет для генерации аннотации"
+      ],
+      "Interval Start column": ["Показатель начала интервала"],
+      "Event Time Column": ["Показатель времени события"],
+      "This column must contain date/time information.": [
+        "Этот показатель должен содержать информацию о дате/времени"
+      ],
+      "Interval End column": ["Показатель конца интервала"],
+      "None": ["Не выбрано"],
+      "Title Column": ["Заголовок показателя"],
+      "Pick a title for you annotation.": [
+        "Выберите заголовок для вашей аннотации"
+      ],
+      "Description Columns": ["Показатели описания"],
+      "Pick one or more columns that should be shown in the annotation. If you don't select a column all of them will be shown.": [
+        "Выберите один или несколько показателей которые должны отображаться в аннотации. Если ни один показатель не выбран, отображены будут все."
+      ],
+      "Override 'Since'": ["Переопределить 'начиная с'"],
+      "This controls whether the 'Since' field from the current view should be passed down to the slice containing the annotation data.": [
+        "Регулирует, должно ли поле 'начиная с' из текущего представления передаваться в отчет, содержащий данные аннотации."
+      ],
+      "Override 'Until'": ["Переопределить 'до'"],
+      "This controls whether the 'Until' field from the current view should be passed down to the slice containing the annotation data.": [
+        "Регулирует, должно ли поле 'до' из текущего представления передаваться в отчет, содержащий данные аннотации."
+      ],
+      "Time delta in natural language (example:  24 hours, 7 days, 56 weeks, 365 days)": [
+        "Временная разница на естественном языке (например, 24 hours, 7 days, 56 weeks, 365 days)"
+      ],
+      "Display configuration": ["Настройки отображения"],
+      "Configure your how you overlay is displayed here.": [
+        "Здесь можно настроить, как слой будет отображаться"
+      ],
+      "Solid": ["Сплошная"],
+      "Dashed": ["Штриховая"],
+      "Long Dashed": ["Длинные штрихи"],
+      "Dotted": ["Пунктирная"],
+      "Style": ["Стиль"],
+      "Automatic Color": ["Автоподбор цвета"],
+      "Line Width": ["Толщина линии"],
+      "Layer Configuration": ["Настройки слоя"],
+      "Configure the basics of your Annotation Layer.": [
+        "Настройте основные параметры вашего слоя аннотаций"
+      ],
+      "Hide Layer": ["Скрыть слой"],
+      "Choose the Annotation Layer Type": ["Выберите тип слоя аннотаций"],
+      "Annotation Layer Type": ["Тип слоя аннотаций"],
+      "Choose the source of your annotations": [
+        "Выберите источник данных для ваших аннотаций"
+      ],
+      "Annotation Source": ["Источник данных для аннотаций"],
+      "OK": ["Подтвердить"],
+      "Take in": ["Под скобки"],
+      "Take out": ["За скобки"],
+      "AND": ["И"],
+      "OR": ["ИЛИ"],
+      "Group": ["Группа"],
+      "Based on a metric": ["Основано на метрике"],
+      "Fixed": ["Фиксированное"],
+      "metric": ["метрика"],
+      "provided invalid option to MetricsControl, %s": [
+        "Невалидный параметр для компонента MetricsControl, %s"
+      ],
+      "Object": ["Объект"],
+      "URL Drilldown": ["Переход по ссылке"],
+      "Add Drilldown URL": ["Добавить переход по ссылке"],
+      "Actual value": ["Действительное значение"],
+      "Percentage": ["Процент"],
+      "Percentage Change": ["Изменение процента"],
+      "Time Comparison": ["Сравнение по времени"],
+      "Sparkline": ["Спарклайн"],
+      "Period Average": ["Среднее за период"],
+      "Column Configuration": ["Настройка показателя"],
+      "The column header label": ["Заголовок показателя"],
+      "Column header tooltip": ["Подсказка заголовка"],
+      "Type of comparison, value difference or percentage": [
+        "Тип сравнения, разница значений или процент"
+      ],
+      "Width of the sparkline": ["Ширина спарклайна"],
+      "Height of the sparkline": ["Высота спарклайна"],
+      "Time Lag": ["Временная задержка"],
+      "Number of periods to compare against": ["Чило периодов для сравнения"],
+      "Time Ratio": ["Соотношения времени"],
+      "Number of periods to ratio against": ["Число перидов для соотношения"],
+      "Color bounds": ["Цветовые границы"],
+      "Superset supports smart date parsing. Strings like `last sunday` or `last october` can be used.": [
+        "Система поддерживает разбор человекочитаемых дат, можно использовать строки вида 'last sunday' или 'last october'"
+      ],
+      "now": ["сейчас"],
+      "clear": ["очистить"],
+      "Relative": ["Относительно"],
+      "column": ["показатель"],
+      "aggregate": ["агрегировать"],
+      "Close": ["Закрыть"],
+      "Click to edit label": ["Щелкните, чтобы отредактировать надпись"],
+      "View Query": ["Посмотреть запрос"],
+      "rows": ["строк"],
+      "fetching dashboards failed for %s": [
+        "Не удалось получить информационную панель для пользователя %s"
+      ],
+      "Failed to save slice": ["Не удалось сохранить отчет"],
+      "Formula ": ["Формула "],
+      "Event": ["Событие"],
+      "Interval": ["Интервал"],
+      "Superset annotation": ["Системная аннотация"],
+      "This query took %s seconds to run, ": [
+        "Этот запрос потребовал %s секунд для исполнения, "
+      ],
+      "and the explore view times out at %s seconds, ": [
+        "и таймаут панели обзора равен %s секундам, "
+      ],
+      "following this flow will most likely lead to your query timing out. We recommend your summarize your data further before following that flow.": [
+        "текущий процесс скорее всего приведет к таймауту запроса. Мы рекомендуем просуммировать ваши даные, прежде чем продолжать процесс."
+      ],
+      "If activated you can use the ": ["Вы можете использовать инструкцию "],
+      "to store a summarized data set that you can then explore.": [
+        "для хранения просуммированого набора данных, который затем можно будет обозревать."
+      ],
+      "You must supply either a saved metric, column or aggregate to MetricDefinitionOption": [
+        "Вы должны предоставить сохраненную метрику, показатель или агрегированное значение для параметра MetricDefinitionOption"
+      ],
+      "You must supply either a saved metric or adhoc metric to MetricDefinitionValue": [
+        "Вы должны предоставить сохраненную метрику или локальную метрику для параметра MetricDefinitionValue"
+      ],
+      "Number bounds used for color encoding from red to blue. Reverse the numbers for blue to red. To get pure red or blue, you can enter either only min or max.": [
+        "Числовые привязки использованы для кодирования цветов от красного до синего. Инвертируйте значения для порядока от синего до красного. Чтобы получить чистый красный или синий, вы можете ввести только минимум или только максимум. "
+      ],
+      "Recently Viewed": ["Недавно просмотренные"],
+      "Switch to View Mode": ["Перейти в режим просмотра"],
+      "Click to change visualization type": [
+        "Щелкните, чтобы сменить тип визуализации"
+      ],
+      "Dismiss": ["Отменить"],
+      "Edit chart properties": ["Редактировать отчет"],
+      "Column groups": ["Группы показателей"],
+      "Optional d3 number format string": [
+        "Опциональная d3-строка форматирования числа"
+      ],
+      "Optional d3 date format string": [
+        "Опциональная d3-строка форматирования даты"
+      ],
+      "Number format string": ["Строка форматирования числа"],
+      "Date format string": ["Строка форматирования даты"],
+      "Data": ["Данные"],
+      "Share query": ["Поделиться запросом"],
+      "Share Query": ["Поделиться запросом"],
+      "JOIN Editor": ["Редактор JOIN"],
+      "ADD NEW JOIN": ["Добавить новое соединение"],
+      "Select a field": ["Выберите поле"],
+      "Add new field clause": ["Добавить привязку показателей"],
+      "from": ["Исходная витрина"],
+      "target": ["Целевая витрина"],
+      "No options": ["Нет значений"],
+      "Select table": ["Выбрать витрину"],
+      "Actions": ["Действия"],
+      "Add Filters": ["Добавить фильтры"],
+      "This slice name was saved successfully.": [
+        "Имя отчета сохранено успешно."
+      ],
+      "You don't have the rights to alter this slice": [
+        "Нет прав на редактирование этого отчета"
+      ],
+      "Export to .xls format": ["Экспорт Excel"],
+      "ago": ["назад"],
+      "from now": ["с текущей даты"],
+      "Free form": ["Свободная форма"],
+      "favorited": ["Изменено"],
+      "slice": ["Отчет"],
+      "name": ["Название"],
+      "type": ["Тип"],
+      "time": ["Время"],
+      "Show Range Filter": ["Показывать временной слайдер"],
+      "Yes": ["Да"],
+      "No": ["Нет"],
+      "Auto": ["Автоматически"],
+      "auto": ["автоматически"],
+      "X Tick Layout": ["Деления оси X"],
+      "The way the ticks are laid out on the X axis": [
+        "Метод, которым отображаются подписи у делений оси X"
+      ],
+      "flat": ["прямые"],
+      "random": ["случайно"],
+      "square": ["прямоугольник"],
+      "staggered": ["в шахматном порядке"],
+      "Adaptative formating": ["Адаптивное форматирование"],
+      "Axis ascending": ["По возрастанию"],
+      "Axis descending": ["По убыванию"],
+      "sum(value) ascending": ["Возрастание суммы значений"],
+      "sum(value) descending": ["Убывание суммы значений"],
+      "Top left": ["Вверху слева"],
+      "Top right": ["Вверху справа"],
+      "Bottom left": ["Внизу слева"],
+      "Bottom right": ["Внизу справа"],
+      "Align +/-": ["Выравнивать +/-"],
+      "Whether to align the background chart for +/- values": [
+        "Надо ли выравнивать фоновый график для значений +/-"
+      ],
+      "Color +/-": ["Цветные +/-"],
+      "Whether to color +/- values": ["Надо ли окрашивать значения +/-"],
+      "Save A Chart": ["Сохранить отчет"],
+      "[chart name]": ["[название отчета]"],
+      "Add chart to existing dashboard": [
+        "Добавить отчет на существующую информационную панель"
+      ],
+      "Select Dashboard": ["Выберите информационную панель"],
+      "Aggregate": ["Агрегировать"],
+      "My Metric": ["Своя метрика"],
+      "%s column(s)": ["%s показатель", "%s показателя", "%s показателей"],
+      "%s aggregates(s)": ["%s агрегатор", "%s агрегатора", "%s агрегаторов"],
+      "Control": ["Элемент"],
+      "Before": ["До"],
+      "After": ["После"],
+      "creator": ["Автор"],
+      "Column Group": ["Группа показателей"],
+      "You don't have the rights to alter this dashboard.": [
+        "У вас нет прав на изменение этой информационной панели"
+      ],
+      "copy": ["копия"],
+      "Prev": ["Предыдущая"],
+      "Next": ["Следующая"],
+      "Invalid date": ["Некорректная дата"],
+      "Invalid Date": ["Некорректная дата"],
+      "invalid date": ["Некорректная дата"],
+      "AGG": ["Станд"],
+      "ABC": ["АБВ"],
+      "#": ["123"],
+      "T/F": ["1/0"],
+      "Category Name": ["Название категории"],
+      "Value": ["Значение"],
+      "Category and Value": ["Категория и значения"],
+      "Percentage rounded to tenths": ["Процент с округлением до десятых"],
+      "Category and Percentage": ["Категория и процент"],
+      "Edit Annotation Layer": ["Редактировать слой аннотаций"],
+      "Hidden": ["Скрытый"],
+      "Remove": ["Удалить"],
+      "Connection": ["БД"],
+      "This section contains validation errors": [
+        "Этот раздел содержит ошибки валидации"
+      ],
+      "longitude": ["Долгота"],
+      "latitude": ["Широта"],
+      "zoom": ["Масштаб"],
+      "bearing": ["Азимут"],
+      "pitch": ["Угол наклона"],
+      "Streets": ["Улицы"],
+      "Dark": ["Темный"],
+      "Light": ["Светлый"],
+      "Satellite Streets": ["Улицы со спутника"],
+      "Satellite": ["Спутник"],
+      "Outdoors": ["Природа"],
+      "Square meters": ["Квадратные метры"],
+      "Square kilometers": ["Квадратные километры"],
+      "Square miles": ["Квадратные мили"],
+      "Radius in meters": ["Радиус в метрах"],
+      "Radius in kilometers": ["Радиус в километрах"],
+      "Radius in miles": ["Радиус в милях"],
+      "Maximum Radius": ["Максимальный радиус"],
+      "Minimum Radius": ["Минимальный радиус"],
+      "Minimum radius size of the circle, in pixels. As the zoom level changes, this insures that the circle respects this minimum radius.": [
+        "Минимальный радиус круга, в пикселях. Он будет учтен при изменении масштаба."
+      ],
+      "Maxium radius size of the circle, in pixels. As the zoom level changes, this insures that the circle respects this maximum radius.": [
+        "Максимальный радиус круга, в пикселях. Он будет учтен при изменении масштаба."
+      ],
+      "Whether to make the grid 3D": ["Должна ли сетка быть в 3D"],
+      "Legend Position": ["Расположение легенды"],
+      "choose a column or aggregate function": [
+        "Выберите показатель или агрегатную функцию"
+      ],
+      "No results found": ["Нет результатов"],
+      "pending": ["Ожидание"],
+      "running": ["Обработка"],
+      "Select...": ["Значение"],
+      "Is date?": ["Дата?"],
+      "Is dimension?": ["Измерение?"],
+      "Aggregate function": ["Агрегатная функция"],
+      "Hotkeys": ["Горячие клавиши"],
+      "Stop query": ["Остановить запрос"],
+      "Run query": ["Запустить запрос"],
+      "New tab": ["Новая вкладка"],
+      "Assign a set of parameters as ": ["Укажите набор параметров в формате "],
+      " below": [" ниже "],
+      "example": ["пример"],
+      "and they become available": ["и они будут доступны "],
+      "in your SQL ": ["в вашем SQL-запросе "],
+      "by using": [" путем использования "],
+      "syntax": ["-синтаксиса"],
+      "State": ["Статус"],
+      "db": ["БД"],
+      "Progress": ["Прогресс"],
+      "Rows": ["Строк"],
+      "SQL Query": ["Запрос"],
+      "Link": ["Ссылка"],
+      "1 hour ago": ["1 час назад"],
+      "1 day ago": ["1 день назад"],
+      "28 days ago": ["28 дней назад"],
+      "90 days ago": ["90 дней назад"],
+      "1 year ago": ["1 год назад"],
+      "success": ["Успех"],
+      "failed": ["Ошибка"],
+      "Started": ["Начало"],
+      "Duration": ["Продолжительность"],
+      "Output": ["Вывод"],
+      "stopped": ["Остановлен"],
+      " of total": [" от общего"],
+      " of parent": [" от родителя"],
+      "Whether to normalize the histogram": [
+        "Надо ли нормализовать гистограмму"
+      ],
+      "Normalized": ["Нормализовать"],
+      "grouped": ["По группам"],
+      "stacked": ["С накоплением"],
+      "Choose the position of the legend": ["Выберите расположение легенды"],
+      "Overwrite chart %s": ["Перезаписать отчет %s"],
+      "Select the numeric columns to draw the histogram": [
+        "Выберите числовые показатели для построения гистрограммы"
+      ],
+      "Numeric Columns": ["Числовые показатели"],
+      "Hard value bounds applied for color coding. Is only relevant and applied when the normalization is applied against the whole heatmap.": [
+        "Жетские границы значение, применяемые для цветового кодирования. Значимы и применяются только когда включена нормализация по всей тепловой карте"
+      ],
+      "Pixels": ["Пиксели"],
+      "Miles": ["Мили"],
+      "Kilometers": ["Километры"],
+      "mean": ["среднее"],
+      "sum": ["сумма"],
+      "median": ["медианное"],
+      "var": ["дисперсия"],
+      "stdev": ["СКО"],
+      "min": ["минимум"],
+      "max": ["максимум"],
+      "Query timeout": ["Таймаут запроса"],
+      "visualization queries are set to timeout at %s seconds. ": [
+        "для отчетов задан таймаут в %s секунд. "
+      ],
+      "Re-scale y-axis": ["Перемасштабировать ось Y"],
+      "ASC short": ["возр"],
+      "DESC short": ["убыв"],
+      "Full name": ["Полное название"],
+      "code International Olympic Committee (cioc)": [
+        "Код Международного олимпийского комитета (cioc)"
+      ],
+      "code ISO 3166-1 alpha-2 (cca2)": ["Код ISO 3166-1 alpha-2 (cca2)"],
+      "code ISO 3166-1 alpha-3 (cca3)": ["Код ISO 3166-1 alpha-3 (cca3)"],
+      "Year (freq=AS)": ["Год (freq=AS)"],
+      "52 weeks starting Monday (freq=52W-MON)": [
+        "52 недели начинающихся с понедельнка (freq=52W-MON)"
+      ],
+      "1 week starting Sunday (freq=W-SUN)": [
+        "1 неделя начинается с воскресенья (freq=W-SUN)"
+      ],
+      "1 week starting Monday (freq=W-MON)": [
+        "1 неделя начинается с понедельника (freq=W-MON)"
+      ],
+      "Day (freq=D)": ["День (freq=D)"],
+      "4 weeks (freq=4W-MON)": ["4 недели (freq=4W-MON)"],
+      "true": ["Да"],
+      "false": ["Нет"],
+      "Cell Size": ["Размер ячейки"],
+      "Cell Padding": ["Отступы ячейки"],
+      "Cell Radius": ["Радиус ячейки"],
+      "Color Steps": ["Градация цвета"],
+      "Show Metric Names": ["Показывать названия метрик"],
+      "Tukey": ["Алгоритм Туки"],
+      "Min/max (no outliers)": ["Мин./макс. (без отсеивания)"],
+      "2/98 percentiles": ["2/98 перцентили"],
+      "9/91 percentiles": ["9/91 перцентили"],
+      "factor": ["Фактор"],
+      "growth": ["Рост"],
+      "value": ["Значение"],
+      "p-value": ["p-значение"],
+      "Lift %": ["Разница значений %"],
+      "Significant": ["Значимость"],
+      "For IAM": ["Для ИАМ"],
+      "Show subtotals by rows": ["Показать подытоги по строкам"],
+      "Show subtotals by column": ["Показать подытоги по столбцам"],
+      "Totals by rows": ["Подытоги по строкам"],
+      "Totals by columns": ["Подытоги по столбцам"],
+      "Metrics Totals": ["Метрики подытогов"],
+      "Totals Metrics": ["Метрики \"Всего\""],
+      "If no aggregating function is selected for the metric, then the subtotal from the metric is by default considered as a sum.\nFor metrics with the date/date-time/string type, by default it is considered as the maximum.": [
+        "Если на метрику не выбрана агрегирующая функция, то подытог от метрики по-умолчанию считается как сумма.\nДля метрик с типом дата/дата-время/строка, по-умолчанию считается как максимум."
+      ],
+      "If no aggregating function is selected for the metric, then the total from the default metric is considered as a sum.\nFor metrics with the date/date-time/string type, by default it is considered as the maximum.": [
+        "Если на метрику не выбрана агрегирующая функция, то итог от метрики по-умолчанию считается как сумма.\nДля метрик с типом дата/дата-время/строка, по-умолчанию считается как максимум."
+      ],
+      "Hierarchy for quick selection": ["Иерархии для быстрого выбора"],
+      "Click to add Hierarchie columns": [
+        "Нажмите чтобы добавить показатели иерархии"
+      ],
+      "Click to remove Hierarchie columns": [
+        "Нажмите чтобы убрать показатели иерархии"
+      ],
+      "Speedometer Chart": ["Спидометр"],
+      "Speedometer options": ["Опции спидометра"],
+      "Label under speedometer": ["Надпись под спидометром"],
+      "Degree": ["Градусы"],
+      "The unit of measure for speedometer": [
+        "Единица измерения для спидометра"
+      ],
+      "Scale Speedometer": ["Сектора"],
+      "Add Sector": ["Добавить сектор"],
+      "Slice href:": ["Переход по клику в отчет:"],
+      "Select range:": ["Выбрать диапазон:"],
+      "From": ["От"],
+      "To": ["До"],
+      "Select label": ["Выбрать Метку"],
+      "Label left": ["метка слева"],
+      "Label right": ["метка справа"],
+      "Label down": ["метка снизу"],
+      "Label up": ["метка сверху"],
+      "error ranges": ["некорректные значения диапазонов"],
+      "error loading data,\nerror: %s": ["ошибка загрузки данных:\n%s"],
+      "Create option %s": ["Добавить в \"%s\""],
+      "Create %s": ["Добавить \"%s\""],
+      "Enter the name of the indicator": [
+        "Введите название показателя"
+      ],
+      "This filter field may not work correctly. more than %s entries were discovered": [
+        "Данное поле фильтра возможно будет работать некорректно т.к. было обнаружено более \"%s\" записей. Для выбора более продвинутой фильтрации нажмите на кнопку рядом с информирующим значком"
+      ],
+      "This field has the ability to easily search for data for filtering": [
+        "Данное поле имеет возможность упрощенного поиска данных для фильтрации"
+      ],
+      "Add folder": ["Добавить папку"],
+      "Edit folder": ["Редактировать папку"],
+      "Show all slices": ["Отобразить все отчеты"],
+      "Show all dashboards": ["Отобразить все панели"],
+      "Folders by sources": ["Папки по источникам данных"],
+      "Custom folders": ["Преднастроенные папки"],
+      "Parent folder": ["Корневая папка"],
+      "Folder name": ["Имя папки"],
+      " -- No parent folder -- ": [" -- Без корневой папки -- "],
+      "Select folder": ["Выберите папку"],
+      "An error occured while getting the folder structure": [
+        "Произошла ошибка при получении структуры папок"
+      ],
+      "Folder": ["Папка"],
+      "Path": ["Путь"],
+      "Conditional formatting": ["Условное форматирование"],
+      "Set range in %": ["Задать диапазон в %"],
+      "Whether to set range value in %": ["Задать значение в %"],
+      "COUNT_DISTINCT": ["Уникальных значений"],
+      "COUNT": ["Число строк"],
+      "MAX": ["Максимум"],
+      "MIN": ["Минимум"],
+      "AVG": ["Среднее значение"],
+      "SUM": ["Сумма"],
+      "cumulative total": ["накопительным итогом"],
+      "Show clustering": ["Кластеризация"],
+      "Whether to set clustering": ["Использовать кластеризацию"],
+      "Set zoom value": ["Задать значение зума"],
+      "Whether to set zoom value": ["Задать значение зума"],
+      "Point name": ["Наименование точки"],
+      "Select point name": ["Выбрать имя точки"],
+      "Icon pointer": ["Указатель на иконку"],
+      "Select icon pointer": ["Выбрать yказатель на иконку"],
+      "First option of metrics is displayed": ["Первая опция"],
+      "Point value": ["Значение точки"],
+      "Select point value": ["Выбрать значение точки"],
+      "No name": ["Без имени"],
+      "The value of the first metric in the list is displayed by default on the geotag. Displaying other metrics from the list is carried out by clicking the user on the geotag": ["Значение первой по списку метрики по умолчанию отображается на геометке. Отображение других метрик из списка осуществляется нажатием пользователя на геометку"],
+      "Change Opacity" : ["Прозрачность"],
+      "Display info panels on the map": ["Отображение информационной панели на карте"],
+      "Whether to set Opacity value" : ["Установить значение Прозрачности"],
+      "Dissipating" : ["Рассеивание"],
+      "Toggle Dissipating": ["Включить/Выключить рассеивание"],
+      "Radius" : ["Радиус"],
+      "Gradient" : ["Градиент"],
+      "Whether to set Radius value" : ["Установить значение радиуса"],
+      "Bubble style": ["Параметры карты"],
+      "Show Heatmap" : ["Отображение тепловой карты"],
+      "Whether to show extra controls or not": ["Отображение дополнительных элементов"],
+      "Toggle Gradient" : ["Инвертировать градиент"],
+      "Choose regions" : ["Выбор области"],
+      "Select the area you want to display on the map" : ["Выберете область которую хотите отобразить на карте"],
+      "Aggregation by area" : ["Агрегация меток по району"],
+      "Placemark aggregation by area" : ["Агрегация меток по району"],
+      "cumulative total": ["накопительным итогом"],
+      "Drill Down is available": ["На данном отчёте доступен Drill-down"]
+    }
+  }
+}
